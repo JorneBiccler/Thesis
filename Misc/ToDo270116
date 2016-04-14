@@ -1,0 +1,20 @@
+\begin{table}[!htb]
+\begin{tabular}{l l c c c c c }
+\toprule
+Species & common name & US & West coast & East coast & western US & southeastern US \\
+\midrule
+Aesculus glabra & Ohio buckeye  &  \ding{51} \\
+Juniperus osteosperma & Utah juniper  & & &  \ding{51}\\
+Quercus ilicifolia & bear oak  & & &  \ding{51}  \\
+Salix caroliniana & coastal plain willow  &  \ding{51}  \\
+Sequoia sempervirens& coast redwood & &  \ding{51}  \\
+\\
+Agkistrodon contortrix Linnaeus & copperhead snake   &  \ding{51}  \\
+Geomys pinetis Rafinesque & southeastern pocket gopher  &&&& &  \ding{51}  \\
+Pituophis catenifer catenifer & Pacific gopher snake  &  &  \ding{51}  \\
+Sorex pacificus & Pacific shrew &  &  \ding{51}  \\
+Sylvilagus nuttallii & mountain cottontail  & & &  &  \ding{51}  \\
+\bottomrule
+\end{tabular}
+\caption{\label{table:Specis}The different species studied and the study extent.}
+\end{table}

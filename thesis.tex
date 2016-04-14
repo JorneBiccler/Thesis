@@ -1,0 +1,114 @@
+% Fundamental packages
+\documentclass[11pt,a4paper,twoside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[american]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{setspace}
+\usepackage[noend]{algpseudocode}
+% margins and general lay-out
+%\usepackage[inner=3cm,outer=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[inner=2.5cm,outer=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\pagestyle{plain}
+% fonts (Helvetica) and typographical stuff 
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} 
+\usepackage{textcomp} 
+\usepackage{pifont}
+\usepackage{csquotes}
+\usepackage{bm}
+
+% Setting the font should be done after loading the typographic packages which tend to 
+% set a new default font. The microtype package should however be loaded after the font ...
+% using san serif helvetica clone
+%\usepackage{helvet}
+%\renewcommand{\familydefault}{\sfdefault}
+
+% phv is another posibility.
+% \renewcommand\rmdefault{phv}
+\usepackage{microtype}
+
+% additional packages
+\usepackage{booktabs}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{todonotes}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage{tablefootnote}
+
+% package to manage citations
+\usepackage[backend=bibtex,style=authoryear-comp,sorting=nyt,isbn=false,url=false]{biblatex}
+\addbibresource{Bibliography/Bibliography.bib}
+\addbibresource{Bibliography/Data.bib}
+
+
+% Kill the auto-indent
+\setlength\parindent{0pt}
+
+% test package
+\usepackage{lipsum}
+
+% Packages for list of symbols and list of abbreviations
+%\usepackage[nonumberlist,acronym,toc,nomain]{glossaries}
+%\makeglossaries
+%\input{Glossaries/Abbreviations}
+
+% new definitions
+\newcommand{\expit}{\text{expit}} 
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\doublespacing
+% start of the document
+\begin{document}
+
+% include cover page + copyright statement + no pagenumbers
+\pagenumbering{gobble}
+\includepdf[pages={1}]{Cover/TitlePage.pdf}
+\clearpage \null \clearpage
+\include{Chapters/Copyright/Copyright}
+
+% frontmatter + roman page numbers
+\frontmatter
+
+\include{Chapters/Preface/Preface}\cleardoublepage
+\include{Chapters/Summary/Summary}
+%\printglossary[type=\acronymtype,style=list,title={List of abbreviations}]
+\cleardoublepage
+\tableofcontents
+\listoftodos
+
+% main matter (chapters + appendices
+\mainmatter
+
+\include{Chapters/Introduction/Introduction}
+
+\include{Chapters/TheEcologicalNicheConcept/TheEcologicalNicheConcept}
+
+\include{Chapters/DataCommonlyUsedInSpeciesDistributionModels/DataCommonlyUsedInSpeciesDistributionModels}
+
+\include{Chapters/ClassificationTechniques/ClassificationTechniques}
+
+\include{Chapters/ReducingTheNumberOfExplanatoryVariables/ReducingTheNumberOfExplanatoryVariables}
+
+\include{Chapters/Applications/Applications}
+
+\include{Chapters/SimulationStudy/SimulationStudy}
+
+
+% backmater => mainly references
+\backmatter
+\printbibliography[heading=bibnumbered]
+\cleardoublepage
+
+\includepdf[pages={1}]{Cover/BackPage.pdf}
+\end{document}

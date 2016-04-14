@@ -1,0 +1,30 @@
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{find a citation}{7}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{note that the sum of the variables = 1 => design matrix will not have full rank ...}{9}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{cite Fine-scale environmental variation in species distribution modelling ...}{9}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{maybe fix the notation so that it's more in line with the previous chapters.}{17}{section*.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{discuss different loss functions that are often used, e.g. GINI, ...}{18}{section*.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{unify MaxEnt / pesudo-absences by introducing IPP models}{21}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{connection with IPP models}{21}{section*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{discuss the possibility of using weighted data (e.g. for decision trees etc.) see paper.}{21}{section*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{Read/find some papers on classification methods with unbalanced data-sets.}{21}{section*.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{discuss effect of using pca on background vs occurrence data}{21}{section*.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{elaborate on problems when using models for prediction vs interpretable models, see Dorman et al. and Harel 2001 (see paper references Dorman)}{25}{section*.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{Discuss the effect of the number of background observations ?}{25}{section*.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{? mention that we "implicitly" assume that the outcome varies mainly along the PCs with the largest eigenvalues ?}{27}{section*.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{check the number of predictors ...}{32}{section*.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{double check which kind of models / residuals the used in the paper}{34}{section*.37}

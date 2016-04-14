@@ -1,0 +1,99 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {american}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Preface}{i}{chapter*.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Summary}{iii}{chapter*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}The ecological niche concept}{3}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Introduction}{3}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Ecological versus geographical space}{3}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Implicit assumptions when building and using species distribution modles}{5}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Data commonly used in species distribution models}{7}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Predictor data}{7}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Vegetation continuous fields}{7}{subsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}Bioclimatic variables}{7}{subsection.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.3}NDVI}{9}{subsection.3.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.4}Digital elevation model}{9}{subsection.3.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.5}Land cover}{9}{subsection.3.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Outcome data}{9}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Species considered}{9}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Global Biodiversity Information Facility}{9}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Spatial scale}{9}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Classification techniques}{13}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Presence absence data}{13}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Logistic regression}{13}{subsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Generalized additive models}{14}{subsection.4.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}Artificial neural networks}{16}{subsection.4.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.4}Tree based methods}{18}{subsection.4.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Decision trees}{18}{section*.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Boosting}{19}{section*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Presence only data}{21}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Classification with pseudo-absences}{21}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Maximum Entropy modeling}{21}{subsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Taking the scale hierarchy into account}{22}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Reducing the number of explanatory variables}{25}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Dimensionality reduction}{25}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}Principal component analysis}{26}{subsection.5.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}Kernel principal component analysis}{28}{subsection.5.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Regularization}{29}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Ridge regression / $L_2$ regularization}{29}{subsection.5.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}Lasso / $L_1$ regularization}{31}{subsection.5.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Subset selection methods}{32}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Best subset selection}{32}{subsection.5.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}Stepwise subset selection}{32}{subsection.5.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.3}Univariate pre-screening}{33}{subsection.5.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Underlying idea}{33}{section*.35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Taking the correlation into account}{33}{section*.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Taking the scale hierarchy into account}{34}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Meaningful combinations of classification and }{34}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Applications}{37}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Simulation study}{39}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{41}{chapter*.39}

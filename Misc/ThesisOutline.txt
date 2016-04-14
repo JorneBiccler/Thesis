@@ -1,0 +1,109 @@
+## Questions
+- Presentation in June (and march?)
+- Template thesis
+- Other rules
+- "Supercomputer" for simulation study
+- Goal: paper
+- Seminar / reading groups / office / ...
+- PhD applications in Denmark/Scandinavia
+
+
+
+## 
+
+- Data used in SDM: 
+	* Presence/absence vs presence only (+ pseudo-absence)
+	* Climate data (Bioclim) / RS data
+	* "Concepts" of scale in ecology (depending on the scale of the observations using "patchy" high res RS data not that appropriate,
+									  see also Graham et al 2008)
+	* Maybe RS data most relevant when modelling "stationary" species.
+	* Paper chase
+	* Small scale => small prevalence!
+	* Multicollinearity / large amount of explanatory variables
+
+- Methods used in SDM: 
+   	* Presence only: MaxEnt above with pseudo-absences
+   	* Connections and difference between these approaches
+   	* Hierarchical vs non-hierarchical approach (see e.g. article by Pearson et al 2004): 
+   		1)  seems reasonable to use hierarhical appraoch since on global scale the 
+   			distribution seems mainly determined by climate (also more data), 
+   			=> regional add extra land-use data + climate model from a larger survey area could improve 
+   			robustness / credibility of the large scale climate model/mechanism.
+   		2) "uncouples" climate and land-cover data (both an advantage and disadvantage?) 
+   		3) however the projection into 2 spaces of lower dimensions doesn't allow for 
+   			climate / land-use interactions (not really a problem when e.g. using GAMs without multivariate splines,
+   			but still it seems that model selection would be "non-optimal") ? 
+   		4) doesn't allow for an "distanglement" of confounders => suboptimal model selection at best
+		5) example of fine and coarse scale interaction; species might be able to deal better with
+		   high average temperatures (coarse) when there are water sources nearby (fine).
+
+- Methods for variable selection / DR: 
+	* Could perhaps include performance indices etc.
+	* Wollan et al; modelling and predicting fungal distribution patterns using herbarium data (combining lasso and other
+	selection methods) on the other hand Merow et al (A practical guide to MaxEnt for modeling species) recomends to preprocess anyway ...
+
+
+- 2 (or more) applications/analyses:
+	* 1 one presence only 
+	* 1 presence/absence (once again note difference in interpretation between 
+						  MaxEnt and the presence/absence methods)
+
+- Simulation study (virtualspecies R package ?): 
+	* Different functional forms of response functions
+	* Different amount of correlation + non-linear relations between variables
+	* Different amount of variables	
+	* Interaction vs no interactions across scales (especially if the hierarchical approach would be used)
+	* Presence/absence vs presence only
+	* Usage: extrapolation vs interpolation in the survey area
+	* Different scales
+
+## Optional / extra ideas
+   	* Model averaging
+   	* FIC could be interesting for some applications?
+robust methods:
+- Introduction:
+	* older observations + some land cover change over time (e.g. wildfires / logging amazon / ...) => some "outliers"
+	* museum records + scale of the observation
+	* ...
+- Robust GLMs, "easy" for presence absence data, but for presence background data it might matter that 
+			the background can't be wrong (excluding errors in the explanatory variables which are prevalent throughout
+			sdm, namely climate interpolation errors)?
+- "Robustify" Maxent (seems doable with the "fit as glm approach by Hastie et al")
+- Application
+- Simulation study
+
+
+
+
+
+Species:
+Sequoia sempervirens
+Quercus ilicifolia
+Salix caroliniana
+Juniperus osteosperma
+Aesculus glabra
+
+
+Pituophis catenifer catenifer (Pacific gopher snake)
+Tympanuchus pallidicinctus (less prairie chicken)
+pocket gopher 
+Aplodontia rufa (mountain beaver)
+Sylvilagus nuttallii (mountain cottontail)
+Seminatrix pygaea (swamp snake)
+Agkistrodon contortrix Linnaeus (copperhead
+
+Ventridens Decassatus
+GBIF.org (10th November 2015) GBIF Occurrence Download http://doi.org/10.15468/dl.q5b1y9
+
+
+
+
+## Outline presence only
+=> define L, U, ... as in paper shapire etc (see toRead) and note that except for intercept they should lead to the same estimate ?
+=> inrepretation dependent on quadrant size (see paper hastie et al. MaxEnt equivalence)
+
+
+
+
+
+
