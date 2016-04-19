@@ -49,7 +49,17 @@
 \addbibresource{Bibliography/Bibliography.bib}
 \addbibresource{Bibliography/Data.bib}
 
-
+\DeclareCiteCommand{\citeauthor}
+  {\boolfalse{citetracker}%
+   \boolfalse{pagetracker}%
+   \usebibmacro{prenote}}
+  {\ifciteindex
+     {\indexnames{labelname}}
+     {}%
+   \printtext[bibhyperref]{\printnames{labelname}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+  
 % Kill the auto-indent
 \setlength\parindent{0pt}
 
@@ -72,7 +82,7 @@
 \begin{document}
 
 % include cover page + copyright statement + no pagenumbers
-\pagenumbering{gobble}
+ \pagenumbering{gobble}
 \includepdf[pages={1}]{Cover/TitlePage.pdf}
 \clearpage \null \clearpage
 \include{Chapters/Copyright/Copyright}

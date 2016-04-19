@@ -60,6 +60,9 @@ A popular choice is the polynomial kernel $k(\bm{x},\bm{y}) = (\bm{x}' \bm{y} + 
 
 A disadvantage of kernel PCA is that it is not always clear which kernel should be used. For our goals, combining kernel PCA and a classification method, we can use cross-validation and treat the type of kernel as a tuning parameter. Furthermore, it is not always particularly clear what the new features are supposed to represent (we might not even know in which Hilbert space we are working). An R implementation of kernel pca is provided as part of the \textsc{kernlab} package \parencite{kernlab}.
 
+\subsection{Presence versus background data}
+\label{sec:dimRedPrVSBG}
+
 
 \section{Regularization}
 \label{sec:Regularization}
@@ -160,17 +163,33 @@ Although the focus in the article was on stepwise regression techniques, the sam
 
 
 \section{Meaningful combinations of classification and }
+\label{sec:combinations}
+ 
+
+For each method of Chapter \ref{ch:ClassificationTechniques} we will consider a ``vanilla'' model. The vanilla logistic regression and ANN model use all predictors except the agriculture land cover class and BIO7. These two predictors are removed to avoid computational problems. The vanilla GAM consists of using all predictors together with GCV to select the smoothness parameter. The vanilla MaxEnt model is the standard MaxEnt model with the default parameters \parencite{phillips_modeling_2008}. Finally, the vanilla version of boosted regression trees is just the standard implementation. \\
+
+Next to the vanilla models ten combinations of classification algorithms and methods to reduce the number of variables will be considered, see Table \ref{table:combinations}. Combinations that are not included were often not computationally feasible to implement, e.g.\ combing kernel PCA and GAMs, or not meaningful, e.g.\ $L_1$ regularization combined with boosted regression trees. Furthermore, following the remarks in Section \ref{sec:dimRedPrVSBG} when PCA or kernel PCA are used in combination with presence-only data three different version will be considered: \begin{enumerate}
+\item a version where the PCA is performed on the background and presence data.
+\item a version where the PCA is performed only on the background data.
+\item a version where the PCA is performed only presence data.
+\end{enumerate}
+In total 
+
 
 \begin{table}[!htb]
 \makebox[\textwidth][c]{
 \begin{tabular}{l@{\hskip 1cm}cccccccc}
+\toprule
  								& PCA				& kernel PCA			& $L_2$ penalty	& $L_1$ penalty & subset selection & select07 \\
+\midrule
  								\\
 Logistic regression 			& \ding{51}			& \ding{51}			  	& \ding{51}			 	& \ding{51} & \ding{51}& \ding{51}\\ 
 Additive logistic regression 	&			&			  	& \ \ding{51}\tablefootnote{Regularization of the ``wiggliness'' instead of the coefficients, see Section \ref{sec:GAM}} 		&  & & \ding{51}
 \\
 Artificial neural networks 		&			&				& \ding{51}	\\
 Boosted regression trees 		& 	\\
-MaxEnt							& \ding{51}			& 						&						& \ding{51}\\
+MaxEnt							& 			& 						&						& \ding{51} \tablefootnote{Using five fold CV to select the $L_1$ regularization parameter instead of using the default parameter.} \\
+\bottomrule
 \end{tabular}}
+\caption{\label{table:combinations}Table with the combinations of classification and dimensionality reduction techniques that are considered.}
 \end{table}
