@@ -3,9 +3,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {todo}{cite paper Brody / Svenning on greenes in the US}{9}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{cite Fine-scale environmental variation in species distribution modelling ...}{16}{section*.14}
+\contentsline {todo}{change this sentence}{15}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{maybe fix the notation so that it's more in line with the previous chapters.}{23}{section*.16}
+\contentsline {todo}{cite Fine-scale environmental variation in species distribution modelling ...}{16}{section*.15}
 \defcounter {refsection}{0}\relax 
 \contentsline {todo}{discuss different loss functions that are often used, e.g. GINI, ...}{24}{section*.19}
 \defcounter {refsection}{0}\relax 
@@ -21,10 +21,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {todo}{elaborate on problems when using models for prediction vs interpretable models, see Dorman et al. and Harel 2001 (see paper references Dorman)}{31}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Discuss the effect of the number of background observations ?}{31}{section*.28}
+\contentsline {todo}{Discuss the effect of the number of background observations ?}{32}{section*.28}
 \defcounter {refsection}{0}\relax 
 \contentsline {todo}{? mention that we "implicitly" assume that the outcome varies mainly along the PCs with the largest eigenvalues ?}{33}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{check the number of predictors ...}{38}{section*.35}
-\defcounter {refsection}{0}\relax 
-\contentsline {todo}{double check which kind of models / residuals the used in the paper}{40}{section*.38}
+\contentsline {todo}{double check which kind of models / residuals the used in the paper}{40}{section*.37}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.1)  12 APR 2016 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.1)  21 APR 2016 10:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -379,11 +379,11 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 1--4
  []
 
 
-Overfull \hbox (624.71pt too wide) in paragraph at lines 1--4
+Overfull \hbox (633.30681pt too wide) in paragraph at lines 1--4
 []\OML/cmm/m/it/10 ovel[]\OT1/cmr/m/n/10 006\OML/cmm/m/it/10 ; segurado[]valuat
 ion[]\OT1/cmr/m/n/10 004\OML/cmm/m/it/10 :Theresultsofthesestudiesweretakeninto
-accountwhenweselectedthemethodswewillshortly\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r
-e\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 introduce:$ 
+accountwhenweselectedthemethodswewillconcisely\OT1/cmr/m/n/10 (\OML/cmm/m/it/10
+ re\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 introduce:$ 
  []
 
 ! Undefined control sequence.
@@ -518,6 +518,8 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -4596,7 +4598,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.42 F
-      inally, up till only univariate splines have been considered, if inter...
+      inally, up till now only univariate splines have been considered, if i...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4615,6 +4617,9 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no l in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -16645,7 +16650,7 @@ hwillnotbefurtherinvestigated:$
 Here is how much of TeX's memory you used:
  53 strings out of 495000
  1070 string characters out of 6181169
- 62988 words of memory out of 5000000
+ 62990 words of memory out of 5000000
  3382 multiletter control sequences out of 15000+600000
  4868 words of font info for 18 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

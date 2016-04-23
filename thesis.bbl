@@ -458,6 +458,101 @@
   \field{urlyear}{2015}
 \endentry
 
+\entry{daly_knowledge-based_2002}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Daly}{D.}%
+     {Christopher}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gibson}{G.}%
+     {Wayne~P.}{W.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Taylor}{T.}%
+     {George~H.}{G.~H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Johnson}{J.}%
+     {Gregory~L.}{G.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pasteris}{P.}%
+     {Phillip}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DC+1}
+  \strng{fullhash}{DCGWPTGHJGLPP1}
+  \field{labelyear}{2002}
+  \field{sortinit}{D}
+  \field{abstract}{%
+  ABSTRACT: The demand for spatial climate data in digital form has risen
+  dramatically in recent years. In response to this need, a variety of
+  statistical techniques have been used to facilitate the production of
+  GIS-compatible climate maps. However, observational data are often too sparse
+  and unrepresentative to directly support the creation of high-quality climate
+  maps and data sets that truly represent the current state of knowledge. An
+  effective approach is to use the wealth of expert knowledge on the spatial
+  patterns of climate and their relationships with geographic features, termed
+  Œgeospatial climatology¹, to help enhance, control, and parameterize a
+  statistical technique. Described here is a dynamic knowledge-based framework
+  that allows for the effective accumulation, application, and refinement of
+  climatic knowledge, as expressed in a statistical regression model known as
+  PRISM (parameter-elevation regressions on independent slopes model). The
+  ultimate goal is to develop an expert system capable of reproducing the
+  process a knowledgeable climatologist would use to create high-quality
+  climate maps, with the added benefits of consistency and repeatability.
+  However, knowledge must first be accumulated and evaluated through an ongoing
+  process of model application; development of knowledge prototypes, parameters
+  and parameter settings; testing; evaluation; and modification. This paper
+  describes the current state of a knowledge-based framework for climate
+  mapping and presents specific algorithms from PRISM to demonstrate how this
+  framework is applied and refined to accommodate difficult climate mapping
+  situations. A weighted climate-elevation regression function acknowledges the
+  dominant influence of elevation on climate. Climate stations are assigned
+  weights that account for other climatically important factors besides
+  elevation. Aspect and topographic exposure, which affect climate at a variety
+  of scales, from hill slope to windward and leeward sides of mountain ranges,
+  are simulated by dividing the terrain into topographic facets. A coastal
+  proximity measure is used to account for sharp climatic gradients near
+  coastlines. A 2-layer model structure divides the atmosphere into a lower
+  boundary layer and an upper free atmosphere layer, allowing the simulation of
+  temperature inversions, as well as mid-slope precipitation maxima. The
+  effectiveness of various terrain configurations at producing orographic
+  precipitation enhancement is also estimated. Climate mapping examples are
+  presented.%
+  }
+  \verb{doi}
+  \verb 10.3354/cr022099
+  \endverb
+  \field{number}{2}
+  \field{pages}{99\bibrangedash 113}
+  \field{title}{A knowledge-based approach to the statistical mapping of
+  climate}
+  \verb{url}
+  \verb http://www.int-res.com/abstracts/cr/v22/n2/p99-113/
+  \endverb
+  \field{volume}{22}
+  \verb{file}
+  \verb Climate Research Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.defa
+  \verb ult/zotero/storage/WFXCV3HJ/Daly et al. - 2002 - A knowledge-based appr
+  \verb oach to the statistical mapp.pdf:application/pdf;Climate Research Snaps
+  \verb hot:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storage/NACJJ83A
+  \verb /p99-113.html:text/html
+  \endverb
+  \field{journaltitle}{Climate Research}
+  \field{month}{09}
+  \field{year}{2002}
+  \field{urlday}{22}
+  \field{urlmonth}{04}
+  \field{urlyear}{2016}
+\endentry
+
 \entry{dempster_maximum_1977}{article}{}
   \name{author}{3}{}{%
     {{}%
@@ -540,7 +635,7 @@
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{DC+1}
+  \strng{namehash}{DC+2}
   \strng{fullhash}{DCCMSRHCHMTJ1}
   \field{sortinit}{D}
   \field{howpublished}{University of Maryland, College Park, MD, USA}
@@ -808,7 +903,7 @@
      {}{}%
      {}{}}%
   }
-  \keyw{climate change, invasions, niche, predict, presence-only, spatial}
+  \keyw{climate change, Invasions, niche, predict, presence-only, spatial}
   \strng{namehash}{EJLJR1}
   \strng{fullhash}{EJLJR1}
   \field{labelyear}{2009}
@@ -1211,6 +1306,68 @@
   \field{urlday}{24}
   \field{urlmonth}{07}
   \field{urlyear}{2015}
+\endentry
+
+\entry{franklin_mapping_2009}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Franklin}{F.}%
+     {Janet}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Miller}{M.}%
+     {Jennifer~A.}{J.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Cambridge University Press}%
+  }
+  \keyw{Biogeography, Mathematical models}
+  \strng{namehash}{FJMJA1}
+  \strng{fullhash}{FJMJA1}
+  \field{labelyear}{2009}
+  \field{sortinit}{F}
+  \field{abstract}{%
+  "Maps of species' distributions or habitat suitability are required for many
+  aspects of environmental research, resource management and conservation
+  planning. These include biodiversity assessment, reserve design, habitat
+  management and restoration, species and habitat conservation plans and
+  predicting the effects of environmental change on species and ecosystems. The
+  proliferation of methods and uncertainty regarding their effectiveness can be
+  daunting to researchers, resource managers and conservation planners alike.
+  Franklin summarises the methods used in species distribution modeling (also
+  called niche modeling) and presents a framework for spatial prediction of
+  species distributions based on the attributes (space, time, scale) of the
+  data and questions being asked. The framework links theoretical ecological
+  models of species distributions to spatial data on species and environment,
+  and statistical models used for spatial prediction. Providing practical
+  guidelines to students, researchers and practitioners in a broad range of
+  environmental sciences including ecology, geography, conservation biology,
+  and natural resources management." --NHBS Environment Bookstore%
+  }
+  \field{isbn}{978-0-521-87635-3 0-521-87635-4 978-0-521-70002-3 0-521-70002-7}
+  \field{series}{Ecology, biodiversity and conservation}
+  \field{shorttitle}{Mapping species distributions}
+  \field{title}{Mapping species distributions: spatial inference and
+  prediction}
+  \list{location}{1}{%
+    {Cambridge ; New York}%
+  }
+  \field{annotation}{%
+  PART I. HISTORY AND ECOLOGICAL BASIS OF SPECIES DISTRIBUTION MODELING:
+  Species distribution modeling -- Why do we need species' distribution models?
+  -- Ecological understanding of species' distributions -- PART II. THE DATA
+  NEEDED FOR MODELING SPECIES DISTRIBUTIONS: Data for species' distribution
+  models: the biological data -- Data for species' distribution models: the
+  environmental data -- PART III. AN OVERVIEW OF THE MODELING METHODS:
+  Statistical models - modern regression -- Machine learning methods --
+  Classification, similarity and other methods for presence-only data -- PART
+  IV. MODEL EVALUATION AND IMPLEMENTATION: Model evaluation -- Implementation
+  of species' distribution models%
+  }
+  \field{year}{2009}
 \endentry
 
 \entry{friedman_additive_2000}{article}{}
@@ -2533,73 +2690,6 @@
   \field{urlyear}{2015}
 \endentry
 
-\entry{miller_modeling_2002}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Miller}{M.}%
-     {Jennifer}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Franklin}{F.}%
-     {Janet}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{Classification tree, Generalized linear model, Indicator kriging,
-  Mojave Desert, Predictive vegetation modeling}
-  \strng{namehash}{MJFJ1}
-  \strng{fullhash}{MJFJ1}
-  \field{labelyear}{2002}
-  \field{sortinit}{M}
-  \field{abstract}{%
-  Generalized linear models (GLMs) and classification trees were developed to
-  predict the presence of four vegetation alliances in a section of the Mojave
-  Desert in California. Generalized additive models were used to provide
-  response shapes for parameterizing GLMs. Environmental variables used to
-  model the distribution of the alliances included temperature, precipitation,
-  elevation, elevation-derived terrain variables (slope, transformed aspect,
-  topographic moisture index, solar radiation, and landscape position), and
-  categorical landform/surface composition variables. Vegetation distributions
-  exhibit spatial dependence and therefore we used indicator kriging to derive
-  neighborhood values of “presence” also used as predictors in the models.
-  The models were developed using 2859 observations coded present or absent for
-  each of the four alliances, and assessed using 960 observations. In general,
-  all of the models were improved with the addition of the kriged dependence
-  term. However, models that relied heavily on the kriged dependence term were
-  less generalizable for predictive purposes. Classification tree models had
-  higher classification accuracy with the training data, but were less robust
-  when used for predictions with the test data. Each of the models was used to
-  generate a map of predictions for each alliance and the results were often
-  quite different. The predicted maps with the kriged dependence terms looked
-  unrealistically smooth, particularly in the classification tree models where
-  they were often selected as the most important variables, and therefore
-  heavily influenced the spatial pattern of the resulting map predictions.%
-  }
-  \verb{doi}
-  \verb 10.1016/S0304-3800(02)00196-5
-  \endverb
-  \field{issn}{0304-3800}
-  \field{number}{2–3}
-  \field{pages}{227\bibrangedash 247}
-  \field{title}{Modeling the distribution of four vegetation alliances using
-  generalized linear models and classification trees with spatial dependence}
-  \verb{url}
-  \verb http://www.sciencedirect.com/science/article/pii/S0304380002001965
-  \endverb
-  \field{volume}{157}
-  \verb{file}
-  \verb ScienceDirect Snapshot:/home/jorne/.zotero/zotero/k1od4wal.default/zote
-  \verb ro/storage/BWQJC8C9/S0304380002001965.html:text/html
-  \endverb
-  \field{journaltitle}{Ecological Modelling}
-  \field{month}{11}
-  \field{year}{2002}
-  \field{urlday}{23}
-  \field{urlmonth}{07}
-  \field{urlyear}{2015}
-\endentry
-
 \entry{fiamanual}{manual}{}
   \name{author}{8}{}{%
     {{}%
@@ -3270,6 +3360,31 @@
   \field{note}{created 17 Nov 2015}
 \endentry
 
+\entry{RProg}{manual}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{R Core Team}}{R.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {R Foundation for Statistical Computing}%
+  }
+  \strng{namehash}{R1}
+  \strng{fullhash}{R1}
+  \field{labelyear}{2013}
+  \field{sortinit}{R}
+  \field{title}{R: A Language and Environment for Statistical Computing}
+  \verb{url}
+  \verb http://www.R-project.org/
+  \endverb
+  \list{location}{1}{%
+    {Vienna, Austria}%
+  }
+  \field{year}{2013}
+\endentry
+
 \entry{renner_equivalence_2013}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -3748,6 +3863,85 @@
   \field{urlday}{16}
   \field{urlmonth}{08}
   \field{urlyear}{2015}
+\endentry
+
+\entry{strubbe_predicting_2008}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Strubbe}{S.}%
+     {Diederik}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Matthysen}{M.}%
+     {Erik}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \keyw{Biodiversity, Competition, Developmental Biology, Ecology, Freshwater
+  \& Marine Ecology, Habitat suitability, Invasions, Plant Sciences,
+  Presence-only modelling, Ring-necked parakeet}
+  \strng{namehash}{SDME1}
+  \strng{fullhash}{SDME1}
+  \field{labelyear}{2008}
+  \field{sortinit}{S}
+  \field{abstract}{%
+  The threat to biodiversity due to invasive alien species is considered second
+  only to that of habitat loss. Given the large number of species that are
+  currently invading ecosystems all over the world, we need to distinguish
+  invaders with minor effects from those with large effects in order to
+  prioritize management efforts. Ecological niche models can be used to predict
+  the potential distribution of an invasive species from occurrence records and
+  environmental data layers. We used the Ecological Niche Factor Analysis
+  (ENFA), a presence-only predictive modelling approach, to describe the
+  invasive ring-necked parakeets’ realized niche and to identify areas
+  suitable for the parakeet in northern Belgium. ENFA proved to be a robust and
+  reliable modelling technique, able to gauge the ecological requirements of an
+  invasive species without the need to include historical information on the
+  starting point of the invasion. ENFA shows that the parakeets tend to occupy
+  relatively rare habitats compared to the main environmental conditions in
+  northern Belgium, although they show some tolerance for environmental
+  conditions inside parks and forests. The general distribution of the
+  ring-necked parakeet is governed primarily by the amount of older forest
+  patches, parks and built-up area in the landscape—reflecting the
+  parakeets’ need for suitable nesting cavities and its reliance upon urban
+  areas to forage. Our resulting habitat suitability maps show that the
+  parakeets have ample room to further increase their range in northern
+  Belgium. Our results indicate some concern for increased competition between
+  parakeets and the nuthatches, native cavity nesters known to suffer from
+  competition with parakeets, as some regions known as nuthatch strongholds are
+  highly likely to be invaded by the parakeets.%
+  }
+  \verb{doi}
+  \verb 10.1007/s10530-008-9266-6
+  \endverb
+  \field{issn}{1387-3547, 1573-1464}
+  \field{number}{3}
+  \field{pages}{497\bibrangedash 513}
+  \field{title}{Predicting the potential distribution of invasive ring-necked
+  parakeets {Psittacula} krameri in northern {Belgium} using an ecological
+  niche modelling approach}
+  \verb{url}
+  \verb http://link.springer.com/article/10.1007/s10530-008-9266-6
+  \endverb
+  \field{volume}{11}
+  \verb{file}
+  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
+  \verb e/3X45QWQ6/Strubbe and Matthysen - 2008 - Predicting the potential dist
+  \verb ribution of invasive .pdf:application/pdf;Snapshot:/home/jorne/.zotero/
+  \verb zotero/k1od4wal.default/zotero/storage/Z35M4WIG/Strubbe and Matthysen -
+  \verb  2008 - Predicting the potential distribution of invasive .html:text/ht
+  \verb ml
+  \endverb
+  \field{journaltitle}{Biological Invasions}
+  \field{month}{04}
+  \field{year}{2008}
+  \field{urlday}{22}
+  \field{urlmonth}{04}
+  \field{urlyear}{2016}
 \endentry
 
 \entry{thuiller_we_2004}{article}{}
@@ -4381,6 +4575,61 @@
   \field{urlday}{23}
   \field{urlmonth}{07}
   \field{urlyear}{2015}
+\endentry
+
+\entry{woodward_impact_1990}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Woodward}{W.}%
+     {F.~I.}{F.~I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fogg}{F.}%
+     {G.~E.}{G.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Heber}{H.}%
+     {U.}{U.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WFIFGEHU1}
+  \strng{fullhash}{WFIFGEHU1}
+  \field{labelyear}{1990}
+  \field{sortinit}{W}
+  \field{abstract}{%
+  The distribution limits of three species, in the British Isles are discussed.
+  For Verbena officinalis and Tilia cordata low temperatures are shown to
+  influence distribution, by limiting the capacity either to flower or to
+  fertilize ovules, respectively. In the case of Umbilicus rupestris, a
+  long-term transplant population beyond the natural geographical limit of the
+  species has evolved new low-temperature responses of seed germination and
+  winter survival. The effect is a marked change of phenology, compared with
+  populations of the species within its natural range, which enhances the
+  capacity of the population to survive in a colder environment.%
+  }
+  \field{issn}{0080-4622}
+  \field{number}{1237}
+  \field{pages}{585\bibrangedash 593}
+  \field{title}{The {Impact} of {Low} {Temperatures} in {Controlling} the
+  {Geographical} {Distribution} of {Plants} [and {Discussion}]}
+  \verb{url}
+  \verb http://www.jstor.org/stable/2398706
+  \endverb
+  \field{volume}{326}
+  \verb{file}
+  \verb JSTOR Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/
+  \verb storage/24DTP8ZA/Woodward et al. - 1990 - The Impact of Low Temperature
+  \verb s in Controlling the .pdf:application/pdf
+  \endverb
+  \field{journaltitle}{Philosophical Transactions of the Royal Society of
+  London. Series B, Biological Sciences}
+  \field{year}{1990}
+  \field{urlday}{21}
+  \field{urlmonth}{04}
+  \field{urlyear}{2016}
 \endentry
 
 \lossort

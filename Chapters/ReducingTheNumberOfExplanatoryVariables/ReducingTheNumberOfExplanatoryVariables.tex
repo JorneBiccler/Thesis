@@ -1,5 +1,7 @@
 \chapter{Reducing the number of explanatory variables}
 \label{ch:ReducingTheNumberOfExplanatoryVariables}
+
+\section{Introduction}
 The explanatory variables used in SDMs are often correlated. Such high correlation can be an indication of redundant information in the data-set. Moreover, since there is usually no knowledge about which variables make up the niche of a species and irrelevant predictors might be included into the model. It is well known that this can lead to over-fitting and unstable predictions. In this chapter we describe some methods to deal with large sets of correlated predictors. More specifically, in Section \ref{sec:DimensionalityReduction} we introduce methods that transform the input space. In Section \ref{sec:Regularization} techniques that penalize ``large'' models are introduced. Finally, Section \ref{sec:SubsetSelectionMethods} deals with step-wise variable selection methods.
 
 \todo[inline]{elaborate on problems when using models for prediction vs interpretable models, see Dorman et al. and Harel 2001 (see paper references Dorman)} 
@@ -108,7 +110,7 @@ This $L_1$ penalty terms is also often called the least absolute shrinkage and s
 \begin{figure}[!htb]
 \centering
 \includegraphics[scale=0.75]{VectorGraphics/lassoTrace.png}
-\caption{\label{fig:LassoTrace}Visualization of the typical evulation of the regression parameters in combination with the lasso parameter.}
+\caption{\label{fig:LassoTrace}Visualization of the typical evolution of the regression parameters in combination with the lasso parameter.}
 \end{figure}
 
 Usually the shrinkage parameter is selected by using cross-validation. Disadvantages include:
@@ -124,7 +126,7 @@ The main advantage is that the lasso performs both shrinkage and parameter selec
 Subset selection methods are an older method to reduce the number of explanatory variables. Although subset selection methods are often criticised for ignoring problems with bias, multiple testing, etc. \parencite{whittingham_why_2006} they are still popular. In this section we will shortly discuss three different techniques. \\
 
 \subsection{Best subset selection}
-The most elementary technique in this set of methods is best-subset selection. Best subset selection consists of fitting a model for each combination of predictors and then selecting the best model from these. What constitutes the best model depends on the goals of the study but often used selection criteria include: AIC, missclassifcation error, p-values, etc. The biggest limitation of best-subset selection is that when the number of predictors increases there is an exponential increase in computational complexity. In particular, if there are $p$ potential terms to be included we need to fit $2^p$ models. Since we have \todo[inline]{check the number of predictors ...} variables this method is infeasible for our purposes.\\
+The most elementary technique in this set of methods is best-subset selection. Best subset selection consists of fitting a model for each combination of predictors and then selecting the best model from these. What constitutes the best model depends on the goals of the study but often used selection criteria include: AIC, missclassifcation error, p-values, etc. The biggest limitation of best-subset selection is that when the number of predictors increases there is an exponential increase in computational complexity. In particular, if there are $p$ potential terms to be included we need to fit $2^p$ models. Since we have $33$ variables this method is infeasible for our purposes.\\
 
 \subsection{Stepwise subset selection}
 A second subset selection method is backward-stepwise selection. This method starts with the model containing all $p$ predictors. In the second step of the algorithm we try removing each predictor from the full model and select the most optimal model from the models with $p-1$ covariates. In the third step we remove each predictor from the model obtained in the second step, fit a model with $p-2$ predictors, and select the best model from these. This process is repeated until there is no improvement possible. One of the most important disadvantages of this method is that it is quite variable. Furthermore, for some algorithms (e.g.\ logistic regression) we need to have $p < n$.
@@ -171,9 +173,9 @@ For each method of Chapter \ref{ch:ClassificationTechniques} we will consider a 
 Next to the vanilla models ten combinations of classification algorithms and methods to reduce the number of variables will be considered, see Table \ref{table:combinations}. Combinations that are not included were often not computationally feasible to implement, e.g.\ combing kernel PCA and GAMs, or not meaningful, e.g.\ $L_1$ regularization combined with boosted regression trees. Furthermore, following the remarks in Section \ref{sec:dimRedPrVSBG} when PCA or kernel PCA are used in combination with presence-only data three different version will be considered: \begin{enumerate}
 \item a version where the PCA is performed on the background and presence data.
 \item a version where the PCA is performed only on the background data.
-\item a version where the PCA is performed only presence data.
+\item a version where the PCA is performed only on the presence data.
 \end{enumerate}
-In total 
+In total $20$ methods are used.
 
 
 \begin{table}[!htb]
