@@ -24,14 +24,14 @@
 \BOOKMARK [1][-]{section.3.4}{Spatial scale}{chapter.3}% 24
 \BOOKMARK [0][-]{chapter.4}{Classification techniques}{}% 25
 \BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.2}{Presence absence data}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.2}{Presence-absence data}{chapter.4}% 27
 \BOOKMARK [2][-]{subsection.4.2.1}{Logistic regression}{section.4.2}% 28
 \BOOKMARK [2][-]{subsection.4.2.2}{Generalized additive models}{section.4.2}% 29
 \BOOKMARK [2][-]{subsection.4.2.3}{Artificial neural networks}{section.4.2}% 30
 \BOOKMARK [2][-]{subsection.4.2.4}{Tree based methods}{section.4.2}% 31
-\BOOKMARK [1][-]{section.4.3}{Presence only data}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.3}{Presence-only data}{chapter.4}% 32
 \BOOKMARK [2][-]{subsection.4.3.1}{Classification with pseudo-absences}{section.4.3}% 33
-\BOOKMARK [2][-]{subsection.4.3.2}{Maximum Entropy modeling}{section.4.3}% 34
+\BOOKMARK [2][-]{subsection.4.3.2}{Maximum Entropy modelling}{section.4.3}% 34
 \BOOKMARK [1][-]{section.4.4}{Taking the scale hierarchy into account}{chapter.4}% 35
 \BOOKMARK [0][-]{chapter.5}{Reducing the number of explanatory variables}{}% 36
 \BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 37
@@ -50,4 +50,4 @@
 \BOOKMARK [1][-]{section.5.6}{Meaningful combinations of classification and }{chapter.5}% 50
 \BOOKMARK [0][-]{chapter.6}{Applications}{}% 51
 \BOOKMARK [0][-]{chapter.7}{Simulation study}{}% 52
-\BOOKMARK [0][-]{chapter*.39}{Bibliography}{}% 53
+\BOOKMARK [0][-]{chapter*.37}{Bibliography}{}% 53

@@ -2293,7 +2293,7 @@
   \field{urlyear}{2015}
 \endentry
 
-\entry{kernlab}{article}{}
+\entry{JSSv011i09}{article}{}
   \name{author}{4}{}{%
     {{}%
      {Karatzoglou}{K.}%
@@ -2302,7 +2302,7 @@
      {}{}}%
     {{}%
      {Smola}{S.}%
-     {Alex}{A.}%
+     {Alexandros}{A.}%
      {}{}%
      {}{}}%
     {{}%
@@ -2320,11 +2320,25 @@
   \strng{fullhash}{KASAHKZA1}
   \field{labelyear}{2004}
   \field{sortinit}{K}
-  \field{number}{9}
+  \field{abstract}{%
+  kernlab is an extensible package for kernel-based machine learning methods in
+  R. It takes advantage of R's new S4 ob ject model and provides a framework
+  for creating and using kernel-based algorithms. The package contains dot
+  product primitives (kernels), implementations of support vector machines and
+  the relevance vector machine, Gaussian processes, a ranking algorithm, kernel
+  PCA, kernel CCA, and a spectral clustering algorithm. Moreover it provides a
+  general purpose quadratic programming solver, and an incomplete Cholesky
+  decomposition method.%
+  }
+  \verb{doi}
+  \verb 10.18637/jss.v011.i09
+  \endverb
+  \field{issn}{1548-7660}
+  \field{number}{1}
   \field{pages}{1\bibrangedash 20}
-  \field{title}{kernlab -- An {S4} Package for Kernel Methods in {R}}
+  \field{title}{kernlab - An S4 Package for Kernel Methods in R}
   \verb{url}
-  \verb http://www.jstatsoft.org/v11/i09/
+  \verb https://www.jstatsoft.org/index.php/jss/article/view/v011i09
   \endverb
   \field{volume}{11}
   \field{journaltitle}{Journal of Statistical Software}
