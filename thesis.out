@@ -30,24 +30,25 @@
 \BOOKMARK [2][-]{subsection.4.2.3}{Artificial neural networks}{section.4.2}% 30
 \BOOKMARK [2][-]{subsection.4.2.4}{Tree based methods}{section.4.2}% 31
 \BOOKMARK [1][-]{section.4.3}{Presence-only data}{chapter.4}% 32
-\BOOKMARK [2][-]{subsection.4.3.1}{Classification with pseudo-absences}{section.4.3}% 33
-\BOOKMARK [2][-]{subsection.4.3.2}{Maximum Entropy modelling}{section.4.3}% 34
-\BOOKMARK [1][-]{section.4.4}{Taking the scale hierarchy into account}{chapter.4}% 35
-\BOOKMARK [0][-]{chapter.5}{Reducing the number of explanatory variables}{}% 36
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 37
-\BOOKMARK [1][-]{section.5.2}{Dimensionality reduction}{chapter.5}% 38
-\BOOKMARK [2][-]{subsection.5.2.1}{Principal component analysis}{section.5.2}% 39
-\BOOKMARK [2][-]{subsection.5.2.2}{Kernel principal component analysis}{section.5.2}% 40
-\BOOKMARK [2][-]{subsection.5.2.3}{Presence versus background data}{section.5.2}% 41
-\BOOKMARK [1][-]{section.5.3}{Regularization}{chapter.5}% 42
-\BOOKMARK [2][-]{subsection.5.3.1}{Ridge regression / L2 regularization}{section.5.3}% 43
-\BOOKMARK [2][-]{subsection.5.3.2}{Lasso / L1 regularization}{section.5.3}% 44
-\BOOKMARK [1][-]{section.5.4}{Subset selection methods}{chapter.5}% 45
-\BOOKMARK [2][-]{subsection.5.4.1}{Best subset selection}{section.5.4}% 46
-\BOOKMARK [2][-]{subsection.5.4.2}{Stepwise subset selection}{section.5.4}% 47
-\BOOKMARK [2][-]{subsection.5.4.3}{Univariate pre-screening}{section.5.4}% 48
-\BOOKMARK [1][-]{section.5.5}{Taking the scale hierarchy into account}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.6}{Meaningful combinations of classification and }{chapter.5}% 50
-\BOOKMARK [0][-]{chapter.6}{Applications}{}% 51
-\BOOKMARK [0][-]{chapter.7}{Simulation study}{}% 52
-\BOOKMARK [0][-]{chapter*.37}{Bibliography}{}% 53
+\BOOKMARK [2][-]{subsection.4.3.1}{Poisson point processes}{section.4.3}% 33
+\BOOKMARK [2][-]{subsection.4.3.2}{Classification with pseudo-absences}{section.4.3}% 34
+\BOOKMARK [2][-]{subsection.4.3.3}{Maximum Entropy modelling}{section.4.3}% 35
+\BOOKMARK [1][-]{section.4.4}{Taking the scale hierarchy into account}{chapter.4}% 36
+\BOOKMARK [0][-]{chapter.5}{Reducing the number of explanatory variables}{}% 37
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.2}{Dimensionality reduction}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.2.1}{Principal component analysis}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.2}{Kernel principal component analysis}{section.5.2}% 41
+\BOOKMARK [2][-]{subsection.5.2.3}{Presence versus background data}{section.5.2}% 42
+\BOOKMARK [1][-]{section.5.3}{Regularization}{chapter.5}% 43
+\BOOKMARK [2][-]{subsection.5.3.1}{Ridge regression / L2 regularization}{section.5.3}% 44
+\BOOKMARK [2][-]{subsection.5.3.2}{Lasso / L1 regularization}{section.5.3}% 45
+\BOOKMARK [1][-]{section.5.4}{Subset selection methods}{chapter.5}% 46
+\BOOKMARK [2][-]{subsection.5.4.1}{Best subset selection}{section.5.4}% 47
+\BOOKMARK [2][-]{subsection.5.4.2}{Stepwise subset selection}{section.5.4}% 48
+\BOOKMARK [2][-]{subsection.5.4.3}{Univariate pre-screening}{section.5.4}% 49
+\BOOKMARK [1][-]{section.5.5}{Taking the scale hierarchy into account}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.6}{Meaningful combinations of classification and }{chapter.5}% 51
+\BOOKMARK [0][-]{chapter.6}{Applications}{}% 52
+\BOOKMARK [0][-]{chapter.7}{Simulation study}{}% 53
+\BOOKMARK [0][-]{chapter*.34}{Bibliography}{}% 54

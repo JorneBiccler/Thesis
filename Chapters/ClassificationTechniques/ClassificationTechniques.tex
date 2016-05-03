@@ -5,7 +5,7 @@
 This chapter deals with the statistical foundations of species distribution modelling. Since it is impractical to list all the available methods that are used we restrict ourselves to the most popular or fundamental ones. In the last 10 years a lot of research has focused on the performance of these different algorithms \parencite[e.g.][]{elith*_novel_2006,segurado_evaluation_2004}. The results of these studies were taken into account when the methods that are used were selected.
 
 \section{Presence-absence data}
-\label{sec:PresenceAbsenceDta}
+\label{sec:PresenceAbsenceData}
 
 In this section some important and often used methods to classify binary data are reviewed. First of all, the outcome, $y_i$, of observation $i$ indicates whether a species occurs, $y_i = 1$, or is absent, $y_i=0$. We denote the vector of explanatory variables as $\bm{X}$. The general form of the models used in this section is:
 \begin{equation}
@@ -15,8 +15,8 @@ P(Y=1|\bm{X} = \bm{x}) = f(\bm{x}; \bm{\gamma}).
 In this representation $f(\cdot;\cdot)$ is a function parametrized by $\bm{\gamma}$. The main differences between the techniques introduced below are the functional form of $f(\cdot;\cdot)$ and the loss function that is minimized.
 
 \subsection{Logistic regression}
-Perhaps the most fundamental modelling technique for binary data is logistic regression. In logistic regression the log odds ratio of the probability of an occurrence is modelled as a linear function of the covariates. Hence, the model can be depicted as \[\log \left( \frac{P(Y=1|\bm{X} = \bm{x})}{P(Y=0|\bm{X} = \bm{x})} \right)= \bm{x}^t \bm{\gamma}.\]
-It is easy to show that this model can be written in the form used in Equation \ref{FundEq}. More specifically, if we define $\expit(\cdot) = \frac{\exp(\cdot)}{1+\exp(\cdot)}$ we get \[f(\bm{x};\bm{\gamma}) = \expit(\mathbf{x}^t\bm{\gamma}).\] Usually the coefficients of a logistic regression model are obtained by using maximum likelihood estimation (MLE). Obtaining the MLE $\widehat{\bm{\gamma}}$ corresponds with solving the following maximization problem:
+Perhaps the most fundamental modelling technique for binary data is logistic regression. In logistic regression the log odds ratio of the probability of an occurrence is modelled as a linear function of the covariates. Hence, the model can be depicted as \[\log \left( \frac{P(Y=1|\bm{X} = \bm{x})}{P(Y=0|\bm{X} = \bm{x})} \right)= \gamma_0 \bm{x}^t \bm{\gamma}.\]
+It is easy to show that this model can be written in the form used in Equation \ref{FundEq}. More specifically, if we define $\expit(\cdot) = \frac{\exp(\cdot)}{1+\exp(\cdot)}$ we get \[f(\bm{x};\bm{\gamma}) = \expit(\gamma_0 + \mathbf{x}^t\bm{\gamma}).\] Usually the coefficients of a logistic regression model are obtained by using maximum likelihood estimation (MLE). Obtaining the MLE $\widehat{\bm{\gamma}}$ corresponds with solving the following maximization problem:
 \[\widehat{\bm{\gamma}} = \argmax_{\bm{\gamma}} \sum_{i=1}^{N} \left\lbrace y_i \log{f(\bm{x}_i;\bm{\gamma})}  + (1-y_i)\log{f(\bm{x}_i;\bm{\gamma})}  \right\rbrace.\] 
 When one multiplies this log-likelihood function by minus one we get a loss function that is often called the cross-entropy. For more information about logistic regression and numerical optimization techniques for obtaining the MLE we refer to \cite{agresti_categorical_2013} and \cite{mccullagh_generalized_1999}. \\
 
@@ -117,50 +117,68 @@ In order to avoid over-fitting one can use a new subsample of the full data-set 
 
 Another popular ensemble method that is used in combination with decision trees is the Random Forest (RF) method. In most cases RFs perform slightly worse than boosted classification trees \parencite{hastie_elements_2009} and we will not consider them in this thesis.\\
 
-A disadvantage of Boosted classification trees is that they are not as easily visualized / interpreted as normal classification trees. Secondly, there are quite a few tuning parameters, namely the depth of the trees $J$, the regularization term, and the number of trees. However, \cite{hastie_elements_2009} note that using $J \in \{4,\dots,8\}$ usually leads to the best performing models, additionally they observed that the specific value of $J$ in this set has little effect on the performance of the classifier. Hence, cross validation will be used to obtain optimal values for the learning rate and the number of trees.\\
+A disadvantage of boosted classification trees is that they are not as easily visualized / interpreted as normal classification trees. Secondly, there are quite a few tuning parameters, namely the depth of the trees $J$, the regularization term, and the number of trees. However, \cite{hastie_elements_2009} note that using $J \in \{4,\dots,8\}$ usually leads to the best performing models, additionally they observed that the specific value of $J$ in this set has little effect on the performance of the classifier. Hence, cross validation will be used to obtain optimal values for the learning rate and the number of trees.\\
 
 Finally, although we described boosting for classification trees the same idea can be readily applied to other classification algorithms. Furthermore, boosted classification trees seem to include a form of internal variable selection, i.e.\ the performance of this method usually doesn't degrade a lot when irrelevant predictors are present. We will use the implementation provided by the \textsc{gbm} package \parencite{gbm}.
 
 \section{Presence-only data}
 \label{sec:PresenceOnlyData}
-Instead of having access to presence-absence data it happens quite often that we only have presence data. This is e.g. the case when we use the records of a natural history museum, herbarium, \dots One method of dealing with this kind of data is by extending the methods from Section \ref{sec:PresenceAbsenceData}, this is done in Section \ref{sec:ClassificationWithPseudoAbsences}. Another popular approach is Maximum Entropy modelling \parencite{phillips_maximum_2006,phillips_modeling_2008}, a short overview of this method is given in Section \ref{sec:MaximumEntropyModeling}. Finally we refer to \parencite{pearce_modelling_2006} for different methods to deal with and additional information on presence-only data. 
+Instead of having access to presence-absence data it happens quite often that only presence data is available. Since the previously described classification techniques need binary data they can not immediately be used with presence-only data. In Section \ref{sec:IPP} the inhomogeneous Poisson process (IPP) is introduced. Presence-background classification is introduced in Section \ref{sec:ClassificationWithPseudoAbsences}. Finally, in Section \ref{sec:MaximumEntropyModeling} Maximum Entropy \parencite[MaxEnt;][]{phillips_maximum_2006,phillips_modeling_2008} is concisely described. \\ 
 
-Finally, there is another interesting way to use regression models in combination with presence-only data. \cite{ward_presence-only_2009} used the EM algorithm \parencite{dempster_maximum_1977} in combination with regression models. Although this leads to an elegant and rigorously motivated method of fitting regression models the prevalence of the species needs to be known, or estimable, which is (nearly) never the case.
+Although we will not consider it we note that there is another interesting way to use regression models in combination with presence-only data. \cite{ward_presence-only_2009} used the EM algorithm \parencite{dempster_maximum_1977} in combination with regression models. Although this leads to an elegant and rigorously motivated method of fitting regression models, the prevalence of the species needs to be known, or estimable, which is nearly never the case.
 
-\todo[inline]{unify MaxEnt / pesudo-absences by introducing IPP models}
+\subsection{Poisson point processes}
+\label{sec:IPP}
+First of all, all the measure theoretic machinery involved in point processes is blatantly ignored in this section. We denote the study area of interest by $S$. Usually $S$ corresponds to an area preserving projection of the earth and therefore our focus is on $S\subset \mathbb{R}^2$. A point process is a random variable $\bm{X}$ that consists of points $u_i \in S$, hence $\bm{X} =  (u_1,\ldots,u_n)$. In the presence-only scenario the $\bm{X}$ variable equals the locations where an occurrence was reported. One popular point process is the inhomogeneous Poisson point process. Before giving a non-rigorous definition of the IPP we define the intensity of a point process as a function $\lambda(\cdot): S \to \mathbb{R}_+$ for which $\int_B \lambda(u)du < \infty,\; \forall$ bounded $B \subset S$. The random variable $\bm{X}$ is said be an IPP if $\forall$ bounded $ B \subset S$:
+\begin{enumerate}
+\item The number of observed points within $B$, $N(B) = \# (X \cap B)$, follows a Poisson distribution with mean $\Lambda(B) = \int_B \lambda(u)du.$
+\item Given the number of observed points within $B$, $N(B)$, the elements of $X$ within $B$ are i.i.d. distributed with density $\frac{\lambda(u)}{\Lambda(B)}.$
+\end{enumerate}
+The first part of the definition implies that the the expected number of observations in a small area surrounding a point is approximately equal to the intensity, assuming it is a continuous function, multiplied by size of the area. \\
+
+In order to obtain a parametric model of an IPP the intensity is usually modelled as a function of the covariates $\bm{z}(u)$ observed at the location $u$. A popular model is the log linear model: 
+\begin{equation*}
+\label{eq:Intensity}
+ \lambda(u) = \exp (\gamma_0  + \bm{\gamma}^t\bm{z}(u) ). 
+\end{equation*}
+It is interesting to note that the intercept term, $\gamma_0$, only affects the expected number of points but not the configuration of the points in $S$. When we use $C$ to denote a rest term that is independent of the parameters, the likelihood function becomes:
+\begin{equation*}
+\label{eq:IPPlikelihood}
+\begin{aligned}
+l(\bm{x};\bm{\gamma}) &= \log \left( \prod_{i=1}^n \frac{\lambda(u_i)}{\Lambda(S)} \frac{ \Lambda(S)^n \exp (-\Lambda(S))}{n!}\right)  \\ 
+&= \sum_{i=1}^n \left\lbrace \gamma_0 + \bm{\gamma}^t\bm{z}(u_i) \right\rbrace - \int_S \exp (\bm{\gamma}^t\bm{z}(u)) du  + C.
+\end{aligned}
+\end{equation*}
+The difficulty of using MLE in combination with IPP models is approximating the integral. For an overview of different methods to obtain the MLEs and a more complete treatment of spatial point processes we refer to \cite{moller_modern_2007}.
+
 \subsection{Classification with pseudo-absences}
 \label{sec:ClassificationWithPseudoAbsences}
-\todo[inline]{connection with IPP models}
-\todo[inline]{discuss the possibility of using weighted data (e.g. for decision trees etc.) see paper.}
-\todo[inline]{Read/find some papers on classification methods with unbalanced data-sets.}
 \todo[inline]{discuss effect of using PCA on background vs occurrence data}
+One of the older techniques to deal with presence-only data consists of generating so-called pseudo-absence or background points. The original motivation of this technique is that by uniformly sampling $n_0$ points in the geographical space $S$ one obtains a representation of the available habitat in the study region \parencite{pearce_modelling_2006}. The available habitat is then contrasted with the locations where a presence was observed by using standard classification methods. In practice one has to decide on the number of pseudo-absences that should be used and whether or not the pseudo-absences should be weighted \parencite{barbet-massin_selecting_2012}.\\
 
+Another, more rigorous, way to justify the pseudo-absence method is by using the IPP model. \cite{warton_poisson_2010} were the first to note the connections between fitting an IPP model and fitting logistic regression models with pseudo-absences. \cite{fithian_finite-sample_2013} further refined these equivalences and also considered the situation when the model is misspecified. We follow the derivation given by \cite{fithian_finite-sample_2013}.\\
 
-
+First of all, we condition on the number of presence points, $n_1$, and the number of background points, $n_0$, and view this as a case-control sampling scheme. It is clear that the probability of outcome $Y_i$ being a presence point equals $P(Y_i = 1) = \frac{n_1}{n_0 + n_1}$ and hence $P(Y_i = 0) = \frac{n_0}{n_0 + n_1}$. Now suppose that the presence points are generated by a IPP with intensity $\lambda_1(u) = \exp(\gamma_0 + \bm{\gamma}^t\bm{z}(u))$. Since the background points are generated uniformly over $S$ the intensity of this process is $\lambda_0(u) \propto 1.$ Conditional on $n_1$ and $n_0$ it is now easy to derive the expression of a logistic model:
+\begin{equation}
+\begin{aligned}
+P(Y_i = 1 | U = u) & = \frac{f(u|Y_i = 1) P(Y_i = 1)}{P(Y_i = 1) f(u|Y_i = 1) + P(Y_i = 0)f(u|Y_i = 0) } \\[0.5ex]
+ & = \frac{\frac{\lambda_1(u)}{\Lambda_1(S)}\frac{n_1}{n_0 + n_1}}{\frac{\lambda_1(u)}{\Lambda_1(S)}\frac{n_1}{n_0 + n_1} + \frac{\lambda_0(u)}{\Lambda_0(S)}\frac{n_0}{n_0 + n_1}} 
+ = \frac{\frac{\lambda_1(u) n_1 \int_S du }{\Lambda_1(S)\lambda_0(u) n_0}}{\frac{ \lambda_1(u) n_1 \int_S du}{\Lambda_1(S) n_0} + 1} \\[0.5ex]
+ & = \frac{\exp \left( \gamma_0 + \log \left( \frac{n_1 \int_S du }{n_0\Lambda_1(S)}\right) + \bm{\gamma}^t\bm{z}(u) \right)}{\exp \left( \gamma_0 + \log \left( \frac{n_1 \int_S du }{n_0\Lambda_1(S)}\right) + \bm{\gamma}^t\bm{z}(u) \right) + 1}
+\end{aligned}
+\end{equation}
+This derivation implies that, with the exception of the intercept, the coefficients of the IPP model can be estimated by using the standard fitting procedures for logistic regression. Furthermore, it shows that combining logistic regression together with back-ground data is quite a natural approach to the presence-only problem. The fact that the intercept of the IPP model cannot be obtained is not problematic. As we saw in Section \ref{sec:IPP} the intercept does not affect the configuration of the observed points within $S$. Instead it basically rescales the expected number of observed presences. Since the number of observed presences is partially determined processes of which we have no data, e.g.\ the sampling intensity, the intercept is usually not of interest,
 
 
 \subsection{Maximum Entropy modelling}
 \label{sec:MaximumEntropyModeling}
-Perhaps the most popular method to create models from presence-only data is by using Maximum Entropy modelling \parencite[MaxEnt][]{phillips_maximum_2006,phillips_modeling_2008}. This introduction follows the interpretation introduced by \cite{elith_statistical_2011} instead of the original motivation of \cite{phillips_maximum_2006}. This is done mainly because in our opinion it is the most intuitive explanation of the algorithm. \\
-
-Usually the MaxEnt algorithm is applied to raster data (however this is not necessary). The extent of the raster defines the study are $L$. Since we usually know the covariate values $\bm{z}$ of each cell (using e.g.\ GIS layers) we can define a probability distribution of the covariates $f(\bm{z})$ which is implied by defining a uniform distribution over $L$. We then try to find the distribution $f_1(\bm{z})$ of the features of the cells where a presence was recorded. This distribution is defined as the distribution which minimizes the Kullback-Leibler divergence with respect to $f(\bm{z})$ and such that the mean of values of the features (with respect to $f_1{z}$) are close to the empirical means of the presence sites.\\
-
-The standard implementation of MaxEnt uses as features a combination of products between covariates, hinge features, step functions, quadratic terms and linear terms \parencite{phillips_modeling_2008}. To avoid over-fitting a regularization term is added, more particularly a lasso penalty (see Section \ref{sec:Lasso}). \\
-
-Advantages include:
-\begin{itemize}
-
-\item MaxEnt has been shown to perform well in a variety of comparative studies \parencite[e.g.][]{elith*_novel_2006}.
-\end{itemize}
-
-Some main disadvantages are:
-\begin{itemize}
-\item The output and interpretation is dependent on the scale of the cells.
-\item MaxEnt is perceived as a black-box model.
-\item No standard errors are available.
-\item There are few model checking tools available.
-\end{itemize}
-However, most of these problems can be ``solved'' by utilizing the connection with inhomogeneous poison models \parencite[IPP,][]{renner_equivalence_2013,fithian_finite-sample_2013}, yet this equivalence is rarely used in practice and as of yet not implemented in the standard MaxEnt software.
+Perhaps the most popular method to create models from presence-only data is Maximum Entropy modelling. \cite{phillips_maximum_2006} considered a gridded study area $\mathcal{X}$. An occurrence of a species then occurs in a cell based manner, hence instead of an exact location in $S$ it is only known that the species was present inside the corresponding cell in $\mathcal{X}$. They then went on to find a distribution $\pi(x): \mathcal{X} \to \mathbb{R}$ which minimizes the entropy: 
+\[ - \sum_{x\in\mathcal{X}} \pi(x) \log \{\pi(x)\},  \]
+under the constraint that the observed mean of the features, $\bm{z}(x) \in \mathbb{R}^p$, is ``close'' to the expected mean. If we denote the set of cells for which an occurrence was observed by $\mathcal{X}_1$ the constraint is:
+\[\left| \sum_{x_i \in \mathcal{X}_1} \bm{z}(x_i)  - \sum_{x \in \mathcal{X}} \pi(x)\bm{z}(x) \right| < \bm{\lambda}, \quad \bm{\lambda} \in \mathbb{R}^p_+,\]
+where the inequality is applied component wise. It can be shown that the solution to this problem has the following form:
+\[\pi(x) \propto \exp (\bm{\gamma}^t\bm{z}(x)), \quad \bm{\gamma} \in \mathbb{R}^p.\]
+It is interesting to note that this is exactly the form of a log linear IPP model. \cite{renner_equivalence_2013} showed that when the grid size becomes small the MaxEnt solution converges towards the penalized IPP solution. The standard implementation of MaxEnt uses as features a combination of products between covariates, hinge features, step functions, quadratic terms and linear terms \parencite{phillips_modeling_2008}. Hence, in the end MaxEnt modelling is equivalent with presence-background logistic regression in an extended covariate space. \\
 
 \section{Taking the scale hierarchy into account}
 \label{sec:TakingTheScaleHierarchyIntoAccount}

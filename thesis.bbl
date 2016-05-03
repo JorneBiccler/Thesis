@@ -202,6 +202,104 @@
   \field{urlyear}{2016}
 \endentry
 
+\entry{barbet-massin_selecting_2012}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Barbet-Massin}{B.-M.}%
+     {Morgane}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jiguet}{J.}%
+     {Frédéric}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Albert}{A.}%
+     {Cécile~Hélène}{C.~H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Thuiller}{T.}%
+     {Wilfried}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \keyw{background data, bias, biomod, ecological niche modelling, sampling
+  design, virtual species}
+  \strng{namehash}{BMM+1}
+  \strng{fullhash}{BMMJFACHTW1}
+  \field{labelyear}{2012}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  1. Species distribution models are increasingly used to address questions
+  in conservation biology, ecology and evolution. The most effective species
+  distribution models require data on both species presence and the available
+  environmental conditions (known as background or pseudo-absence data) in the
+  area. However, there is still no consensus on how and where to sample these
+  pseudo-absences and how many. 2. In this study, we conducted a
+  comprehensive comparative analysis based on simple simulated species
+  distributions to propose guidelines on how, where and how many
+  pseudo-absences should be generated to build reliable species distribution
+  models. Depending on the quantity and quality of the initial presence data
+  (unbiased vs. climatically or spatially biased), we assessed the relative
+  effect of the method for selecting pseudo-absences (random vs.
+  environmentally or spatially stratified) and their number on the predictive
+  accuracy of seven common modelling techniques (regression, classification and
+  machine-learning techniques). 3. When using regression techniques, the
+  method used to select pseudo-absences had the greatest impact on the
+  model’s predictive accuracy. Randomly selected pseudo-absences yielded the
+  most reliable distribution models. Models fitted with a large number of
+  pseudo-absences but equally weighted to the presences (i.e. the weighted sum
+  of presence equals the weighted sum of pseudo-absence) produced the most
+  accurate predicted distributions. For classification and machine-learning
+  techniques, the number of pseudo-absences had the greatest impact on model
+  accuracy, and averaging several runs with fewer pseudo-absences than for
+  regression techniques yielded the most predictive models. 4. Overall, we
+  recommend the use of a large number (e.g. 10 000) of pseudo-absences with
+  equal weighting for presences and absences when using regression techniques
+  (e.g. generalised linear model and generalised additive model); averaging
+  several runs (e.g. 10) with fewer pseudo-absences (e.g. 100) with equal
+  weighting for presences and absences with multiple adaptive regression
+  splines and discriminant analyses; and using the same number of
+  pseudo-absences as available presences (averaging several runs if few
+  pseudo-absences) for classification techniques such as boosted regression
+  trees, classification trees and random forest. In addition, we recommend the
+  random selection of pseudo-absences when using regression techniques and the
+  random selection of geographically and environmentally stratified
+  pseudo-absences when using classification and machine-learning techniques.%
+  }
+  \verb{doi}
+  \verb 10.1111/j.2041-210X.2011.00172.x
+  \endverb
+  \field{issn}{2041-210X}
+  \field{number}{2}
+  \field{pages}{327\bibrangedash 338}
+  \field{shorttitle}{Selecting pseudo-absences for species distribution models}
+  \field{title}{Selecting pseudo-absences for species distribution models: how,
+  where and how many?}
+  \verb{url}
+  \verb http://onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2011.00172.x/abs
+  \verb tract
+  \endverb
+  \field{volume}{3}
+  \verb{file}
+  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
+  \verb e/4TQASS9Z/Barbet-Massin et al. - 2012 - Selecting pseudo-absences for
+  \verb species distribution.pdf:application/pdf;Snapshot:/home/jorne/.zotero/z
+  \verb otero/k1od4wal.default/zotero/storage/CZ37XUS5/abstract.html:text/html
+  \endverb
+  \field{journaltitle}{Methods in Ecology and Evolution}
+  \field{month}{04}
+  \field{year}{2012}
+  \field{urlday}{24}
+  \field{urlmonth}{07}
+  \field{urlyear}{2015}
+\endentry
+
 \entry{benjamini_controlling_1995}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -2704,6 +2802,65 @@
   \field{urlyear}{2015}
 \endentry
 
+\entry{moller_modern_2007}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Møller}{M.}%
+     {Jesper}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Waagepetersen}{W.}%
+     {Rasmus~P.}{R.~P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \keyw{Bayesian inference, conditional intensity, Cox process, Gibbs point
+  process, Markov chain Monte Carlo, maximum likelihood, perfect simulation,
+  Poisson process, residuals, simulation free estimation, summary statistics}
+  \strng{namehash}{MJWRP1}
+  \strng{fullhash}{MJWRP1}
+  \field{labelyear}{2007}
+  \field{sortinit}{M}
+  \field{abstract}{%
+  Abstract.  We summarize and discuss the current state of spatial point
+  process theory and directions for future research, making an analogy with
+  generalized linear models and random effect models, and illustrating the
+  theory with various examples of applications. In particular, we consider
+  Poisson, Gibbs and Cox process models, diagnostic tools and model checking,
+  Markov chain Monte Carlo algorithms, computational methods for
+  likelihood-based inference, and quick non-likelihood approaches to
+  inference.%
+  }
+  \verb{doi}
+  \verb 10.1111/j.1467-9469.2007.00569.x
+  \endverb
+  \field{issn}{1467-9469}
+  \field{number}{4}
+  \field{pages}{643\bibrangedash 684}
+  \field{title}{Modern {Statistics} for {Spatial} {Point} {Processes}*}
+  \verb{url}
+  \verb http://onlinelibrary.wiley.com/doi/10.1111/j.1467-9469.2007.00569.x/abs
+  \verb tract
+  \endverb
+  \field{volume}{34}
+  \verb{file}
+  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
+  \verb e/T95DII8S/Møller and Waagepetersen - 2007 - Modern Statistics for Spa
+  \verb tial Point Processes.pdf:application/pdf;Snapshot:/home/jorne/.zotero/z
+  \verb otero/k1od4wal.default/zotero/storage/PFR3QUFI/abstract.html:text/html
+  \endverb
+  \field{journaltitle}{Scandinavian Journal of Statistics}
+  \field{month}{12}
+  \field{year}{2007}
+  \field{urlday}{30}
+  \field{urlmonth}{04}
+  \field{urlyear}{2016}
+\endentry
+
 \entry{fiamanual}{manual}{}
   \name{author}{8}{}{%
     {{}%
@@ -4276,6 +4433,72 @@
   \field{urlday}{22}
   \field{urlmonth}{07}
   \field{urlyear}{2015}
+\endentry
+
+\entry{warton_poisson_2010}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Warton}{W.}%
+     {David~I.}{D.~I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shepherd}{S.}%
+     {Leah~C.}{L.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {EN}%
+  }
+  \keyw{habitat modeling, occurrence data, pseudo-absences, quadrature points,
+  species distribution modeling}
+  \strng{namehash}{WDISLC1}
+  \strng{fullhash}{WDISLC1}
+  \field{labelyear}{2010}
+  \field{sortinit}{W}
+  \field{abstract}{%
+  Presence-only data, point locations where a species has been recorded as
+  being present, are often used in modeling the distribution of a species as a
+  function of a set of explanatory variables—whether to map species
+  occurrence, to understand its association with the environment, or to predict
+  its response to environmental change. Currently, ecologists most commonly
+  analyze presence-only data by adding randomly chosen “pseudo-absences” to
+  the data such that it can be analyzed using logistic regression, an approach
+  which has weaknesses in model specification, in interpretation, and in
+  implementation. To address these issues, we propose Poisson point process
+  modeling of the intensity of presences. We also derive a link between the
+  proposed approach and logistic regression—specifically, we show that as the
+  number of pseudo-absences increases (in a regular or uniform random
+  arrangement), logistic regression slope parameters and their standard errors
+  converge to those of the corresponding Poisson point process model. We
+  discuss the practical implications of these results. In particular, point
+  process modeling offers a framework for choice of the number and location of
+  pseudo-absences, both of which are currently chosen by ad hoc and sometimes
+  ineffective methods in ecology, a point which we illustrate by example.%
+  }
+  \verb{doi}
+  \verb 10.1214/10-AOAS331
+  \endverb
+  \field{issn}{1932-6157, 1941-7330}
+  \field{number}{3}
+  \field{pages}{1383\bibrangedash 1402}
+  \field{title}{Poisson point process models solve the “pseudo-absence
+  problem” for presence-only data in ecology}
+  \verb{url}
+  \verb http://projecteuclid.org/euclid.aoas/1287409378
+  \endverb
+  \field{volume}{4}
+  \verb{file}
+  \verb Snapshot:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storage/T4R
+  \verb 6QJQH/1287409378.html:text/html
+  \endverb
+  \field{journaltitle}{The Annals of Applied Statistics}
+  \field{month}{09}
+  \field{year}{2010}
+  \field{urlday}{30}
+  \field{urlmonth}{04}
+  \field{urlyear}{2016}
 \endentry
 
 \entry{whittingham_why_2006}{article}{}
