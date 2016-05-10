@@ -2,15 +2,12 @@
 \label{ch:ReducingTheNumberOfExplanatoryVariables}
 
 \section{Introduction}
-The explanatory variables used in SDMs are often correlated. Such high correlation can be an indication of redundant information in the data-set. Moreover, since there is usually no knowledge about which variables make up the niche of a species and irrelevant predictors might be included into the model. It is well known that this can lead to over-fitting and unstable predictions. In this chapter we describe some methods to deal with large sets of correlated predictors. More specifically, in Section \ref{sec:DimensionalityReduction} we introduce methods that transform the input space. In Section \ref{sec:Regularization} techniques that penalize ``large'' models are introduced. Finally, Section \ref{sec:SubsetSelectionMethods} deals with step-wise variable selection methods.
-
-\todo[inline]{elaborate on problems when using models for prediction vs interpretable models, see Dorman et al. and Harel 2001 (see paper references Dorman)} 
+The explanatory variables used in SDMs are often correlated. Highly correlated variables can be an indication of redundant information in the data-set. Moreover, irrelevant predictors might be included into the model since there is usually no knowledge about which variables make up the niche. It is well known that this can lead to over-fitting and unstable predictions. In this chapter we describe some methods to deal with large sets of correlated predictors. More specifically, in Section \ref{sec:DimensionalityReduction} we introduce methods that transform the input space. In Section \ref{sec:Regularization} techniques that penalize ``large'' models are introduced. Finally, Section \ref{sec:SubsetSelectionMethods} deals with step-wise variable selection methods. \\
 
 For a review of methods to deal with correlated covariates in ecology we refer to \cite{dormann_collinearity:_2013}. Finally, these automatic selection procedures are of course not meant to replace a well founded motivation of why certain predictors should be selected. A discussion of how the available data, scale of the predictors, etc.\ should influence the decision of using a complex or a simple model can be found in \cite{merow_what_2014}.
 
 \section{Dimensionality reduction}
 \label{sec:DimensionalityReduction}
-\todo[inline]{Discuss the effect of the number of background observations ?}
 Dimensionality reduction techniques can be used to obtain a new, often lower-dimensional, representation of important structures in the input space. This can be particularly useful when two or more explanatory variables are proxies of one underlying latent variable. For example, there are multiple indices that indirectly measure the amount of vegetation. A combination of these indices might be a better indicator of the amount of vegetation than the individual indices. The dimensionality reduction techniques that are used in this thesis use only the input space and ignore the outcome values. It should however be noted that there are other dimensionality reduction techniques that do take into account the relationship between input and output variables, e.g.\ partial least squares \parencite[see e.g.][]{marx_iteratively_1996}.
 
 \subsection{Principal component analysis}
@@ -25,7 +22,7 @@ is minimized. It can be shown that for a certain $K$ this sum is minimized when 
 \end{figure} 
 
 
-Once we have calculated the principal components they can be used as the explanatory variables in one of the models of Chapter \ref{ch:ClassificationTechniques}. Since the new variables are uncorrelated and some irrelevant noise in the predictors might be removed the resultant models often exhibit less variance. \\
+Once the principal components have been obtained they can be used as the explanatory variables in one of the models of Chapter \ref{ch:ClassificationTechniques}. Since the new variables are uncorrelated and some irrelevant noise in the predictors might be removed the resultant models often exhibit less variance. \\
 
 There are multiple criteria based upon which the number of principal components, $K$, can be chosen. One possibility is to plot the so-called ``explained'' variance versus the number of components and look for either a kink or a point where a certain percentage of variance is explained. If PCA is combined with a classification method it is usually more appropriate to use cross-validation to select the number of principal components. We will use the cross-validation approach.\\
 
@@ -53,12 +50,12 @@ One attractive property of kernel PCA is that we do not need to actually compute
 \[\mathbb{K}_{ij} = \langle \bm{\phi} (\bm{x}_i), \bm{\phi} (\bm{x}_j)  \rangle = k(\bm{x}_i,\bm{x}_j).\]
 In general it can be shown that, under some regularity conditions, for any kernel function
 \[k(\cdot,\cdot): \mathcal{X} \times \mathcal{X} \to \mathcal{R}\] 
-there exists a corresponding $\bm{\phi}(\cdot)$ and Hilbert space $F$. Hence usually one specifies the kernel function instead of the map $\phi(\cdot)$.\\ 
+there exists a corresponding $\bm{\phi}(\cdot)$ and Hilbert space $F$. Hence usually one specifies the kernel function instead of the map $\bm{\phi}(\cdot)$.\\ 
 
-Popular choices of the kernel function include:
+Popular kernel functions are:
 \begin{itemize}
-\item The polynomial kernel $k(\bm{x},\bm{y}) = (\bm{x}' \bm{y} + c)^d$.
-\item The radial basis kernel (RBF kernel) $k(\bm{x},\bm{y}) = \exp{(-\frac{\vert \vert \bm{x} -\bm{y}\vert \vert ^2}{\sigma})}$, with $\sigma > 0$. 
+\item The polynomial kernel $k(\bm{x},\bm{y}) = (\bm{x}^t \bm{y} + c)^d$.
+\item The radial basis kernel (RBF kernel) $k(\bm{x},\bm{y}) = \exp{\left(-\frac{\vert \vert \bm{x} -\bm{y}\vert \vert ^2}{\sigma}\right)}$, with $\sigma > 0$. 
 \item The hyperbolic tangent kernel, $k(\bm{x},\bm{y}) = \tanh{(\sigma \bm{x}^t \bm{y} + c)}$.
 \end{itemize}
 In these representations the $\sigma$, resp.\ $c$, parameter can be seen as a scale, resp.\ offset, parameter. The value of these parameters is in general selected by using cross validation. We will focus on the RBF kernel, this kernel is usually used when no prior information is available \parencite{JSSv011i09}.  \\
@@ -67,21 +64,23 @@ A disadvantage of kernel PCA is that it is not always clear which kernel should 
 
 \subsection{Presence versus background data}
 \label{sec:dimRedPrVSBG}
+In this section we focus on PCA but all the comments readily apply to kernel PCA.\\
 
+When PCA is combined with classification techniques one usually performs the PCA on the predictor values of all the included cases. However, in presence-only models the background points are randomly generated and the number of these points can be chosen. It should be clear that when the number of background points approaches infinity the covariance matrix used in the PCA converges to the covariance matrix of the explanatory data within the study extent. Unless the covariance matrix of the explanatory variables within the cells where the species is present equals the covariance matrix over the whole study extent, performing PCA on only the values corresponding with the presence points will lead to different results. For these reasons it was decided to test whether or not the effect of performing PCA on the presence, background, or all points has a significant effect on the performance of the final SDMs.
 
 \section{Regularization}
 \label{sec:Regularization}
 When one uses regression methods, e.g. logistic regression or ANNs, in combination with a large set of correlated predictors the obtained coefficients are often excessively large and unstable. To combat this large coefficients can be penalized such that the solution consists of shrunken coefficients. To do this the standard minimization problem
 \[\widehat{\bm{\gamma}} = \argmin_{\bm{\gamma}} L(\bm{y},\bm{\gamma})\]
 is adjusted to \[\widehat{\bm{\gamma}} = \argmin_{\bm{\gamma}} L(\bm{y},\bm{\gamma}) + J(\bm{\gamma},\bm{\lambda}).\]
-In this representation the function $ J(\bm{\gamma},\bm{\lambda})$ is usually a monotonically increasing function in $\bm{\gamma}$. Furthermore, the $\bm{\lambda}$ parameters are used to control ``the amount of regularization'' and are often selected by using cross-validation. Finally, the described regularization methods can be used in conjunction with logistic regression by using the \textsc{glmnet} \parencite{glmnet} package.
+In this representation the function $ J(\bm{\gamma},\bm{\lambda})$ is usually a monotonically increasing function in $\bm{\gamma}$. Furthermore, the $\bm{\lambda}$ parameters are used to control ``the amount of regularization'' and are often selected by using cross-validation. Finally, the described regularization methods can be used in conjunction with logistic regression by using the \textsc{glmnet} package \parencite{glmnet}.
 
 \label{sec:Regularization}
 \subsection{Ridge regression / $L_2$ regularization}
 \label{sec:L2Regularization}
 Ridge regression (also called $L_2$ regularization) is obtained when the Euclidean norm of the coefficients is used as the penalization function:
 \[J(\bm{\gamma},\lambda) = \lambda \vert \vert \bm{\gamma} \vert \vert ^2 _2.\]
-We immediately see that small $\lambda$'s correspond to a small amount of regularization and the non-penalized solution is obtained when $\lambda = 0.$ Furthermore, when $\lambda >>$ the coefficients are shrunken to zero. A typical evolution of the coefficients in function of the regularization parameter can be found in Figure \ref{fig:RidgeTrace}.\\ 
+We immediately see that small $\lambda$'s correspond to a small amount of regularization and the non-penalized solution is obtained when $\lambda = 0.$ Furthermore, when $\lambda \gg$ the coefficients are shrunken to zero. A typical evolution of the coefficients in function of the regularization parameter can be found in Figure \ref{fig:RidgeTrace}.\\ 
 
 \begin{figure}[!htb]
 \centering
@@ -97,7 +96,7 @@ Advantages of using an $L_2$ penalty include:
 \item For most regression problems it is easy to adopt the standard algorithms to include the $L_2$ penalty.
 \item It is usually no problem if the number of variables is larger than the number of observations.
 \end{itemize}
-The biggest disadvantages is that all the predictors are kept in the model, i.e.\ usually no coefficients are equal to zero. \\
+The biggest disadvantage is that all the predictors are kept in the model, i.e.\ usually no coefficients are equal to zero. \\
 
 Finally, we note that $L_2$ regularization is also called weight decay when it is used in combination with neural networks. 
 
@@ -129,7 +128,7 @@ The most elementary technique in this set of methods is best-subset selection. B
 A second subset selection method is backward-stepwise selection. This method starts with the model containing all $p$ predictors. In the second step of the algorithm we try removing each predictor from the full model and select the most optimal model from the models with $p-1$ covariates. In the third step we remove each predictor from the model obtained in the second step, fit a model with $p-2$ predictors, and select the best model from these. This process is repeated until there is no improvement possible. One of the most important disadvantages of this method is that it is quite variable. Furthermore, for some algorithms (e.g.\ logistic regression) we need to have $p < n$.
 \\
 
-Forward-stepwise selection is basically the reverse of the backward-stepwsie method. More particuarly, one starts with the model containing only an intercept. The the variable that leads to the largest improvement is added. And this process is repeated until the performance criterion can not be improved any further. The main advantage of this method over backward-stepwise selection is that it is generally less variable. On the other hand, this method usually leads to a bigger bias. Another limitation of forward-stepwise subset selection is that it fails if, in order to minimize some selection criterion, two predictors need to be included at the same time.\\
+Forward-stepwise selection is basically the reverse of the backward-stepwsie method. More particuarly, one starts with the model containing only an intercept, the variable that leads to the largest improvement is added, and this process is repeated until the performance criterion can not be improved any further. The main advantage of this method over backward-stepwise selection is that it is generally less variable. On the other hand, this method usually leads to a bigger bias. Another limitation of forward-stepwise subset selection is that it fails if, in order to minimize some selection criterion, two predictors need to be included at the same time.\\
 
 \subsection{Univariate pre-screening}
 \subsubsection{Underlying idea}
@@ -151,7 +150,6 @@ An implementation of this method was provided by \cite{dormann_collinearity:_201
 
 \section{Taking the scale hierarchy into account}
 \label{sec:TakingTheScaleHierarchyIntoAccount}
-\todo[inline]{double check which kind of models / residuals the used in the paper}
 \cite{thuiller_we_2004} used a hierarchical model selection approach. More specifically, they investigated the effect of adding land-cover data to models build with climate data. To do this they used the following three steps:
 \begin{enumerate}
 \item A model with only climate variables is constructed by using a stepwise selection method.
@@ -168,9 +166,9 @@ Although the focus in the article was on stepwise regression techniques, the sam
 For each method of Chapter \ref{ch:ClassificationTechniques} a ``vanilla'' model will be considered. The vanilla logistic regression and ANN model use all predictors except the agriculture land cover class and BIO7. These two predictors are removed to avoid computational problems associated with design matrices that are not of full rank. For the vanilla GAM all predictors are used together with GCV to select the smoothness parameters. The vanilla MaxEnt model is the standard MaxEnt model with the default parameters \parencite{phillips_modeling_2008}. Finally, the vanilla version of boosted regression trees is just the standard implementation. \\
 
 Next to the vanilla models ten combinations of classification algorithms and methods to reduce the number of variables will be considered, see Table \ref{table:combinations}. Combinations that are not included were often not computationally feasible to implement, e.g.\ combing kernel PCA and GAMs, or not meaningful, e.g.\ $L_1$ regularization combined with boosted regression trees. Furthermore, following the remarks in Section \ref{sec:dimRedPrVSBG} when PCA or kernel PCA are used in combination with presence-only data three different version will be considered: \begin{enumerate}
-\item a version where the PCA is performed on the predictor values associated with background and presence locations.
-\item a version where the PCA is performed only on the predictors values associated with background locations.
-\item a version where the PCA is performed only on the predictors values associated with presence locations.
+\item A version where the PCA is performed on the predictor values associated with background and presence locations.
+\item A version where the PCA is performed only on the predictors values associated with background locations.
+\item A version where the PCA is performed only on the predictors values associated with presence locations.
 \end{enumerate}
 In total $20$ methods are used when presence-only data is considered and $14$ when presence-absence data is considered.
 

@@ -1235,103 +1235,6 @@
   \field{urlyear}{2015}
 \endentry
 
-\entry{elith_statistical_2011}{article}{}
-  \name{author}{6}{}{%
-    {{}%
-     {Elith}{E.}%
-     {Jane}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Phillips}{P.}%
-     {Steven~J.}{S.~J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hastie}{H.}%
-     {Trevor}{T.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Dudík}{D.}%
-     {Miroslav}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Chee}{C.}%
-     {Yung~En}{Y.~E.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Yates}{Y.}%
-     {Colin~J.}{C.~J.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{language}{1}{%
-    {en}%
-  }
-  \keyw{Absence, ecological niche, entropy, machine learning, presence-only,
-  Species distribution model}
-  \strng{namehash}{EJ+2}
-  \strng{fullhash}{EJPSJHTDMCYEYCJ1}
-  \field{labelyear}{2011}
-  \field{sortinit}{E}
-  \field{abstract}{%
-  MaxEnt is a program for modelling species distributions from presence-only
-  species records. This paper is written for ecologists and describes the
-  MaxEnt model from a statistical perspective, making explicit links between
-  the structure of the model, decisions required in producing a modelled
-  distribution, and knowledge about the species and the data that might affect
-  those decisions. To begin we discuss the characteristics of presence-only
-  data, highlighting implications for modelling distributions. We particularly
-  focus on the problems of sample bias and lack of information on species
-  prevalence. The keystone of the paper is a new statistical explanation of
-  MaxEnt which shows that the model minimizes the relative entropy between two
-  probability densities (one estimated from the presence data and one, from the
-  landscape) defined in covariate space. For many users, this viewpoint is
-  likely to be a more accessible way to understand the model than previous ones
-  that rely on machine learning concepts. We then step through a detailed
-  explanation of MaxEnt describing key components (e.g. covariates and
-  features, and definition of the landscape extent), the mechanics of model
-  fitting (e.g. feature selection, constraints and regularization) and outputs.
-  Using case studies for a Banksia species native to south-west Australia and a
-  riverine fish, we fit models and interpret them, exploring why certain
-  choices affect the result and what this means. The fish example illustrates
-  use of the model with vector data for linear river segments rather than
-  raster (gridded) data. Appropriate treatments for survey bias, unprojected
-  data, locally restricted species, and predicting to environments outside the
-  range of the training data are demonstrated, and new capabilities discussed.
-  Online appendices include additional details of the model and the
-  mathematical links between previous explanations and this one, example code
-  and data, and further information on the case studies.%
-  }
-  \verb{doi}
-  \verb 10.1111/j.1472-4642.2010.00725.x
-  \endverb
-  \field{issn}{1472-4642}
-  \field{number}{1}
-  \field{pages}{43\bibrangedash 57}
-  \field{title}{A statistical explanation of {MaxEnt} for ecologists}
-  \verb{url}
-  \verb http://onlinelibrary.wiley.com/doi/10.1111/j.1472-4642.2010.00725.x/abs
-  \verb tract
-  \endverb
-  \field{volume}{17}
-  \verb{file}
-  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
-  \verb e/VIGI7J5S/Elith et al. - 2011 - A statistical explanation of MaxEnt fo
-  \verb r ecologists.pdf:application/pdf;Snapshot:/home/jorne/.zotero/zotero/k1
-  \verb od4wal.default/zotero/storage/QMHTM3PA/abstract.html:text/html
-  \endverb
-  \field{journaltitle}{Diversity and Distributions}
-  \field{month}{01}
-  \field{year}{2011}
-  \field{urlday}{22}
-  \field{urlmonth}{07}
-  \field{urlyear}{2015}
-\endentry
-
 \entry{fithian_finite-sample_2013}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -2391,6 +2294,79 @@
   \field{urlyear}{2015}
 \endentry
 
+\entry{jimenez-valverde_insights_2012}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Jiménez-Valverde}{J.-V.}%
+     {Alberto}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \keyw{AUC, background data, commission/omission errors, misclassification
+  cost, potential distribution, realized distribution, ROC curve, sensitivity,
+  specificity, threshold}
+  \strng{namehash}{JVA1}
+  \strng{fullhash}{JVA1}
+  \field{labelyear}{2012}
+  \field{sortinit}{J}
+  \field{abstract}{%
+  Aim  The area under the receiver operating characteristic (ROC) curve (AUC)
+  is a widely used statistic for assessing the discriminatory capacity of
+  species distribution models. Here, I used simulated data to examine the
+  interdependence of the AUC and classical discrimination measures (sensitivity
+  and specificity) derived for the application of a threshold. I shall further
+  exemplify with simulated data the implications of using the AUC to evaluate
+  potential versus realized distribution models. Innovation  After applying
+  the threshold that makes sensitivity and specificity equal, a strong
+  relationship between the AUC and these two measures was found. This result is
+  corroborated with real data. On the other hand, the AUC penalizes the models
+  that estimate potential distributions (the regions where the species could
+  survive and reproduce due to the existence of suitable environmental
+  conditions), and favours those that estimate realized distributions (the
+  regions where the species actually lives). Main conclusions  Firstly, the
+  independence of the AUC from the threshold selection may be irrelevant in
+  practice. This result also emphasizes the fact that the AUC assumes nothing
+  about the relative costs of errors of omission and commission. However, in
+  most real situations this premise may not be optimal. Measures derived from a
+  contingency table for different cost ratio scenarios, together with the ROC
+  curve, may be more informative than reporting just a single AUC value.
+  Secondly, the AUC is only truly informative when there are true instances of
+  absence available and the objective is the estimation of the realized
+  distribution. When the potential distribution is the goal of the research,
+  the AUC is not an appropriate performance measure because the weight of
+  commission errors is much lower than that of omission errors.%
+  }
+  \verb{doi}
+  \verb 10.1111/j.1466-8238.2011.00683.x
+  \endverb
+  \field{issn}{1466-8238}
+  \field{number}{4}
+  \field{pages}{498\bibrangedash 507}
+  \field{title}{Insights into the area under the receiver operating
+  characteristic curve ({AUC}) as a discrimination measure in species
+  distribution modelling}
+  \verb{url}
+  \verb http://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2011.00683.x/abs
+  \verb tract
+  \endverb
+  \field{volume}{21}
+  \verb{file}
+  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
+  \verb e/KG24RDUW/Jiménez-Valverde - 2012 - Insights into the area under the
+  \verb receiver operatin.pdf:application/pdf;Snapshot:/home/jorne/.zotero/zote
+  \verb ro/k1od4wal.default/zotero/storage/KN5SG6FD/abstract.html:text/html
+  \endverb
+  \field{journaltitle}{Global Ecology and Biogeography}
+  \field{month}{04}
+  \field{year}{2012}
+  \field{urlday}{09}
+  \field{urlmonth}{05}
+  \field{urlyear}{2016}
+\endentry
+
 \entry{JSSv011i09}{article}{}
   \name{author}{4}{}{%
     {{}%
@@ -2536,6 +2512,79 @@
   \verb https://CRAN.R-project.org/package=caret
   \endverb
   \field{year}{2015}
+\endentry
+
+\entry{lobo_auc:_2008}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Lobo}{L.}%
+     {Jorge~M.}{J.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jiménez-Valverde}{J.-V.}%
+     {Alberto}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Real}{R.}%
+     {Raimundo}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \keyw{AUC, distribution models, ecological statistics, goodness-of-fit, model
+  accuracy, ROC curve}
+  \strng{namehash}{LJMJVARR1}
+  \strng{fullhash}{LJMJVARR1}
+  \field{labelyear}{2008}
+  \field{sortinit}{L}
+  \field{abstract}{%
+  The area under the receiver operating characteristic (ROC) curve, known as
+  the AUC, is currently considered to be the standard method to assess the
+  accuracy of predictive distribution models. It avoids the supposed
+  subjectivity in the threshold selection process, when continuous probability
+  derived scores are converted to a binary presence–absence variable, by
+  summarizing overall model performance over all possible thresholds. In this
+  manuscript we review some of the features of this measure and bring into
+  question its reliability as a comparative measure of accuracy between model
+  results. We do not recommend using AUC for five reasons: (1) it ignores the
+  predicted probability values and the goodness-of-fit of the model; (2) it
+  summarises the test performance over regions of the ROC space in which one
+  would rarely operate; (3) it weights omission and commission errors equally;
+  (4) it does not give information about the spatial distribution of model
+  errors; and, most importantly, (5) the total extent to which models are
+  carried out highly influences the rate of well-predicted absences and the AUC
+  scores.%
+  }
+  \verb{doi}
+  \verb 10.1111/j.1466-8238.2007.00358.x
+  \endverb
+  \field{issn}{1466-8238}
+  \field{number}{2}
+  \field{pages}{145\bibrangedash 151}
+  \field{shorttitle}{{AUC}}
+  \field{title}{{AUC}: a misleading measure of the performance of predictive
+  distribution models}
+  \verb{url}
+  \verb http://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2007.00358.x/abs
+  \verb tract
+  \endverb
+  \field{volume}{17}
+  \verb{file}
+  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
+  \verb e/7S7WAKU3/Lobo et al. - 2008 - AUC a misleading measure of the perform
+  \verb ance of pr.pdf:application/pdf;Snapshot:/home/jorne/.zotero/zotero/k1od
+  \verb 4wal.default/zotero/storage/R88A9SK6/abstract.html:text/html
+  \endverb
+  \field{journaltitle}{Global Ecology and Biogeography}
+  \field{month}{03}
+  \field{year}{2008}
+  \field{urlday}{26}
+  \field{urlmonth}{12}
+  \field{urlyear}{2015}
 \endentry
 
 \entry{marra_practical_2011}{article}{}

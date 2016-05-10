@@ -5,23 +5,23 @@
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 5
 \BOOKMARK [1][-]{section.2.2}{Ecological versus geographical space}{chapter.2}% 6
 \BOOKMARK [1][-]{section.2.3}{Implicit assumptions when building and using species distribution modles}{chapter.2}% 7
-\BOOKMARK [0][-]{chapter.3}{Data}{}% 8
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 9
-\BOOKMARK [1][-]{section.3.2}{Predictor data}{chapter.3}% 10
-\BOOKMARK [2][-]{subsection.3.2.1}{Vegetation Continuous Fields}{section.3.2}% 11
-\BOOKMARK [2][-]{subsection.3.2.2}{Bioclimatic variables}{section.3.2}% 12
-\BOOKMARK [2][-]{subsection.3.2.3}{Normalized Difference Vegetation Index}{section.3.2}% 13
-\BOOKMARK [2][-]{subsection.3.2.4}{Digital elevation model}{section.3.2}% 14
-\BOOKMARK [2][-]{subsection.3.2.5}{Land cover}{section.3.2}% 15
-\BOOKMARK [2][-]{subsection.3.2.6}{Human Influence Index}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.7}{Preprocessing of the predictor data}{section.3.2}% 17
-\BOOKMARK [2][-]{subsection.3.2.8}{Exploratory analysis of the predictor data}{section.3.2}% 18
-\BOOKMARK [1][-]{section.3.3}{Outcome data}{chapter.3}% 19
-\BOOKMARK [2][-]{subsection.3.3.1}{Species considered}{section.3.3}% 20
-\BOOKMARK [2][-]{subsection.3.3.2}{Global Biodiversity Information Facility}{section.3.3}% 21
-\BOOKMARK [2][-]{subsection.3.3.3}{Forest Inventory and Analysis data}{section.3.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.4}{Data preparation}{section.3.3}% 23
-\BOOKMARK [1][-]{section.3.4}{Spatial scale}{chapter.3}% 24
+\BOOKMARK [1][-]{section.2.4}{Spatial scale}{chapter.2}% 8
+\BOOKMARK [0][-]{chapter.3}{Data}{}% 9
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{Predictor data}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.2.1}{Vegetation Continuous Fields}{section.3.2}% 12
+\BOOKMARK [2][-]{subsection.3.2.2}{Bioclimatic variables}{section.3.2}% 13
+\BOOKMARK [2][-]{subsection.3.2.3}{Normalized Difference Vegetation Index}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.4}{Digital elevation model}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.5}{Land cover}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.6}{Human Influence Index}{section.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.2.7}{Preprocessing of the predictor data}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.8}{Exploratory analysis of the predictor data}{section.3.2}% 19
+\BOOKMARK [1][-]{section.3.3}{Outcome data}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.1}{Species considered}{section.3.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.2}{Global Biodiversity Information Facility}{section.3.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.3}{Forest Inventory and Analysis data}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.4}{Data preparation}{section.3.3}% 24
 \BOOKMARK [0][-]{chapter.4}{Classification techniques}{}% 25
 \BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 26
 \BOOKMARK [1][-]{section.4.2}{Presence-absence data}{chapter.4}% 27
@@ -50,5 +50,10 @@
 \BOOKMARK [1][-]{section.5.5}{Taking the scale hierarchy into account}{chapter.5}% 50
 \BOOKMARK [1][-]{section.5.6}{Meaningful combinations of classification and }{chapter.5}% 51
 \BOOKMARK [0][-]{chapter.6}{Applications}{}% 52
-\BOOKMARK [0][-]{chapter.7}{Simulation study}{}% 53
-\BOOKMARK [0][-]{chapter*.34}{Bibliography}{}% 54
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 53
+\BOOKMARK [1][-]{section.6.2}{Results}{chapter.6}% 54
+\BOOKMARK [2][-]{subsection.6.2.1}{Presence-only data}{section.6.2}% 55
+\BOOKMARK [2][-]{subsection.6.2.2}{Presence-absence data}{section.6.2}% 56
+\BOOKMARK [1][-]{section.6.3}{Discussion}{chapter.6}% 57
+\BOOKMARK [0][-]{chapter.7}{Simulation study}{}% 58
+\BOOKMARK [0][-]{chapter*.32}{Bibliography}{}% 59

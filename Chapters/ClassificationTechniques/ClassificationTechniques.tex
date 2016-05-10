@@ -2,12 +2,12 @@
 \label{ch:ClassificationTechniques}
 
 \section{Introduction}
-This chapter deals with the statistical foundations of species distribution modelling. Since it is impractical to list all the available methods that are used we restrict ourselves to the most popular or fundamental ones. In the last 10 years a lot of research has focused on the performance of these different algorithms \parencite[e.g.][]{elith*_novel_2006,segurado_evaluation_2004}. The results of these studies were taken into account when the methods that are used were selected.
+This chapter deals with the statistical foundations of species distribution modelling. Since it is impractical to list all the available methods we restrict ourselves to the most popular or fundamental ones. In the last 10 years a lot of research has focused on the performance of these different algorithms \parencite[e.g.][]{elith*_novel_2006,segurado_evaluation_2004}. The results of these studies were taken into account when the methods that are used were selected.
 
 \section{Presence-absence data}
 \label{sec:PresenceAbsenceData}
 
-In this section some important and often used methods to classify binary data are reviewed. First of all, the outcome, $y_i$, of observation $i$ indicates whether a species occurs, $y_i = 1$, or is absent, $y_i=0$. We denote the vector of explanatory variables as $\bm{X}$. The general form of the models used in this section is:
+In this section some important and often used methods to classify binary data are reviewed. First of all, the outcome, $Y_i$, of observation $i$ indicates whether a species occurs, $Y_i = 1$, or is absent, $Y_i=0$. We denote the vector of explanatory variables as $\bm{X}$. The general form of the models used in this section is:
 \begin{equation}
 \label{FundEq}
 P(Y=1|\bm{X} = \bm{x}) = f(\bm{x}; \bm{\gamma}).
@@ -15,10 +15,10 @@ P(Y=1|\bm{X} = \bm{x}) = f(\bm{x}; \bm{\gamma}).
 In this representation $f(\cdot;\cdot)$ is a function parametrized by $\bm{\gamma}$. The main differences between the techniques introduced below are the functional form of $f(\cdot;\cdot)$ and the loss function that is minimized.
 
 \subsection{Logistic regression}
-Perhaps the most fundamental modelling technique for binary data is logistic regression. In logistic regression the log odds ratio of the probability of an occurrence is modelled as a linear function of the covariates. Hence, the model can be depicted as \[\log \left( \frac{P(Y=1|\bm{X} = \bm{x})}{P(Y=0|\bm{X} = \bm{x})} \right)= \gamma_0 \bm{x}^t \bm{\gamma}.\]
+Perhaps the most fundamental modelling technique for binary data is logistic regression. In logistic regression the log odds ratio of the probability of an occurrence is modelled as a linear function of the covariates. Hence, the model can be depicted as \[\log \left( \frac{P(Y=1|\bm{X} = \bm{x})}{P(Y=0|\bm{X} = \bm{x})} \right)= \gamma_0 + \bm{x}^t \bm{\gamma}.\]
 It is easy to show that this model can be written in the form used in Equation \ref{FundEq}. More specifically, if we define $\expit(\cdot) = \frac{\exp(\cdot)}{1+\exp(\cdot)}$ we get \[f(\bm{x};\bm{\gamma}) = \expit(\gamma_0 + \mathbf{x}^t\bm{\gamma}).\] Usually the coefficients of a logistic regression model are obtained by using maximum likelihood estimation (MLE). Obtaining the MLE $\widehat{\bm{\gamma}}$ corresponds with solving the following maximization problem:
 \[\widehat{\bm{\gamma}} = \argmax_{\bm{\gamma}} \sum_{i=1}^{N} \left\lbrace y_i \log{f(\bm{x}_i;\bm{\gamma})}  + (1-y_i)\log{f(\bm{x}_i;\bm{\gamma})}  \right\rbrace.\] 
-When one multiplies this log-likelihood function by minus one we get a loss function that is often called the cross-entropy. For more information about logistic regression and numerical optimization techniques for obtaining the MLE we refer to \cite{agresti_categorical_2013} and \cite{mccullagh_generalized_1999}. \\
+When one multiplies this log-likelihood function by minus one we get a loss function that is often called the cross-entropy. For more information about logistic regression and numerical optimization techniques for obtaining the MLE we refer to \cite{agresti_categorical_2013, mccullagh_generalized_1999}. \\
 
 The main advantages of logistic regression models are that they are relatively simple to implement, interpret, etc. This simplicity is also its greatest disadvantage. In particular, when modelling the distribution of a species there is often no a priori knowledge of the shape of the response curves.
 
@@ -31,20 +31,20 @@ In standard logistic regression a linear systematic component is used. It is eas
 \end{equation}
 In this representation the $f_k(\cdot)$'s are certain smooth functions. Again one can write this model in the form of Equation \ref{FundEq}:
 \[f(\bm{x};\bm{\gamma}) = \gamma_0 + f_1(x_{1}) + \dots + f_p(x_{p})\] 
-There is a multitude of popular ways to specify the $f_k(\cdot)$'s \parencite{wood_generalized_2006, hastie_generalized_1990}. We will follow \cite{wood_generalized_2006} and \cite{wood_gams_2002} and focus on using cubic smoothing splines to represent the $f_k(\cdot)$'s. \\
+There is a multitude of popular ways to specify the $f_k(\cdot)$'s \parencite{wood_generalized_2006, hastie_generalized_1990}. We will follow \cite{wood_generalized_2006, wood_gams_2002} and focus on using cubic smoothing splines to represent the $f_k(\cdot)$'s. \\
 
 GAMs are most often fitted by using MLE. In order to restrict the ``wiggliness'' of the smoothing functions in model \ref{GAMs} one can add a penalization term to the likelihood function. An example of such a ``wiggliness'' penalty is:
 \[\sum_{j=1}^p \lambda_j \int_{x_{j(1)}}^{x_{j(n)}} \{f^{(2)}_j(x) \}^2dx.\]
 In this penalization term the $x_{j(1)}$ (resp.\ $x_{j(n)}$) is the smallest (resp.\ largest) value of the $j$'th covariate. Furthermore, it can be shown that, in a class of sufficiently smooth functions, the minimizer of
 \[- \sum_{i=1}^{N} \left\lbrace y_i \log{f(\bm{x}_i;\bm{\gamma})}  + (1-y_i)\log{f(\bm{x}_i;\bm{\gamma})} \right\rbrace + \sum_{j=1}^p \lambda_j \int_{x_{j(1)}}^{x_{j(n)}} \{f_j^{(2)}(x)\}^2 dx\]
-is a natural cubic spline with knots at the $n$ covariate values. The two limiting cases, $\lambda = 0$ and $\lambda = \infty$, are interesting. If $\lambda = 0$ an interpolating spline is optimal, while when $\lambda \to \infty$ the solution converges to the linear logistic regression solution. Finally, fitting GAMS with natural cubic splines as smoothing functions is, compared to most other smoothers used in GAMS, computationally efficient.\\
+is a natural cubic spline with knots at the $n$ covariate values. The two limiting cases, $\lambda = 0$ and $\lambda = \infty$, are interesting. If $\lambda = 0$ an interpolating spline is optimal, while when $\lambda \to \infty$ the solution converges to the linear logistic regression solution. Finally, fitting GAMS with natural cubic splines as smoothing functions is, compared to most other smoothers used in GAMs, computationally efficient.\\
 
-In practice we have to select the penalization parameters, this is usually done by using cross-validation. Because the fitting procedures for GAMs are often computationally intensive usually the closely related generalized cross-validation (GCV) is used \parencite{wood_gams_2002}. Finally, since $\lambda = \infty$ still allows a first order fit, it can be interesting to perform additional model selection. Although variable selection is the topic of Chapter \ref{ch:ReducingTheNumberOfExplanatoryVariables} we mention that it is possible to introduce an extra penalization term that leads to an automatic variable selection technique \parencite{marra_practical_2011}, i.e.\ might remove a predictor from the model. This approach is implemented in the \textsc{mgcv} R package \parencite{mgcv}. \\
+In practice we have to select the penalization parameters, this is usually done by using cross-validation. Because the fitting procedures for GAMs are computationally intensive usually the closely related generalized cross-validation (GCV) is used \parencite{wood_gams_2002}. Finally, since $\lambda = \infty$ still allows a first order fit, it can be interesting to perform additional model selection. Although variable selection is the topic of Chapter \ref{ch:ReducingTheNumberOfExplanatoryVariables} we mention that it is possible to introduce an extra penalization term that leads to an automatic variable selection technique \parencite{marra_practical_2011}, i.e.\ might remove a predictor from the model. This approach is implemented in the \textsc{mgcv} package \parencite{mgcv}. \\
 
 Finally, up till now only univariate splines have been considered, if interaction terms are to be included one can use e.g.\ thin plate splines. However, using multidimensional splines usually results in a computationally intensive fitting procedure. Finally, for a more applied review of the use of GAMs in species distribution modelling we refer to \cite{guisan_generalized_2002}.
 
 \subsection{Artificial neural networks}
-Artificial neural networks (ANNs) are a non-linear modelling technique. We refer to \cite{bishop_neural_1995} for an introduction to the general methodology and some of the technical details. The terminology used in the ANN literature is slightly different than in the standard statistical literature. More particularly, the explanatory variables are usually called the input features. Furthermore, an ANN consists of so-called ``layers'' of ``neurons'. The first layer is called the input layer and consists of one neuron for each variable. In each successive layer the output of the corresponding neurons is the result of applying an activation function, $g(\cdot)$, to a linear combination of the values from the previous layer. The coefficients of these linear combinations are called the weights of the ANN. These weights are the parameters one can tune. The process of feeding the values of the previous layer into the next is repeated up to the last layer which is called the output layer. The layers that are neither the input nor output layer are called hidden layers. A graphical representation of an ANN with one hidden layer can be found in Figure \ref{fig:chClassificationTechniques:ANN}.\\
+Artificial neural networks (ANNs) are a non-linear modelling technique. We refer to \cite{bishop_neural_1995} for an introduction to the general methodology and some of the technical details. The terminology used in the ANN literature is slightly different than in the standard statistical literature. More particularly, the explanatory variables are usually called the input features. Furthermore, an ANN consists of so-called ``layers'' of ``neurons''. The first layer is called the input layer and consists of one neuron for each variable. In each successive layer the output of the corresponding neurons is the result of applying an activation function, $g(\cdot)$, to a linear combination of the values from the previous layer. The coefficients of these linear combinations are called the weights of the ANN. These weights are the parameters one can tune. The process of feeding the values of the previous layer into the next is repeated up to the last layer which is called the output layer. The layers that are neither the input nor output layer are called hidden layers. A graphical representation of an ANN with one hidden layer can be found in Figure \ref{fig:chClassificationTechniques:ANN}.\\
 
 \begin{figure}[!htb]
 \centering
@@ -82,7 +82,7 @@ Tree based methods are a class of algorithms that partition the input space into
 \caption{\label{fig:chClassificationTechniques:CART}Visualization of a classification tree in a two dimensional input space.}
 \end{figure}
 
-Unless a stopping criteria is specified this approach would lead to over-fitting. More particularly we would end up with as many regions as there are observations. Hence, the algorithm is usually stopped when no new splits can be found that decrease the loss by some pre-specified amount. Another possible stopping criterion is to stop the algorithm once a certain number of splits is reached. As usually we opt for using the cross-entropy as the loss function. Finally, we note that there are many variations to the algorithm sketched above.
+Unless a stopping criteria is specified this approach would lead to over-fitting. Hence, the algorithm is usually stopped when no new splits can be found that decrease the loss by some pre-specified amount. Another possible stopping criterion is to stop the algorithm once a certain number of splits is reached. As usually we opt for using the cross-entropy as the loss function. Finally, we note that there are many variations to the algorithm sketched above.\\ 
 
 The most important advantages of decision trees include:
 \begin{itemize}
@@ -101,7 +101,7 @@ Some of the disadvantages of using decision trees include:
 
 \subsubsection{Boosting}
 \label{sec:Boosting}
-In order to combat the large variance of decision tree boosting was introduced. The overview of boosting presented in this section is largely based on \cite{elith_working_2008} and \cite{friedman_additive_2000}. \cite{elith_working_2008} gave an applied working guide to boosted regression trees while \cite{friedman_additive_2000} gave a theoretical explanation of boosted regression trees.\\
+Boosting can be used to combat the large variance of decision trees. The overview of boosting presented in this section is largely based on \cite{elith_working_2008, friedman_additive_2000}. \cite{elith_working_2008} gave an applied working guide to boosted regression trees while \cite{friedman_additive_2000} gave a theoretical explanation of boosted regression trees.\\
 
 An ensemble of different classifiers is sometimes useful to obtain improved classifiers. This is what is done in boosted classification trees. Boosting can be described as creating a sequence of models such that the $i$'th model focusses on correctly classifying observations that were misclassified by the $i-1$ previous models. The corresponding algorithm then takes the following form:\\
 \begin{enumerate}
@@ -117,7 +117,7 @@ In order to avoid over-fitting one can use a new subsample of the full data-set 
 
 Another popular ensemble method that is used in combination with decision trees is the Random Forest (RF) method. In most cases RFs perform slightly worse than boosted classification trees \parencite{hastie_elements_2009} and we will not consider them in this thesis.\\
 
-A disadvantage of boosted classification trees is that they are not as easily visualized / interpreted as normal classification trees. Secondly, there are quite a few tuning parameters, namely the depth of the trees $J$, the regularization term, and the number of trees. However, \cite{hastie_elements_2009} note that using $J \in \{4,\dots,8\}$ usually leads to the best performing models, additionally they observed that the specific value of $J$ in this set has little effect on the performance of the classifier. Hence, cross validation will be used to obtain optimal values for the learning rate and the number of trees.\\
+A disadvantage of boosted classification trees is that they are not as easily visualized / interpreted as normal classification trees. Secondly, there are quite a few tuning parameters, namely the depth of the trees $J$, the regularization term, and the number of trees. However, \cite{hastie_elements_2009} note that using $J \in \{4,\dots,8\}$ usually leads to the best performing models. Additionally they observed that the specific value of $J$ in this set has little effect on the performance of the classifier. Hence, cross validation will be used to obtain optimal values for the shrinkage parameter and the number of trees.\\
 
 Finally, although we described boosting for classification trees the same idea can be readily applied to other classification algorithms. Furthermore, boosted classification trees seem to include a form of internal variable selection, i.e.\ the performance of this method usually doesn't degrade a lot when irrelevant predictors are present. We will use the implementation provided by the \textsc{gbm} package \parencite{gbm}.
 
@@ -146,14 +146,13 @@ It is interesting to note that the intercept term, $\gamma_0$, only affects the 
 \label{eq:IPPlikelihood}
 \begin{aligned}
 l(\bm{x};\bm{\gamma}) &= \log \left( \prod_{i=1}^n \frac{\lambda(u_i)}{\Lambda(S)} \frac{ \Lambda(S)^n \exp (-\Lambda(S))}{n!}\right)  \\ 
-&= \sum_{i=1}^n \left\lbrace \gamma_0 + \bm{\gamma}^t\bm{z}(u_i) \right\rbrace - \int_S \exp (\bm{\gamma}^t\bm{z}(u)) du  + C.
+&= \sum_{i=1}^n \left\lbrace \gamma_0 + \bm{\gamma}^t\bm{z}(u_i) \right\rbrace - \int_S \exp (\gamma_0  + \bm{\gamma}^t\bm{z}(u)) du  + C.
 \end{aligned}
 \end{equation*}
 The difficulty of using MLE in combination with IPP models is approximating the integral. For an overview of different methods to obtain the MLEs and a more complete treatment of spatial point processes we refer to \cite{moller_modern_2007}.
 
 \subsection{Classification with pseudo-absences}
 \label{sec:ClassificationWithPseudoAbsences}
-\todo[inline]{discuss effect of using PCA on background vs occurrence data}
 One of the older techniques to deal with presence-only data consists of generating so-called pseudo-absence or background points. The original motivation of this technique is that by uniformly sampling $n_0$ points in the geographical space $S$ one obtains a representation of the available habitat in the study region \parencite{pearce_modelling_2006}. The available habitat is then contrasted with the locations where a presence was observed by using standard classification methods. In practice one has to decide on the number of pseudo-absences that should be used and whether or not the pseudo-absences should be weighted \parencite{barbet-massin_selecting_2012}.\\
 
 Another, more rigorous, way to justify the pseudo-absence method is by using the IPP model. \cite{warton_poisson_2010} were the first to note the connections between fitting an IPP model and fitting logistic regression models with pseudo-absences. \cite{fithian_finite-sample_2013} further refined these equivalences and also considered the situation when the model is misspecified. We follow the derivation given by \cite{fithian_finite-sample_2013}.\\
@@ -167,7 +166,7 @@ P(Y_i = 1 | U = u) & = \frac{f(u|Y_i = 1) P(Y_i = 1)}{P(Y_i = 1) f(u|Y_i = 1) + 
  & = \frac{\exp \left( \gamma_0 + \log \left( \frac{n_1 \int_S du }{n_0\Lambda_1(S)}\right) + \bm{\gamma}^t\bm{z}(u) \right)}{\exp \left( \gamma_0 + \log \left( \frac{n_1 \int_S du }{n_0\Lambda_1(S)}\right) + \bm{\gamma}^t\bm{z}(u) \right) + 1}
 \end{aligned}
 \end{equation}
-This derivation implies that, with the exception of the intercept, the coefficients of the IPP model can be estimated by using the standard fitting procedures for logistic regression. Furthermore, it shows that combining logistic regression together with back-ground data is quite a natural approach to the presence-only problem. The fact that the intercept of the IPP model cannot be obtained is not problematic. As we saw in Section \ref{sec:IPP} the intercept does not affect the configuration of the observed points within $S$. Instead it basically rescales the expected number of observed presences. Since the number of observed presences is partially determined processes of which we have no data, e.g.\ the sampling intensity, the intercept is usually not of interest,
+This derivation implies that, with the exception of the intercept, the coefficients of the IPP model can be estimated by using the standard fitting procedures for logistic regression. Furthermore, it shows that combining logistic regression together with back-ground data is quite a natural approach to the presence-only problem. The fact that the intercept of the IPP model cannot be obtained is not problematic. As we saw in Section \ref{sec:IPP} the intercept does not affect the configuration of the observed points within $S$. Instead it basically rescales the expected number of observed presences. Since the number of observed presences is partially determined by processes of which we have no data, e.g.\ the sampling intensity, the intercept is usually not of interest.
 
 
 \subsection{Maximum Entropy modelling}
@@ -178,7 +177,7 @@ under the constraint that the observed mean of the features, $\bm{z}(x) \in \mat
 \[\left| \sum_{x_i \in \mathcal{X}_1} \bm{z}(x_i)  - \sum_{x \in \mathcal{X}} \pi(x)\bm{z}(x) \right| < \bm{\lambda}, \quad \bm{\lambda} \in \mathbb{R}^p_+,\]
 where the inequality is applied component wise. It can be shown that the solution to this problem has the following form:
 \[\pi(x) \propto \exp (\bm{\gamma}^t\bm{z}(x)), \quad \bm{\gamma} \in \mathbb{R}^p.\]
-It is interesting to note that this is exactly the form of a log linear IPP model. \cite{renner_equivalence_2013} showed that when the grid size becomes small the MaxEnt solution converges towards the penalized IPP solution. The standard implementation of MaxEnt uses as features a combination of products between covariates, hinge features, step functions, quadratic terms and linear terms \parencite{phillips_modeling_2008}. Hence, in the end MaxEnt modelling is equivalent with presence-background logistic regression in an extended covariate space. \\
+It is interesting to note that this is exactly the form of a log linear IPP model. \cite{renner_equivalence_2013} showed that when the grid size becomes small the MaxEnt solution converges towards the penalized IPP solution. The standard implementation of MaxEnt uses as features a combination of products between covariates, hinge features, step functions, quadratic terms and linear terms \parencite{phillips_modeling_2008}. Hence, in the end MaxEnt modelling is equivalent with a penalized version of presence-background logistic regression in an extended covariate space. \\
 
 \section{Taking the scale hierarchy into account}
 \label{sec:TakingTheScaleHierarchyIntoAccount}
@@ -186,7 +185,7 @@ In Section \ref{sec:SpatialScale} the influence of spatial scale was discussed. 
 \begin{enumerate}
 \item An initial model is obtained by solely using climate variables as predictors.
 \item The predicted values are saved as a new variable.
-\item The predicted values and remote sensed variables are combined and used as the input for a second model.
+\item The predicted values and remotely sensed variables are combined and used as the input for a second model.
 \item The predicted values of the second model are the final predictions.
 \end{enumerate}
 
@@ -198,7 +197,7 @@ Graphically this can be depicted as in Figure \ref{fig:chClassificationTechnique
 \caption{\label{fig:chClassificationTechniques:HierarchicalClassification}Visualization of the hierarchical model.}
 \end{figure}
 
-This hierarchical model has since been applied in combination with e.g.\ stacked SDMs \parencite{cord_remote_2014}. However, from a statistical point of view this approach is not well motivated. The main drawback of this approach is that interaction effects between the climate and remotely sensed variables cannot be taken into account. Furthermore, since there is usually quite some correlation between the climate and remotely sensed variables model selection is hampered. For example, if a remotely sensed variable is fundamental in determining the niche and highly correlated with a climate variable that is not as relevant for defining the niche the climate variable will usually end up in the model instead of the remotely sensed variable. Because of these drawbacks this approach will not be investigated.
+This hierarchical model has since been applied in combination with e.g.\ stacked SDMs \parencite{cord_remote_2014}. However, from a statistical point of view this approach is not well motivated. The main drawback of this approach is that interaction effects between the climate and remotely sensed variables cannot be taken into account. Furthermore, since there is usually quite some correlation between the climate and remotely sensed variables model selection is hampered. For example, if a remotely sensed variable is fundamental in determining the niche and highly correlated with a climate variable that is not as relevant for defining the niche, then the climate variable will usually end up in the model instead of the remotely sensed variable. Because of these drawbacks this approach will not be investigated.
 
 
 
