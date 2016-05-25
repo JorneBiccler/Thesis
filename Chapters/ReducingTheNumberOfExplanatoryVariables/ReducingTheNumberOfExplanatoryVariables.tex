@@ -12,7 +12,7 @@ Dimensionality reduction techniques can be used to obtain a new, often lower-dim
 
 \subsection{Principal component analysis}
 Often principal component analysis (PCA) is introduced as a method which constructs uncorrelated linear combinations of the variables, these new variables are called principal components. However, for our purposes it might be more interesting to view PCA as a way to find a low dimensional affine subspace such that when the original data is projected onto this subspace the ``information loss'' is minimal. One possible characterization of PCA is that a set of $K$ orthonormal vectors $\bm{u}_i$ and an offset vector $\bm{b}$ are constructed so that
-\[\sum_{i=1}^{N} \sum_{j=1}^{K} \vert \vert \bm{x}_i - \bm{x}_i'\bm{u}_i\bm{u}_i - \bm{b} \vert \vert_2^2 \]
+\[\sum_{i=1}^{N} \sum_{j=1}^{K} \vert \vert \bm{x}_i - \bm{x}_i^t \bm{u}_i\bm{u}_i - \bm{b} \vert \vert_2^2 \]
 is minimized. It can be shown that for a certain $K$ this sum is minimized when the $\bm{u}_i$ are the eigenvectors corresponding with the $K$ largest eigenvalues of the covariance matrix. A prototype scenario is shown in Figure \ref{fig:PCA}.\\
 
 \begin{figure}[!htb]
@@ -72,7 +72,11 @@ When PCA is combined with classification techniques one usually performs the PCA
 \label{sec:Regularization}
 When one uses regression methods, e.g. logistic regression or ANNs, in combination with a large set of correlated predictors the obtained coefficients are often excessively large and unstable. To combat this large coefficients can be penalized such that the solution consists of shrunken coefficients. To do this the standard minimization problem
 \[\widehat{\bm{\gamma}} = \argmin_{\bm{\gamma}} L(\bm{y},\bm{\gamma})\]
-is adjusted to \[\widehat{\bm{\gamma}} = \argmin_{\bm{\gamma}} L(\bm{y},\bm{\gamma}) + J(\bm{\gamma},\bm{\lambda}).\]
+is adjusted to 
+\begin{equation}
+\label{eq:regularization}
+\widehat{\bm{\gamma}} = \argmin_{\bm{\gamma}} L(\bm{y},\bm{\gamma}) + J(\bm{\gamma},\bm{\lambda}).
+\end{equation}
 In this representation the function $ J(\bm{\gamma},\bm{\lambda})$ is usually a monotonically increasing function in $\bm{\gamma}$. Furthermore, the $\bm{\lambda}$ parameters are used to control ``the amount of regularization'' and are often selected by using cross-validation. Finally, the described regularization methods can be used in conjunction with logistic regression by using the \textsc{glmnet} package \parencite{glmnet}.
 
 \label{sec:Regularization}
@@ -102,7 +106,8 @@ Finally, we note that $L_2$ regularization is also called weight decay when it i
 
 \subsection{Lasso / $L_1$ regularization}
 \label{sec:Lasso}
-Another popular option was proposed by \cite{tibshirani_regression_1996}. He suggested to use the absolute norm (also called the $L_1$ norm or Manhattan distance) as penalty function, or thus the minimization problem becomes: \[J(\bm{\gamma},\bm{\lambda}) = \lambda \vert \vert \bm{\gamma} \vert \vert _1 = \lambda \sum_{i=1}^p \vert \gamma_j \vert.\]
+Another popular option was proposed by \cite{tibshirani_regression_1996}. He suggested to use the absolute norm (also called the $L_1$ norm or Manhattan distance) as penalty function, or thus the minimization problem becomes: 
+\[J(\bm{\gamma},\bm{\lambda}) = \lambda \vert \vert \bm{\gamma} \vert \vert _1 = \lambda \sum_{i=1}^p \vert \gamma_j \vert.\]
 The $L_1$ penalty term is also called the least absolute shrinkage and selection operator (lasso). Unlike $L_2$ regularization, the lasso solution will usually contain some coefficients that are equal to zero. This implies that, in addition to the parameter shrinkage, the lasso performs some form of automatic variable selection. A typical parameter trace can be found in Figure \ref{fig:LassoTrace}. \\
 \begin{figure}[!htb]
 \centering
@@ -117,6 +122,8 @@ Usually the shrinkage parameter is selected by using cross-validation. The main 
 \item If there is a group of highly correlated variables usually only one will be selected. Sometimes the variable that is selected is rather arbitrary.
 \end{itemize}
 
+\subsection{\textsc{glmnet} implementation}
+When the cross-validation implementations of the lasso or ridge logistic regression from \textsc{glmnet} package are used, the selected $\lambda$'s do not correspond with \ref{eq:regularization}. Instead the largest $\lambda$ within one standard error of the optimal criterion is selected. The reasoning behind this is that there is no convincing evidence that the selected $\lambda$ is better than the optimal $\lambda$, however using a larger shrinkage parameter usually, in the case of the lasso, leads to a sparser model.
 \section{Subset selection methods}
 \label{sec:SubsetSelectionMethods}
 Subset selection methods are a set of older methods to reduce the number of explanatory variables. Although subset selection methods are often criticised for ignoring problems with bias, multiple testing, etc. \parencite{whittingham_why_2006} they are still popular. In this section three different subset selection techniques are discussed. \\

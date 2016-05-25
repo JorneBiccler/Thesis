@@ -202,6 +202,63 @@
   \field{urlyear}{2016}
 \endentry
 
+\entry{assuncao_robustness_1999}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Assunção}{A.}%
+     {Renato}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Guttorp}{G.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \keyw{influence function, M-estimator, point process, Poisson process,
+  Robustness, Statistics for Business/Economics/Mathematical Finance/Insurance,
+  Statistics, general}
+  \strng{namehash}{ARGP1}
+  \strng{fullhash}{ARGP1}
+  \field{labelyear}{1999}
+  \field{sortinit}{A}
+  \field{abstract}{%
+  We consider robustness for estimation of parametric inhomogeneous Poisson
+  point processes. We propose an influence functional to measure the effect of
+  contamination on estimates. We also propose an M-estimator as an alternative
+  to maximum likelihood estimator, show its consistency and asymptotic
+  normality.%
+  }
+  \verb{doi}
+  \verb 10.1023/A:1004079013014
+  \endverb
+  \field{issn}{0020-3157, 1572-9052}
+  \field{number}{4}
+  \field{pages}{657\bibrangedash 678}
+  \field{title}{Robustness for {Inhomogeneous} {Poisson} {Point} {Processes}}
+  \verb{url}
+  \verb http://link.springer.com/article/10.1023/A%3A1004079013014
+  \endverb
+  \field{volume}{51}
+  \verb{file}
+  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
+  \verb e/DF639CMD/Assunção and Guttorp - 1999 - Robustness for Inhomogeneous
+  \verb  Poisson Point Process.pdf:application/pdf;Snapshot:/home/jorne/.zotero
+  \verb /zotero/k1od4wal.default/zotero/storage/DH773ZZ3/Assunção and Guttorp
+  \verb  - 1999 - Robustness for Inhomogeneous Poisson Point Process.html:text/
+  \verb html
+  \endverb
+  \field{journaltitle}{Annals of the Institute of Statistical Mathematics}
+  \field{month}{12}
+  \field{year}{1999}
+  \field{urlday}{25}
+  \field{urlmonth}{05}
+  \field{urlyear}{2016}
+\endentry
+
 \entry{barbet-massin_selecting_2012}{article}{}
   \name{author}{4}{}{%
     {{}%
@@ -376,6 +433,49 @@
     {Oxford : New York}%
   }
   \field{year}{1995}
+\endentry
+
+\entry{cantoni_robust_2001}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Cantoni}{C.}%
+     {Eva}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ronchetti}{R.}%
+     {Elvezio}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CERE1}
+  \strng{fullhash}{CERE1}
+  \field{labelyear}{2001}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  By starting from a natural class of robust estimators for generalized linear
+  models based on the notion of quasi-likelihood, we define robust deviances
+  that can be used for stepwise model selection as in the classical framework.
+  We derive the asymptotic distribution of tests based on robust deviances, and
+  we investigate the stability of their asymptotic level under contamination.
+  The binomial and Poisson models are treated in detail. Two applications to
+  real data and a sensitivity analysis show that the inference obtained by
+  means of the new techniques is more reliable than that obtained by classical
+  estimation and testing procedures.%
+  }
+  \field{issn}{0162-1459}
+  \field{number}{455}
+  \field{pages}{1022\bibrangedash 1030}
+  \field{title}{Robust {Inference} for {Generalized} {Linear} {Models}}
+  \verb{url}
+  \verb http://www.jstor.org/stable/2670248
+  \endverb
+  \field{volume}{96}
+  \field{journaltitle}{Journal of the American Statistical Association}
+  \field{year}{2001}
+  \field{urlday}{25}
+  \field{urlmonth}{05}
+  \field{urlyear}{2016}
 \endentry
 
 \entry{DEM}{misc}{}
@@ -2514,6 +2614,117 @@
   \field{year}{2015}
 \endentry
 
+\entry{virtualspecies}{manual}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Leroy}{L.}%
+     {Boris}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Meynard}{M.}%
+     {Christine~N.}{C.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bellard}{B.}%
+     {Céline}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Courchamp}{C.}%
+     {Franck}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LB+1}
+  \strng{fullhash}{LBMCNBCCF1}
+  \field{labelyear}{2014}
+  \field{sortinit}{L}
+  \field{note}{R package version 1.0}
+  \field{title}{virtualspecies: Generation of Virtual Species Distributions}
+  \verb{url}
+  \verb http://CRAN.R-project.org/package=virtualspecies
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{leroy_virtualspecies_2015}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Leroy}{L.}%
+     {Boris}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Meynard}{M.}%
+     {Christine~N.}{C.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bellard}{B.}%
+     {Céline}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Courchamp}{C.}%
+     {Franck}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \strng{namehash}{LB+1}
+  \strng{fullhash}{LBMCNBCCF1}
+  \field{labelyear}{2015}
+  \field{sortinit}{L}
+  \field{abstract}{%
+  virtualspecies is a freely available package for R designed to generate
+  virtual species distributions, a procedure increasingly used in ecology to
+  improve species distribution models. This package combines the existing
+  methodological approaches with the objective of generating virtual species
+  distributions with increased ecological realism. The package includes 1)
+  generating the probability of occurrence of a virtual species from a spatial
+  set of environmental conditions (i.e. environmental suitability), with two
+  different approaches; 2) converting the environmental suitability into
+  presence–absence with a probabilistic approach; 3) introducing dispersal
+  limitations in the realised virtual species distributions and 4) sampling
+  occurrences with different biases in the sampling procedure. The package was
+  designed to be extremely flexible, to allow users to simulate their own
+  defined species–environment relationships, as well as to provide a fine
+  control over every simulation parameter. The package also includes a function
+  to generate random virtual species distributions. We provide a simple example
+  in this paper showing how increasing ecological realism of the virtual
+  species impacts the predictive performance of species distribution models. We
+  expect that this new package will be valuable to researchers willing to test
+  techniques and protocols of species distribution models as well as various
+  biogeographical hypotheses.%
+  }
+  \verb{doi}
+  \verb 10.1111/ecog.01388
+  \endverb
+  \field{issn}{1600-0587}
+  \field{pages}{n/a\bibrangedash n/a}
+  \field{title}{virtualspecies, an {R} package to generate virtual species
+  distributions}
+  \verb{url}
+  \verb http://onlinelibrary.wiley.com/doi/10.1111/ecog.01388/abstract
+  \endverb
+  \verb{file}
+  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
+  \verb e/3HBS2I4F/Leroy et al. - 2015 - virtualspecies, an R package to genera
+  \verb te virtual s.pdf:application/pdf;Snapshot:/home/jorne/.zotero/zotero/k1
+  \verb od4wal.default/zotero/storage/7G6DFP26/full.html:text/html
+  \endverb
+  \field{journaltitle}{Ecography}
+  \field{month}{06}
+  \field{year}{2015}
+  \field{urlday}{24}
+  \field{urlmonth}{05}
+  \field{urlyear}{2016}
+\endentry
+
 \entry{lobo_auc:_2008}{article}{}
   \name{author}{3}{}{%
     {{}%
@@ -2907,6 +3118,51 @@
   \field{year}{2007}
   \field{urlday}{30}
   \field{urlmonth}{04}
+  \field{urlyear}{2016}
+\endentry
+
+\entry{muller_robust_2009}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Müller}{M.}%
+     {Samuel}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Welsh}{W.}%
+     {A.~H.}{A.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MSWAH1}
+  \strng{fullhash}{MSWAH1}
+  \field{labelyear}{2009}
+  \field{sortinit}{M}
+  \field{abstract}{%
+  In this paper, we extend to generalized linear models the robust model
+  selection methodology of Müller and Welsh (2005). As in Müller and Welsh
+  (2005), we combine a robust penalized measure of fit to the sample with a
+  robust measure of out of sample predictive ability that is estimated using a
+  post-stratified m-out-of-n bootstrap. The method can be used to compare
+  different estimators (robust and nonrobust) as well as different models.
+  Specialized to linear models, the present methodology improves on Müller and
+  Welsh (2005): we use a new bias-adjusted bootstrap estimator which avoids the
+  need to include an intercept in every model and we establish an essential
+  monotonicity condition more generally.%
+  }
+  \field{issn}{1017-0405}
+  \field{number}{3}
+  \field{pages}{1155\bibrangedash 1170}
+  \field{title}{{ROBUST} {MODEL} {SELECTION} {IN} {GENERALIZED} {LINEAR}
+  {MODELS}}
+  \verb{url}
+  \verb http://www.jstor.org/stable/24308950
+  \endverb
+  \field{volume}{19}
+  \field{journaltitle}{Statistica Sinica}
+  \field{year}{2009}
+  \field{urlday}{25}
+  \field{urlmonth}{05}
   \field{urlyear}{2016}
 \endentry
 
@@ -4355,6 +4611,46 @@
   \field{volume}{26}
   \field{journaltitle}{International Journal of Remote Sensing}
   \field{year}{2005}
+\endentry
+
+\entry{venables_modern_2002}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Venables}{V.}%
+     {W.~N.}{W.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ripley}{R.}%
+     {Brian~D.}{B.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Venables}{V.}%
+     {W.~N.}{W.~N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \keyw{Data processing, Mathematical statistics, S (Computer system),
+  Statistics}
+  \strng{namehash}{VWNRBDVWN1}
+  \strng{fullhash}{VWNRBDVWN1}
+  \field{labelyear}{2002}
+  \field{sortinit}{V}
+  \field{edition}{4th ed}
+  \field{isbn}{978-0-387-95457-8}
+  \field{series}{Statistics and computing}
+  \field{title}{Modern applied statistics with {S}}
+  \list{location}{1}{%
+    {New York}%
+  }
+  \field{annotation}{%
+  Previously published as: Modern applied statistics with S-PLUS, c1999%
+  }
+  \field{year}{2002}
 \endentry
 
 \entry{vogelmann2001completion}{article}{}

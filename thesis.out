@@ -43,17 +43,23 @@
 \BOOKMARK [1][-]{section.5.3}{Regularization}{chapter.5}% 43
 \BOOKMARK [2][-]{subsection.5.3.1}{Ridge regression / L2 regularization}{section.5.3}% 44
 \BOOKMARK [2][-]{subsection.5.3.2}{Lasso / L1 regularization}{section.5.3}% 45
-\BOOKMARK [1][-]{section.5.4}{Subset selection methods}{chapter.5}% 46
-\BOOKMARK [2][-]{subsection.5.4.1}{Best subset selection}{section.5.4}% 47
-\BOOKMARK [2][-]{subsection.5.4.2}{Stepwise subset selection}{section.5.4}% 48
-\BOOKMARK [2][-]{subsection.5.4.3}{Univariate pre-screening}{section.5.4}% 49
-\BOOKMARK [1][-]{section.5.5}{Taking the scale hierarchy into account}{chapter.5}% 50
-\BOOKMARK [1][-]{section.5.6}{Meaningful combinations of classification and }{chapter.5}% 51
-\BOOKMARK [0][-]{chapter.6}{Applications}{}% 52
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 53
-\BOOKMARK [1][-]{section.6.2}{Results}{chapter.6}% 54
-\BOOKMARK [2][-]{subsection.6.2.1}{Presence-only data}{section.6.2}% 55
-\BOOKMARK [2][-]{subsection.6.2.2}{Presence-absence data}{section.6.2}% 56
-\BOOKMARK [1][-]{section.6.3}{Discussion}{chapter.6}% 57
-\BOOKMARK [0][-]{chapter.7}{Simulation study}{}% 58
-\BOOKMARK [0][-]{chapter*.32}{Bibliography}{}% 59
+\BOOKMARK [2][-]{subsection.5.3.3}{glmnet implementation}{section.5.3}% 46
+\BOOKMARK [1][-]{section.5.4}{Subset selection methods}{chapter.5}% 47
+\BOOKMARK [2][-]{subsection.5.4.1}{Best subset selection}{section.5.4}% 48
+\BOOKMARK [2][-]{subsection.5.4.2}{Stepwise subset selection}{section.5.4}% 49
+\BOOKMARK [2][-]{subsection.5.4.3}{Univariate pre-screening}{section.5.4}% 50
+\BOOKMARK [1][-]{section.5.5}{Taking the scale hierarchy into account}{chapter.5}% 51
+\BOOKMARK [1][-]{section.5.6}{Meaningful combinations of classification and }{chapter.5}% 52
+\BOOKMARK [0][-]{chapter.6}{Applications}{}% 53
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 54
+\BOOKMARK [1][-]{section.6.2}{Implementations and tuning parameters of the methods}{chapter.6}% 55
+\BOOKMARK [1][-]{section.6.3}{Results}{chapter.6}% 56
+\BOOKMARK [2][-]{subsection.6.3.1}{Presence-only data}{section.6.3}% 57
+\BOOKMARK [2][-]{subsection.6.3.2}{Presence-absence data}{section.6.3}% 58
+\BOOKMARK [1][-]{section.6.4}{Discussion}{chapter.6}% 59
+\BOOKMARK [0][-]{chapter.7}{Simulation study}{}% 60
+\BOOKMARK [1][-]{section.7.1}{Introduction and set-up}{chapter.7}% 61
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 62
+\BOOKMARK [1][-]{section.8.1}{}{chapter.8}% 63
+\BOOKMARK [1][-]{section.8.2}{Future research}{chapter.8}% 64
+\BOOKMARK [0][-]{chapter*.34}{Bibliography}{}% 65
