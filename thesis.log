@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.1)  25 MAY 2016 15:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.1)  2 JUN 2016 20:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 2 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
-File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -1519,12 +1519,12 @@ e
 * \topmargin=-33.0119pt
 * \headheight=12.0pt
 * \headsep=19.8738pt
-* \topskip=11.0pt
-* \footskip=27.46295pt
-* \marginparwidth=106.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1586,7 +1586,7 @@ Package biblatex Info: ... file 'thesis.bbl' found.
 (./thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 83.
 Package biblatex Info: Reference segment=0 on input line 83.
- <Cover/TitlePage.pdf, id=268, 597.50829pt x 845.0471pt>
+ <Cover/TitlePage.pdf, id=292, 597.50829pt x 845.0471pt>
 File: Cover/TitlePage.pdf Graphic file (type pdf)
 
 <use Cover/TitlePage.pdf>
@@ -1597,7 +1597,7 @@ File: Cover/TitlePage.pdf Graphic file (type pdf)
 Package pdftex.def Info: Cover/TitlePage.pdf used on input line 87.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
-<Cover/TitlePage.pdf, id=271, page=1, 597.50829pt x 845.0471pt>
+<Cover/TitlePage.pdf, id=295, page=1, 597.50829pt x 845.0471pt>
 File: Cover/TitlePage.pdf Graphic file (type pdf)
 
 <use Cover/TitlePage.pdf, page 1>
@@ -1689,7 +1689,7 @@ LaTeX Font Info:    Try loading font information for OMX+lmex on input line 5.
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 5.
+(Font)              <12> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1711,19 +1711,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 5.
+(Font)              <10> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 5.
-
-
-LaTeX Warning: Citation 'Apparently semi-supervised learning sounds fancy but d
-oesn't really work that well for SDM.' on page 1 undefined on input line 5.
-
-
-Overfull \hbox (2.58559pt too wide) in paragraph at lines 5--5
-[][][][]\T1/lmr/m/n/9 (-20) .| 
- []
-
 ) [1
 
 
@@ -1735,7 +1727,8 @@ Overfull \hbox (2.58559pt too wide) in paragraph at lines 5--5
 ]
 \openout2 = `Chapters/Summary/Summary.aux'.
 
- (./Chapters/Summary/Summary.tex)
+
+(./Chapters/Summary/Summary.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 4--95
 
  []
@@ -1750,19 +1743,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--95
 
 ]
 Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             in font `T1/lmr/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
- [6])
+)
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
- [7] [8
-
-] (./thesis.tdo)
+ [6] (./thesis.tdo)
 \tf@tdo=\write7
 \openout7 = `thesis.tdo'.
 
- [9] [10
+ [7
+
+] [8
 
 ]
 \openout2 = `Chapters/Introduction/Introduction.aux'.
@@ -1803,18 +1796,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-<VectorGraphics/Niche.png, id=472, 812.61732pt x 405.88849pt>
+<VectorGraphics/Niche.png, id=489, 812.61732pt x 405.88849pt>
 File: VectorGraphics/Niche.png Graphic file (type png)
 
 <use VectorGraphics/Niche.png>
 Package pdftex.def Info: VectorGraphics/Niche.png used on input line 12.
 (pdftex.def)             Requested size: 406.30766pt x 202.94374pt.
- [3
 
-
-
-]
-<VectorGraphics/RealizedNiche.png, id=483, 814.242pt x 406.318pt>
+<VectorGraphics/RealizedNiche.png, id=492, 814.242pt x 406.318pt>
 File: VectorGraphics/RealizedNiche.png Graphic file (type png)
 
 <use VectorGraphics/RealizedNiche.png>
@@ -1827,14 +1816,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2837) has occurred while \output is active []
 
- [4 <./VectorGraphics/Niche.png> <./VectorGraphics/RealizedNiche.png>]
+ [3
+
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-
+[4 <./VectorGraphics/Niche.png> <./VectorGraphics/RealizedNiche.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
@@ -1844,18 +1837,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-) [6]
+) [5]
 \openout2 = `Chapters/DataCommonlyUsedInSpeciesDistributionModels/DataCommonlyU
 sedInSpeciesDistributionModels.aux'.
 
 
 (./Chapters/DataCommonlyUsedInSpeciesDistributionModels/DataCommonlyUsedInSpeci
-esDistributionModels.tex
+esDistributionModels.tex [6
+
+
+
+]
 Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
@@ -1865,23 +1862,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 15.
 
-Underfull \vbox (badness 1297) has occurred while \output is active []
-
- [7
-
-
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-[8] [9] <VectorGraphics/DataScheme.png, id=566, 678.3744pt x 866.7582pt>
+[8] [9] <VectorGraphics/DataScheme.png, id=589, 678.3744pt x 866.7582pt>
 File: VectorGraphics/DataScheme.png Graphic file (type png)
 
 <use VectorGraphics/DataScheme.png>
@@ -1892,7 +1882,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-[10] <Plots/StudyExtent.png, id=581, 776.9025pt x 541.02126pt>
+<Plots/StudyExtent.png, id=593, 776.9025pt x 541.02126pt>
 File: Plots/StudyExtent.png Graphic file (type png)
 
 <use Plots/StudyExtent.png>
@@ -1908,24 +1898,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11 <./VectorGraphics/DataScheme.png>] [12 <./Plots/StudyExtent.png (PNG copy)
->]
-<Plots/CorPlotUS.png, id=594, 752.8125pt x 602.25pt>
+[10 <./VectorGraphics/DataScheme.png>] [11 <./Plots/StudyExtent.png (PNG copy)>
+] <Plots/CorPlotUS.png, id=606, 752.8125pt x 602.25pt>
 File: Plots/CorPlotUS.png Graphic file (type png)
- <use Plots/CorPlotUS.png>
+
+<use Plots/CorPlotUS.png>
 Package pdftex.def Info: Plots/CorPlotUS.png used on input line 104.
 (pdftex.def)             Requested size: 409.71692pt x 327.78323pt.
 
-<Plots/CorPlotBGWC.png, id=595, 752.8125pt x 602.25pt>
+<Plots/CorPlotBGWC.png, id=607, 752.8125pt x 602.25pt>
 File: Plots/CorPlotBGWC.png Graphic file (type png)
 
 <use Plots/CorPlotBGWC.png>
 Package pdftex.def Info: Plots/CorPlotBGWC.png used on input line 104.
 (pdftex.def)             Requested size: 409.71692pt x 327.78323pt.
- [13
+ [12
 
  <./Plots/CorPlotUS.png (PNG copy)> <./Plots/CorPlotBGWC.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
@@ -1943,48 +1930,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--143
  []
 
 
-Underfull \vbox (badness 1997) has occurred while \output is active []
-
- [14
-
-]
-[15]
 Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
+[13
 
-Overfull \hbox (14.13129pt too wide) in paragraph at lines 155--172
+] [14]
+Overfull \hbox (29.04973pt too wide) in paragraph at lines 155--172
  [][] 
  []
 
 
-Overfull \hbox (21.9pt too wide) in paragraph at lines 152--189
+Overfull \hbox (23.49966pt too wide) in paragraph at lines 152--189
 []$[]$ $[]$ 
  []
 
-) [16] [17]
+) [15]
 \openout2 = `Chapters/ClassificationTechniques/ClassificationTechniques.aux'.
 
  (./Chapters/ClassificationTechniques/ClassificationTechniques.tex
-[18
+[16
 
 
 
 ]
 Chapter 4.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
  []
 
 
-Underfull \vbox (badness 2229) has occurred while \output is active []
-
- [20]
 Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
@@ -1994,20 +1971,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
-
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-<VectorGraphics/ANN.png, id=676, 555.676pt x 529.177pt>
+<VectorGraphics/ANN.png, id=680, 555.676pt x 529.177pt>
 File: VectorGraphics/ANN.png Graphic file (type png)
 
 <use VectorGraphics/ANN.png>
@@ -2018,17 +1992,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-[22]
+
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-[23 <./VectorGraphics/ANN.png>]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-<VectorGraphics/CART.png, id=702, 342.86232pt x 316.81151pt>
+[20 <./VectorGraphics/ANN.png>]
+<VectorGraphics/CART.png, id=709, 342.86232pt x 316.81151pt>
 File: VectorGraphics/CART.png Graphic file (type png)
 
 <use VectorGraphics/CART.png>
@@ -2039,7 +2014,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-[24]
+[21 <./VectorGraphics/CART.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
@@ -2049,7 +2024,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
-[25 <./VectorGraphics/CART.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
@@ -2064,7 +2039,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-[26]
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
@@ -2074,7 +2049,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-[27]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
@@ -2084,43 +2059,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-[28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
 
-<VectorGraphics/HierarchicalClassification.png, id=794, 952.95558pt x 228.57489
+<VectorGraphics/HierarchicalClassification.png, id=789, 952.95558pt x 228.57489
 pt>
 File: VectorGraphics/HierarchicalClassification.png Graphic file (type png)
  <use VectorGraphics/HierarchicalClassification.png>
 Package pdftex.def Info: VectorGraphics/HierarchicalClassification.png used on 
-input line 198.
+input line 199.
 (pdftex.def)             Requested size: 476.47662pt x 114.28716pt.
-) [31 <./VectorGraphics/HierarchicalClassification.png>]
+) [26 <./VectorGraphics/HierarchicalClassification.png>]
 \openout2 = `Chapters/ReducingTheNumberOfExplanatoryVariables/ReducingTheNumber
 OfExplanatoryVariables.aux'.
 
 
 (./Chapters/ReducingTheNumberOfExplanatoryVariables/ReducingTheNumberOfExplanat
-oryVariables.tex [32
-
-
-
-]
+oryVariables.tex
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
@@ -2128,14 +2096,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6380) has occurred while \output is active []
 
- [33]
+ [27
+
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
 
-<VectorGraphics/PCA.png, id=822, 330.2571pt x 316.81151pt>
+<VectorGraphics/PCA.png, id=815, 330.2571pt x 316.81151pt>
 File: VectorGraphics/PCA.png Graphic file (type png)
 
 <use VectorGraphics/PCA.png>
@@ -2151,33 +2123,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-[34]
+
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-<VectorGraphics/PCACircle.png, id=832, 330.2571pt x 316.81151pt>
+[28 <./VectorGraphics/PCA.png>]
+<VectorGraphics/PCACircle.png, id=826, 330.2571pt x 316.81151pt>
 File: VectorGraphics/PCACircle.png Graphic file (type png)
 
 <use VectorGraphics/PCACircle.png>
 Package pdftex.def Info: VectorGraphics/PCACircle.png used on input line 33.
 (pdftex.def)             Requested size: 165.12814pt x 158.40536pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35 <./VectorGraphics/PCA.png> <./VectorGraphics/PCACircle.png>]
-<VectorGraphics/KernelPCA.png, id=844, 715.9772pt x 390.7622pt>
+<VectorGraphics/KernelPCA.png, id=829, 715.9772pt x 390.7622pt>
 File: VectorGraphics/KernelPCA.png Graphic file (type png)
 
 <use VectorGraphics/KernelPCA.png>
 Package pdftex.def Info: VectorGraphics/KernelPCA.png used on input line 45.
 (pdftex.def)             Requested size: 357.98772pt x 195.38062pt.
-
+ [29 <./VectorGraphics/PCACircle.png> <./VectorGraphics/KernelPCA.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
 
-[36 <./VectorGraphics/KernelPCA.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
@@ -2187,9 +2157,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-[37]
+[30]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 83.
+(Font)              <14.4> on input line 83.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2208,7 +2178,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--88
 
  []
 
-<VectorGraphics/ridgeTrace.png, id=861, 288.3573pt x 280.8894pt>
+<VectorGraphics/ridgeTrace.png, id=848, 288.3573pt x 280.8894pt>
 File: VectorGraphics/ridgeTrace.png Graphic file (type png)
 
 <use VectorGraphics/ridgeTrace.png>
@@ -2219,11 +2189,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-[38]
+
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
+[31 <./VectorGraphics/ridgeTrace.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 107.
@@ -2236,13 +2207,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 107.
 
-<VectorGraphics/lassoTrace.png, id=871, 286.4301pt x 280.8894pt>
+<VectorGraphics/lassoTrace.png, id=860, 286.4301pt x 280.8894pt>
 File: VectorGraphics/lassoTrace.png Graphic file (type png)
 
 <use VectorGraphics/lassoTrace.png>
 Package pdftex.def Info: VectorGraphics/lassoTrace.png used on input line 114.
 (pdftex.def)             Requested size: 214.82204pt x 210.66653pt.
- [39 <./VectorGraphics/ridgeTrace.png>]
+ [32 <./VectorGraphics/lassoTrace.png>]
 
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
 (Font)              using `T1/lmr/bx/n' instead on input line 125.
@@ -2252,7 +2223,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-[40 <./VectorGraphics/lassoTrace.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
@@ -2267,28 +2238,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
-
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
-[41] [42]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
-[43]) [44]
+) [35] [36]
 \openout2 = `Chapters/Applications/Applications.aux'.
 
  (./Chapters/Applications/Applications.tex
 Chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
@@ -2302,48 +2268,119 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-[45
 
-
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
 
-LaTeX Warning: Reference `' on page 46 undefined on input line 17.
+LaTeX Warning: Reference `sec:ANN' on page 37 undefined on input line 17.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
+[37
 
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-<Plots/AUCPlot.png, id=952, 803.0pt x 501.875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \vbox (badness 2165) has occurred while \output is active []
+
+ [38]
+<Plots/AUCPlot.png, id=948, 803.0pt x 501.875pt>
 File: Plots/AUCPlot.png Graphic file (type png)
  <use Plots/AUCPlot.png>
-Package pdftex.def Info: Plots/AUCPlot.png used on input line 63.
+Package pdftex.def Info: Plots/AUCPlot.png used on input line 75.
 (pdftex.def)             Requested size: 562.09618pt x 351.31009pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+[39]
+
+LaTeX Warning: Reference `sec:PAResults' on page 40 undefined on input line 88.
+
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46]
-<Plots/AUCPAPlot.png, id=958, 803.0pt x 501.875pt>
+ [40 <./Plots/AUCPlot.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+<Plots/AUCPAPlot.png, id=968, 803.0pt x 501.875pt>
 File: Plots/AUCPAPlot.png Graphic file (type png)
  <use Plots/AUCPAPlot.png>
-Package pdftex.def Info: Plots/AUCPAPlot.png used on input line 103.
+Package pdftex.def Info: Plots/AUCPAPlot.png used on input line 132.
 (pdftex.def)             Requested size: 562.09618pt x 351.31009pt.
-)
-[47] [48 <./Plots/AUCPlot.png (PNG copy)>] [49 <./Plots/AUCPAPlot.png (PNG copy
-)>]
+
+[41]
+
+LaTeX Warning: Text page 42 contains only floats.
+
+
+Overfull \vbox (3.5436pt too high) has occurred while \output is active []
+
+
+[42 <./Plots/AUCPAPlot.png (PNG copy)>]) [43]
 \openout2 = `Chapters/SimulationStudy/SimulationStudy.aux'.
 
- (./Chapters/SimulationStudy/SimulationStudy.tex [50
+
+(./Chapters/SimulationStudy/SimulationStudy.tex [44
 
 
 
@@ -2355,22 +2392,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--7
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-[51] <Plots/WashingtonPlot.png, id=990, 702.625pt x 552.0625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+[45] <Plots/WashingtonPlot.png, id=1001, 702.625pt x 552.0625pt>
 File: Plots/WashingtonPlot.png Graphic file (type png)
 
 <use Plots/WashingtonPlot.png>
-Package pdftex.def Info: Plots/WashingtonPlot.png used on input line 15.
+Package pdftex.def Info: Plots/WashingtonPlot.png used on input line 17.
 (pdftex.def)             Requested size: 351.31163pt x 276.03056pt.
-) [52 <./Plots/WashingtonPlot.png (PNG copy)>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+) [46 <./Plots/WashingtonPlot.png (PNG copy)>]
 \openout2 = `Chapters/Conclusion/Conclusion.aux'.
 
 
@@ -2386,14 +2428,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-) [53
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+) [47
 
 
 
-] [54
-
-
-]
+] [48]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 121.
 
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
@@ -2403,17 +2452,14 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [55
+ [49
 
-] [56] [57] [58]
-Overfull \hbox (0.69212pt too wide) in paragraph at lines 121--121
-[][]\T1/lmr/m/n/10.95 (-20) PRISM Cli-mate Group, Ore-gon State Uni-ver-sity cr
-e-ated 4 Feb 2004. []$\T1/lmtt/m/n/10.95 http : / / prism . oregonstate .
- []
 
-[59] [60] [61] [62
 
-] <Cover/BackPage.pdf, id=1051, 597.50829pt x 845.0471pt>
+] [50] [51] [52]
+[53] [54
+
+] <Cover/BackPage.pdf, id=1059, 597.50829pt x 845.0471pt>
 File: Cover/BackPage.pdf Graphic file (type pdf)
 
 <use Cover/BackPage.pdf>
@@ -2424,7 +2470,7 @@ File: Cover/BackPage.pdf Graphic file (type pdf)
 Package pdftex.def Info: Cover/BackPage.pdf used on input line 124.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
-<Cover/BackPage.pdf, id=1054, page=1, 597.50829pt x 845.0471pt>
+<Cover/BackPage.pdf, id=1062, page=1, 597.50829pt x 845.0471pt>
 File: Cover/BackPage.pdf Graphic file (type pdf)
 
 <use Cover/BackPage.pdf, page 1>
@@ -2448,7 +2494,7 @@ File: Cover/BackPage.pdf Graphic file (type pdf)
 <use Cover/BackPage.pdf, page 1>
 Package pdftex.def Info: Cover/BackPage.pdf, page1 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [63 <./Cover/BackPage.pdf>]
+ [55 <./Cover/BackPage.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
  (./thesis.aux
@@ -2465,7 +2511,7 @@ oryVariables.aux) (./Chapters/Applications/Applications.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9809700BE8CCE41A65911BA67EE1AE26;4639.
+(rerunfilecheck)             Checksum: D4BA38485F0EC5B32115064B9C4C3FF7;5079.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2477,46 +2523,44 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29222 strings out of 495000
- 524660 string characters out of 6181169
- 973262 words of memory out of 5000000
- 31274 multiletter control sequences out of 15000+600000
- 110115 words of font info for 183 fonts, out of 8000000 for 9000
+ 29283 strings out of 495000
+ 525761 string characters out of 6181169
+ 981673 words of memory out of 5000000
+ 31328 multiletter control sequences out of 15000+600000
+ 112644 words of font info for 193 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,18n,92p,1383b,1867s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,18n,92p,1383b,1864s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/f
-onts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-r6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/zapfding/uzdr.pfb>
-Output written on thesis.pdf (77 pages, 1506740 bytes).
+onts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding
+/uzdr.pfb>
+Output written on thesis.pdf (67 pages, 1477132 bytes).
 PDF statistics:
- 1214 PDF objects out of 1440 (max. 8388607)
- 1060 compressed objects within 11 object streams
+ 1217 PDF objects out of 1440 (max. 8388607)
+ 1075 compressed objects within 11 object streams
  288 named destinations out of 1000 (max. 500000)
- 28306 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 28354 words of extra memory for PDF output out of 29859 (max. 10000000)
 

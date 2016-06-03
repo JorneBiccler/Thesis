@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Ecological versus geographical space}{3}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Implicit assumptions when building and using species distribution modles}{5}{section.2.3}
+\contentsline {section}{\numberline {2.3}Implicit assumptions when building and using species distribution modles}{4}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Spatial scale}{5}{section.2.4}
 \defcounter {refsection}{0}\relax 
@@ -26,116 +26,128 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Vegetation Continuous Fields}{7}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Bioclimatic variables}{8}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Bioclimatic variables}{7}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Normalized Difference Vegetation Index}{9}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Normalized Difference Vegetation Index}{8}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.4}Digital elevation model}{9}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Land cover}{10}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.5}Land cover}{9}{subsection.3.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.6}Human Influence Index}{10}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.6}Human Influence Index}{9}{subsection.3.2.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.7}Preprocessing of the predictor data}{10}{subsection.3.2.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.8}Exploratory analysis of the predictor data}{10}{subsection.3.2.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Outcome data}{14}{section.3.3}
+\contentsline {section}{\numberline {3.3}Outcome data}{13}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Species considered}{14}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Species considered}{13}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Global Biodiversity Information Facility}{14}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Global Biodiversity Information Facility}{13}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Forest Inventory and Analysis data}{16}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.3}Forest Inventory and Analysis data}{13}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Data preparation}{16}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.4}Data preparation}{15}{subsection.3.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Classification techniques}{19}{chapter.4}
+\contentsline {chapter}{\numberline {4}Classification techniques}{17}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Introduction}{19}{section.4.1}
+\contentsline {section}{\numberline {4.1}Introduction}{17}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Presence-absence data}{19}{section.4.2}
+\contentsline {section}{\numberline {4.2}Presence-absence data}{17}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Logistic regression}{20}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Logistic regression}{17}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Generalized additive models}{20}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Generalized additive models}{18}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Artificial neural networks}{22}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Artificial neural networks}{19}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Tree based methods}{24}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.4}Tree based methods}{20}{subsection.4.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Decision trees}{24}{section*.16}
+\contentsline {subsubsection}{Decision trees}{21}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Boosting}{25}{section*.18}
+\contentsline {subsubsection}{Boosting}{22}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Presence-only data}{27}{section.4.3}
+\contentsline {section}{\numberline {4.3}Presence-only data}{23}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Poisson point processes}{27}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Poisson point processes}{23}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Classification with pseudo-absences}{28}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.2}Classification with pseudo-absences}{24}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Maximum Entropy modelling}{29}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.3}Maximum Entropy modelling}{25}{subsection.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Taking the scale hierarchy into account}{30}{section.4.4}
+\contentsline {section}{\numberline {4.4}Taking the scale hierarchy into account}{25}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Reducing the number of explanatory variables}{33}{chapter.5}
+\contentsline {chapter}{\numberline {5}Reducing the number of explanatory variables}{27}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Introduction}{33}{section.5.1}
+\contentsline {section}{\numberline {5.1}Introduction}{27}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Dimensionality reduction}{34}{section.5.2}
+\contentsline {section}{\numberline {5.2}Dimensionality reduction}{27}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Principal component analysis}{34}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}Principal component analysis}{28}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Kernel principal component analysis}{36}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Kernel principal component analysis}{29}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Presence versus background data}{37}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}Presence versus background data}{30}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Regularization}{38}{section.5.3}
+\contentsline {section}{\numberline {5.3}Regularization}{30}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Ridge regression / $L_2$ regularization}{38}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}Ridge regression / $L_2$ regularization}{31}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Lasso / $L_1$ regularization}{39}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}Lasso / $L_1$ regularization}{32}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}\textsc {glmnet} implementation}{40}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.3}\textsc {glmnet} implementation}{33}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Subset selection methods}{40}{section.5.4}
+\contentsline {section}{\numberline {5.4}Subset selection methods}{33}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Best subset selection}{41}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.1}Best subset selection}{33}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Stepwise subset selection}{41}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.2}Stepwise subset selection}{33}{subsection.5.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.3}Univariate pre-screening}{42}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.3}Univariate pre-screening}{34}{subsection.5.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Underlying idea}{42}{section*.25}
+\contentsline {subsubsection}{Underlying idea}{34}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Taking the correlation into account}{42}{section*.26}
+\contentsline {subsubsection}{Taking the correlation into account}{34}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Taking the scale hierarchy into account}{43}{section.5.5}
+\contentsline {section}{\numberline {5.5}Taking the scale hierarchy into account}{35}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Meaningful combinations of classification and }{43}{section.5.6}
+\contentsline {section}{\numberline {5.6}Meaningful combinations of classification and }{35}{section.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Applications}{45}{chapter.6}
+\contentsline {chapter}{\numberline {6}Applications}{37}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Introduction}{45}{section.6.1}
+\contentsline {section}{\numberline {6.1}Introduction}{37}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Implementations and tuning parameters of the methods}{45}{section.6.2}
+\contentsline {section}{\numberline {6.2}Implementations and tuning parameters of the methods}{37}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Results}{47}{section.6.3}
+\contentsline {section}{\numberline {6.3}AUC as a measure of classification performance in SDM}{38}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}Presence-only data}{47}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}Presence-only data}{39}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.2}Presence-absence data}{47}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.4.1}Results}{39}{subsection.6.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Discussion}{47}{section.6.4}
+\contentsline {section}{\numberline {6.5}Presence-absence data}{41}{section.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Simulation study}{51}{chapter.7}
+\contentsline {subsection}{\numberline {6.5.1}Case-control sampling}{41}{subsection.6.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Introduction and set-up}{51}{section.7.1}
+\contentsline {subsection}{\numberline {6.5.2}results}{41}{subsection.6.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion}{53}{chapter.8}
+\contentsline {section}{\numberline {6.6}Discussion}{43}{section.6.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}}{53}{section.8.1}
+\contentsline {chapter}{\numberline {7}Simulation study}{45}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Future research}{53}{section.8.2}
+\contentsline {section}{\numberline {7.1}Introduction}{45}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{55}{chapter*.34}
+\contentsline {section}{\numberline {7.2}Overview of the \textsc {virtualspecies} package and the simulation set-up}{45}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Results}{46}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Discussion}{46}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Conclusion}{47}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}}{47}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Future research}{47}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{49}{chapter*.33}

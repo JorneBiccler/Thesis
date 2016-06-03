@@ -478,10 +478,132 @@
   \field{urlyear}{2016}
 \endentry
 
+\entry{chawla2005data}{incollection}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Chawla}{C.}%
+     {Nitesh~V}{N.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{CNV1}
+  \strng{fullhash}{CNV1}
+  \field{labelyear}{2005}
+  \field{sortinit}{C}
+  \field{booktitle}{Data mining and knowledge discovery handbook}
+  \field{pages}{853\bibrangedash 867}
+  \field{title}{Data mining for imbalanced datasets: An overview}
+  \field{year}{2005}
+\endentry
+
 \entry{DEM}{misc}{}
   \field{sortinit}{C}
   \field{howpublished}{\url{http://srtm.csi.cgiar.org/}}
   \field{title}{CIAT-CSI SRTM}
+\endentry
+
+\entry{claeskens_focused_2003}{article}{}
+  \name{author}{12}{}{%
+    {{}%
+     {Claeskens}{C.}%
+     {Gerda}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hjort}{H.}%
+     {Nils~Lid}{N.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shen}{S.}%
+     {Xiaotong}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dougherty}{D.}%
+     {Daniel~P.}{D.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Johnson}{J.}%
+     {Wesley~O.}{W.~O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ishwaran}{I.}%
+     {Hemant}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rao}{R.}%
+     {J.~Sunil}{J.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cook}{C.}%
+     {R.~Dennis}{R.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Li}{L.}%
+     {Lexin}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tsai}{T.}%
+     {Chih-Ling}{C.-L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Raftery}{R.}%
+     {Adrian~E.}{A.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zheng}{Z.}%
+     {Yingye}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CG+1}
+  \strng{fullhash}{CGHNLSXDDPJWOIHRJSCRDLLTCLRAEZY1}
+  \field{labelyear}{2003}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  A variety of model selection criteria have been developed, of general and
+  specific types. Most of these aim at selecting a single model with good
+  overall properties, for example, formulated via average prediction quality or
+  shortest estimated overall distance to the true model. The Akaike, the
+  Bayesian, and the deviance information criteria, along with many suitable
+  variations, are examples of such methods. These methods are not concerned,
+  however, with the actual use of the selected model, which varies with context
+  and application. The present article takes the view that the model selector
+  should instead focus on the parameter singled out for interest; in
+  particular, a model that gives good precision for one estimand may be worse
+  when used for inference for another estimand. We develop a method that, for a
+  given focus parameter, estimates the precision of any submodel-based
+  estimator. The framework is that of large-sample likelihood inference. Using
+  an unbiased estimate of limiting risk, we propose a focused information
+  criterion for model selection. We investigate and discuss properties of the
+  method, establish some connections to Akaike's information criterion, and
+  illustrate its use in a variety of situations.%
+  }
+  \field{issn}{0162-1459}
+  \field{number}{464}
+  \field{pages}{900\bibrangedash 945}
+  \field{title}{The {Focused} {Information} {Criterion}}
+  \verb{url}
+  \verb http://www.jstor.org/stable/30045340
+  \endverb
+  \field{volume}{98}
+  \field{journaltitle}{Journal of the American Statistical Association}
+  \field{year}{2003}
+  \field{urlday}{15}
+  \field{urlmonth}{05}
+  \field{urlyear}{2016}
 \endentry
 
 \entry{colwell_hutchinsons_2009}{article}{}
@@ -1863,6 +1985,67 @@
   \field{urlyear}{2015}
 \endentry
 
+\entry{hanley_meaning_1982}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Hanley}{H.}%
+     {J~A}{J.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {McNeil}{M.}%
+     {B~J}{B.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HJAMBJ1}
+  \strng{fullhash}{HJAMBJ1}
+  \field{labelyear}{1982}
+  \field{sortinit}{H}
+  \field{abstract}{%
+  A representation and interpretation of the area under a receiver operating
+  characteristic (ROC) curve obtained by the "rating" method, or by
+  mathematical predictions based on patient characteristics, is presented. It
+  is shown that in such a setting the area represents the probability that a
+  randomly chosen diseased subject is (correctly) rated or ranked with greater
+  suspicion than a randomly chosen non-diseased subject. Moreover, this
+  probability of a correct ranking is the same quantity that is estimated by
+  the already well-studied nonparametric Wilcoxon statistic. These two
+  relationships are exploited to (a) provide rapid closed-form expressions for
+  the approximate magnitude of the sampling variability, i.e., standard error
+  that one uses to accompany the area under a smoothed ROC curve, (b) guide in
+  determining the size of the sample required to provide a sufficiently
+  reliable estimate of this area, and (c) determine how large sample sizes
+  should be to ensure that one can statistically detect differences in the
+  accuracy of diagnostic techniques.%
+  }
+  \verb{doi}
+  \verb 10.1148/radiology.143.1.7063747
+  \endverb
+  \field{issn}{0033-8419}
+  \field{number}{1}
+  \field{pages}{29\bibrangedash 36}
+  \field{title}{The meaning and use of the area under a receiver operating
+  characteristic ({ROC}) curve.}
+  \verb{url}
+  \verb http://pubs.rsna.org/doi/abs/10.1148/radiology.143.1.7063747
+  \endverb
+  \field{volume}{143}
+  \verb{file}
+  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
+  \verb e/MICZZPQU/Hanley and McNeil - 1982 - The meaning and use of the area u
+  \verb nder a receiver o.pdf:application/pdf;Snapshot:/home/jorne/.zotero/zote
+  \verb ro/k1od4wal.default/zotero/storage/JMVGN58A/Hanley and McNeil - 1982 -
+  \verb The meaning and use of the area under a receiver o.html:text/html
+  \endverb
+  \field{journaltitle}{Radiology}
+  \field{month}{04}
+  \field{year}{1982}
+  \field{urlday}{30}
+  \field{urlmonth}{05}
+  \field{urlyear}{2016}
+\endentry
+
 \entry{hastie_principal_1989}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -2517,6 +2700,72 @@
   \field{volume}{11}
   \field{journaltitle}{Journal of Statistical Software}
   \field{year}{2004}
+\endentry
+
+\entry{king_logistic_2001}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {King}{K.}%
+     {Gary}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zeng}{Z.}%
+     {Langche}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \strng{namehash}{KGZL1}
+  \strng{fullhash}{KGZL1}
+  \field{labelyear}{2001}
+  \field{sortinit}{K}
+  \field{abstract}{%
+  We study rare events data, binary dependent variables with dozens to
+  thousands of times fewer ones (events, such as wars, vetoes, cases of
+  political activism, or epidemiological infections) than zeros
+  (“nonevents”). In many literatures, these variables have proven difficult
+  to explain and predict, a problem that seems to have at least two sources.
+  First, popular statistical procedures, such as logistic regression, can
+  sharply underestimate the probability of rare events. We recommend
+  corrections that outperform existing methods and change the estimates of
+  absolute and relative risks by as much as some estimated effects reported in
+  the literature. Second, commonly used data collection strategies are grossly
+  inefficient for rare events data. The fear of collecting data with too few
+  events has led to data collections with huge numbers of observations but
+  relatively few, and poorly measured, explanatory variables, such as in
+  international conflict data with more than a quarter-million dyads, only a
+  few of which are at war. As it turns out, more efficient sampling designs
+  exist for making valid inferences, such as sampling all available events
+  (e.g., wars) and a tiny fraction of nonevents (peace). This enables scholars
+  to save as much as 99\% of their (nonfixed) data collection costs or to
+  collect much more meaningful explanatory variables. We provide methods that
+  link these two results, enabling both types of corrections to work
+  simultaneously, and software that implements the methods developed.%
+  }
+  \field{issn}{1047-1987, 1476-4989}
+  \field{number}{2}
+  \field{pages}{137\bibrangedash 163}
+  \field{title}{Logistic {Regression} in {Rare} {Events} {Data}}
+  \verb{url}
+  \verb http://pan.oxfordjournals.org/content/9/2/137
+  \endverb
+  \field{volume}{9}
+  \verb{file}
+  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
+  \verb e/BGBBFFRC/King and Zeng - 2001 - Logistic Regression in Rare Events Da
+  \verb ta.pdf:application/pdf;Snapshot:/home/jorne/.zotero/zotero/k1od4wal.def
+  \verb ault/zotero/storage/B6Z2PHP8/King and Zeng - 2001 - Logistic Regression
+  \verb  in Rare Events Data.html:text/html
+  \endverb
+  \field{journaltitle}{Political Analysis}
+  \field{month}{01}
+  \field{year}{2001}
+  \field{urlday}{05}
+  \field{urlmonth}{05}
+  \field{urlyear}{2016}
 \endentry
 
 \entry{caret}{manual}{}
@@ -5212,6 +5461,68 @@
   \field{urlday}{21}
   \field{urlmonth}{04}
   \field{urlyear}{2016}
+\endentry
+
+\entry{zou_regularization_2005}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Zou}{Z.}%
+     {Hui}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hastie}{H.}%
+     {Trevor}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \keyw{Grouping effect, LARS algorithm, Lasso, p≫n problem, Penalization,
+  variable selection}
+  \strng{namehash}{ZHHT1}
+  \strng{fullhash}{ZHHT1}
+  \field{labelyear}{2005}
+  \field{sortinit}{Z}
+  \field{abstract}{%
+  Summary.  We propose the elastic net, a new regularization and variable
+  selection method. Real world data and a simulation study show that the
+  elastic net often outperforms the lasso, while enjoying a similar sparsity of
+  representation. In addition, the elastic net encourages a grouping effect,
+  where strongly correlated predictors tend to be in or out of the model
+  together. The elastic net is particularly useful when the number of
+  predictors (p) is much bigger than the number of observations (n). By
+  contrast, the lasso is not a very satisfactory variable selection method in
+  the p≫n case. An algorithm called LARS-EN is proposed for computing elastic
+  net regularization paths efficiently, much like algorithm LARS does for the
+  lasso.%
+  }
+  \verb{doi}
+  \verb 10.1111/j.1467-9868.2005.00503.x
+  \endverb
+  \field{issn}{1467-9868}
+  \field{number}{2}
+  \field{pages}{301\bibrangedash 320}
+  \field{title}{Regularization and variable selection via the elastic net}
+  \verb{url}
+  \verb http://onlinelibrary.wiley.com.kuleuven.ezproxy.kuleuven.be/doi/10.1111
+  \verb /j.1467-9868.2005.00503.x/abstract
+  \endverb
+  \field{volume}{67}
+  \verb{file}
+  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
+  \verb e/V4PKEW3I/Zou and Hastie - 2005 - Regularization and variable selectio
+  \verb n via the elas.pdf:application/pdf;Snapshot:/home/jorne/.zotero/zotero/
+  \verb k1od4wal.default/zotero/storage/ZCCS59PB/abstract.html:text/html
+  \endverb
+  \field{journaltitle}{Journal of the Royal Statistical Society: Series B
+  (Statistical Methodology)}
+  \field{month}{04}
+  \field{year}{2005}
+  \field{urlday}{25}
+  \field{urlmonth}{07}
+  \field{urlyear}{2015}
 \endentry
 
 \lossort
