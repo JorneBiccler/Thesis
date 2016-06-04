@@ -49,23 +49,26 @@
 \BOOKMARK [2][-]{subsection.5.4.2}{Stepwise subset selection}{section.5.4}% 49
 \BOOKMARK [2][-]{subsection.5.4.3}{Univariate pre-screening}{section.5.4}% 50
 \BOOKMARK [1][-]{section.5.5}{Taking the scale hierarchy into account}{chapter.5}% 51
-\BOOKMARK [1][-]{section.5.6}{Meaningful combinations of classification and }{chapter.5}% 52
-\BOOKMARK [0][-]{chapter.6}{Applications}{}% 53
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 54
-\BOOKMARK [1][-]{section.6.2}{Implementations and tuning parameters of the methods}{chapter.6}% 55
-\BOOKMARK [1][-]{section.6.3}{AUC as a measure of classification performance in SDM}{chapter.6}% 56
-\BOOKMARK [1][-]{section.6.4}{Presence-only data}{chapter.6}% 57
-\BOOKMARK [2][-]{subsection.6.4.1}{Results}{section.6.4}% 58
-\BOOKMARK [1][-]{section.6.5}{Presence-absence data}{chapter.6}% 59
-\BOOKMARK [2][-]{subsection.6.5.1}{Case-control sampling}{section.6.5}% 60
-\BOOKMARK [2][-]{subsection.6.5.2}{results}{section.6.5}% 61
-\BOOKMARK [1][-]{section.6.6}{Discussion}{chapter.6}% 62
-\BOOKMARK [0][-]{chapter.7}{Simulation study}{}% 63
-\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 64
-\BOOKMARK [1][-]{section.7.2}{Overview of the virtualspecies package and the simulation set-up}{chapter.7}% 65
-\BOOKMARK [1][-]{section.7.3}{Results}{chapter.7}% 66
-\BOOKMARK [1][-]{section.7.4}{Discussion}{chapter.7}% 67
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 68
-\BOOKMARK [1][-]{section.8.1}{}{chapter.8}% 69
-\BOOKMARK [1][-]{section.8.2}{Future research}{chapter.8}% 70
-\BOOKMARK [0][-]{chapter*.33}{Bibliography}{}% 71
+\BOOKMARK [0][-]{chapter.6}{Implementations of the different methods}{}% 52
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 53
+\BOOKMARK [1][-]{section.6.2}{Meaningful combinations of classification and }{chapter.6}% 54
+\BOOKMARK [1][-]{section.6.3}{Implementations and tuning parameters of the methods}{chapter.6}% 55
+\BOOKMARK [0][-]{chapter.7}{Applications}{}% 56
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 57
+\BOOKMARK [1][-]{section.7.2}{AUC as a measure of classification performance in SDM}{chapter.7}% 58
+\BOOKMARK [1][-]{section.7.3}{Presence-only data}{chapter.7}% 59
+\BOOKMARK [2][-]{subsection.7.3.1}{Results}{section.7.3}% 60
+\BOOKMARK [1][-]{section.7.4}{Presence-absence data}{chapter.7}% 61
+\BOOKMARK [2][-]{subsection.7.4.1}{Case-control sampling}{section.7.4}% 62
+\BOOKMARK [2][-]{subsection.7.4.2}{results}{section.7.4}% 63
+\BOOKMARK [1][-]{section.7.5}{Discussion}{chapter.7}% 64
+\BOOKMARK [0][-]{chapter.8}{Simulation study}{}% 65
+\BOOKMARK [1][-]{section.8.1}{Introduction}{chapter.8}% 66
+\BOOKMARK [1][-]{section.8.2}{Overview of the virtualspecies package and the simulation set-up}{chapter.8}% 67
+\BOOKMARK [1][-]{section.8.3}{Model}{chapter.8}% 68
+\BOOKMARK [1][-]{section.8.4}{Results}{chapter.8}% 69
+\BOOKMARK [1][-]{section.8.5}{Discussion}{chapter.8}% 70
+\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 71
+\BOOKMARK [1][-]{section.9.1}{}{chapter.9}% 72
+\BOOKMARK [1][-]{section.9.2}{Future research}{chapter.9}% 73
+\BOOKMARK [0][-]{chapter*.35}{Bibliography}{}% 74

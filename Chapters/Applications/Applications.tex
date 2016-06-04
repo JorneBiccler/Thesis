@@ -1,39 +1,25 @@
 \chapter{Applications}
 \label{ch:Applications}
 \section{Introduction}
+The use of the area under the receiver operating curve (AUC) as a measure of performance in SDM is discussed in Section \ref{sec:AUC}. In Section \ref{sec:POData} (resp.\ \ref{sec:PAData}) the performance of the techniques is discussed in the case of presence-only (resp.\ presence-absence) data. In both these sections the models were fit by using a training set and then the AUC values were calculated on a test set. The training set consists of \nicefrac{3}{4}'th of the data while the test set contains the other \nicefrac{1}{4}'th.\\
 
-The data-sets were split into a training and a test set. The training data consists of \nicefrac{3}{4}'th of the data while the test set contains the other \nicefrac{1}{4}'th.\\
-
-\section{Implementations and tuning parameters of the methods}
-\label{sec:implementation}
-For the majority of the methods described in Chapters \ref{ch:ReducingTheNumberOfExplanatoryVariables} and \ref{ch:ClassificationTechniques} some decisions regarding their model specification and tuning parameters have to be made.
-
-In order to have a nice baseline method the logistic model was fit by using only linear terms. The logistic regression methods combined with the lasso or ridge were fit by using a cubic polynomial expansion of the predictors. To limit the amount of predictors and computational cost no interaction terms were considered. \\
-
-It was decided to implement our own version of PCA logistic and KPCA logistic regression. This was mainly done to investigate the remarks made in Section \ref{sec:dimRedPrVSBG}. Both implementations allow us to specify on which indices the (K)PCA should be based on. Furthermore 5-fold-CV is used to select the an optimal number of principal components where always the components corresponding to the $x$ highest eigenvalues. To allow some non-linearity in the PCA logistic regressin implementation we also allow for polynomial expansions in the PCs of up to the third degree (ignoring interaction effects). CV is used to select the optimal polynomial expansion. This expanding of the PCs into a polynomial is not done when KPCA is used, the reason is that KPCA already implicitly expands the original data into a new non-linear expansion. To limit the computational costs it was decided to limit the number of components to at most $75$ in the KPCA implementation. Furthermore, when using KPCA together with logistic regression the KPCA will be performed on at most $500$ observations, if necessary these are randomly selected from the relevant observations. \\
-
-In the MaxEnt implementation where CV was used to select the regularization parameters considered were $\chi \times \lambda_{def}$ with $\lambda_{def}$ the default MaxEnt parameter and $\chi \in \{0.1,0.5,1,2,10\}$. \\
-
-The tuning variables and of the ANN method are the number of neurons and the in the hidden layer $\in \{ 5,10,20,40,60 \}$. Following the suggestions of \cite{venables_modern_2002} we optimize the weight decay parameter over $\{0.1,0.01,0.001,0.0001\}$. Furthermore instead of simply averaging neural networks it was decided to use bagging which has, next to the advantages mentioned in Section \ref{sec:ANN}, the advantage that it tends to prevent over-fitting. The only tuning parameter that is used in the vanilla ANN model is the number of neurons in the hidden layer. \\
-
-The tuning parameters of our gradient boosted decision trees are the number of trees $\in \{ 100,500,1000,2000\}$, the interaction depth $\in \{ 1,3,5,7\}$, and the amount of shrinkage $\in  \{0.1,0.01,0.001,0.0001)\}$. The choice of these values was mainly inspired by \cite{elith_working_2008}. \\
 
 \section{AUC as a measure of classification performance in SDM}
 \label{sec:AUC}
-To measure the performance of the classification method the area under the receiver operating curve (AUC) values will be used. Using the AUC to measure the performance of SDMs has been criticized \parencite{lobo_auc:_2008, jimenez-valverde_insights_2012}. However, most of the issues that are usually raised are not of particular interest in our case. Before studying the AUC values it is interesting to note that there are three main sources of randomness in the calculation of the mean AUC values across the different species. \\ 
+To measure the performance of the classification method the AUC is used. Using the AUC to measure the performance of SDMs has been criticized \parencite{lobo_auc:_2008, jimenez-valverde_insights_2012}. However, most of the issues that are usually raised are not of particular interest in our case. Before studying the AUC values it is interesting to note that there are three main sources of randomness in the calculation of the mean AUC values across the different species. \\ 
 
-First of all, in our set-up we could consider the species that are considered as drawn from a pool of all species in the databases. Of course this assumption is violated since we selected the species conditional on certain characteristics.  \\
+First of all, in our set-up we could consider the species that are considered as drawn from a pool of all species in the databases. Of course this assumption is violated since we selected the species conditional on certain characteristics. Hence a more accurate depiction would be to say that the species are a stratified sample from the pool of available species.  \\
 
-Secondly, the parameters in the classifications methods are estimated by using the training set. The elements of the training set can be seen sample of presence, and background or absence points from the corresponding distributions. The predicted variables, and the AUC, are therefore also dependent on the sample of points used. \\
+Secondly, the parameters in the classifications methods are estimated by using the training set. The elements of the training set can be seen sample of presence, and background or absence points from the corresponding distributions. The predicted probabilities, and the AUC, are therefore also dependent on the sample of points used.\\
 
 Thirdly, the AUC is calculated on the test set which again consists of a sample of random presence, and background or absence points from the corresponding distributions. Thus even if the classifier was fixed we would get different AUC values if we use different test sets. \\
 
-It is well known that the AUC statistic is equivalent to the Mann-Whitney U test statistic \parencite{hanley_meaning_1982} and hence the theory surrounding the Mann-Whitney U test statistic can provide us with standard errors (SE), asymptotic distributions, etc. However, these results only hold if the classifier is assumed to be fixed and hence ignores the randomness of the methods themselves and the species sampling scheme. A rigorous way to inspect the distribution of the AUC values would be to use a bootstrap method to construct e.g.\ confidence intervals. In our situation this is however computationally infeasible. In the end we opted to only report standard deviations (SD) and the mean values.\\
+It is well known that the AUC statistic is equivalent to the Mann-Whitney U test statistic \parencite{hanley_meaning_1982}. Therefore the theory surrounding the Mann-Whitney U test statistic can provide us with standard errors (SE), asymptotic distributions, etc. However, these results were derived by assuming that the classifier is fixed. Given that also the training set and the considered species can be seen as a random sample these results are not directly applicable. A rigorous way to inspect the distribution of the AUC values would be to use a bootstrap method to construct e.g.\ confidence intervals. In our situation this is, however, computationally infeasible. In the end we opted to only report standard deviations (SD) and mean values.\\
 
 \section{Presence-only data}
-
+\label{sec:POData}
 \subsection{Results}
-All the methods described in Sections \ref{sec:combinations} and \ref{sec:implementation} were fitted upon the GBIF data. Summary measures of the AUC values can be found in Table \ref{tab:PrOnlyAUC} and Figure \ref{fig:PrOnlyAUC}.
+All the methods described in Chapter \ref{ch:Implementations} were fitted on the GBIF data. A plot of the AUC values can be found in Figure \ref{fig:PrOnlyAUC} and summary measures can be found in Table \ref{tab:PrOnlyAUC}. Few rigorous tests are performed in this section. This because, given the small sample size and the fact that the AUC values are quite close, the power of such tests, using the usual $5\%$ significance level, is very low. Therefore the discussion of the results is rather short and mainly used as a preliminary study to generate interesting research questions for the simulation study of Chapter \ref{chap:SimulationStudy}. \\
 
 
 \begin{table}[!htb]
@@ -76,26 +62,37 @@ GBM                             & 0.958 & 0.032 & 0.944 & 0.033 & 0.014    & 0.0
 \caption{\label{fig:PrOnlyAUC}AUC values of the different classifiers fitted on the presence-only data.}
 \end{figure}
 
-First of all, few rigorous tests will be performed in this section. This because given the small sample size and the fact that the AUC values are quite close the power of such tests, using the usual $5\%$ significance level, is very low. Because of this the discussion is rather short and mainly used as a preliminary study which generated interesting research questions for the simulation study of Chapter \ref{chap:SimulationStudy}. \\
 
-It is interesting to note that logistic regression performs quite well. Furthermore, the SDs of the stepwise selection methods are relatively large. This might indicate that these methods are inherently variable and hence lead to unstable predictions. It is interesting to note that while the performance of forward stepwise selection is bad when all variables are considered this is not the case when only the bioclimatic variables are considered. This could be explained by the fact that the backward selection method becomes a lot more variable when variables with little explanatory power are added. However, since this is a variable selection technique this is unwanted behaviour. The MaxEnt implementation that uses the default settings performs worse than the implementation in which the penalization parameter is selected by CV. Perhaps the most interesting is that GBM and ANNs seem to consistently lead to high AUC values with low standard deviations. Given our results it seems like MaxEnt might be overused throughout the standard deviations and at least some other machine learning methods should at least be considered before opting for MaxEnt. \\
+First of all, it is interesting to note that logistic regression performs quite well. There is a small, non-significant, decrease in mean AUC value when only the bioclimatic variables are considered.\\
 
-In light of the discussion in Section \ref{sec:dimRedPrVSBG} two Wilcoxon signed-rank tests were performed to test whether there is a significant difference between performing the (K)PCA on the background points or on the presence points. The p-value corresponding with the test for the PCA (resp.\ KPCA) is $0.32$ (resp.\ $0.11$) and hence accept the null-hypothesis of no difference between the methods.
+The two stepwise selection methods have relatively small mean AUC values and large SDs when all variables are considered. The high SDs indicate that these methods are inherently variable and hence usually lead to unstable predictions. When only the bioclimatic variables are considered the same is true for the forward stepwise selection method, on the other hand backward stepwise selection performs quite well. This could be explained by the fact that the backward selection method becomes a lot more variable when variables with little explanatory power are added. Finally, in comparison with the vanilla logistic regression method the stepwise methods perform quite badly. However, since in the vanilla logistic method only first order terms are considered it might be unfair to say that stepwise selection is inherently worse and a comparison with a logistic regression model with the same polynomial expansion might have been more appropriate. \\ 
 
-To test whether or not using only the bioclimatic variables has a profound effect a Wilcoxon signed-rank test was performed for each method. These tests are of interest because on one hand they provide information on the usefulness of non-bioclimatic variables, i.e. is there an increase in classification performance. Also the a decrease in classification performance is of interest to detect, this could be interpreted as adding irrelevant predictors which lead to over-fitting. Even before performing a multiple testing correction none of the tests were significant at the $5$\% level. Hence we conclude that in our limited study there's no difference between using only the bioclimatic variables or all variables. 
+
+The MaxEnt implementation with the default settings performs worse than the implementation in which the penalization parameter is selected by CV. Although MaxEnt is very popular in SDM applications it does not seem to perform better than simpler models as logistic regression. Even though our small sample size does not allow us to dispute the popularity of MaxEnt our results seem to show that even if there is a gain in performance over e.g.\ logistic regression it is likely quite small and one might wonder if the loss of interpretability and increased computational cost is worth a small gain in performance. Furthermore, it seems that in most applications of SDM the default value of the penalization parameter is used while our results seem to show that using CV leads to some improvements. \\
+
+GBMs and ANNs seem to consistently lead to high AUC values with low standard deviations. Although these methods are sometimes used in practice they are far less popular than the MaxEnt method. Given our results it seems like MaxEnt might be overused and it seems appropriate to at least consider some other machine learning methods when building SDM. \\ 
+
+None of the PCA logistic regression methods seem to perform well, i.e.\ the mean AUC is lower than the mean AUC of logistic regression and the SDs are quite large. Both when only the bioclimatic variables and when all variables are used at least one of the KPCA logistic regression methods tends to outperform the logistic regression model. At first glance there does not seem to be a systematic difference between using the presence or the background observations in the (K)PCA methods. To rigorously test this two Wilcoxon signed-rank tests were performed. The p-value corresponding with the test for the PCA (resp.\ KPCA) method is $0.32$ (resp.\ $0.11$) and hence the null-hypothesis of no difference between the methods is accepted. \\
+
+The three version of GAMs that we consider all seem to perform better than logistic regression when only the bioclimatic variables are considered. When all variables are considered the select07 variable selection method in combination with a GAM still performs decently while the two other methods seem to deteriorate slightly.  \\
+
+The penalized logistic regression models perform approximately on par with the standard logistic regression model. Finally, the logistic regression model combined with the select07 rule seems to slightly outperform the standard logistic regression model when bioclimatic variables are considered and on par when all variables are used. \\
+
+To test whether or not using only the bioclimatic variables has a profound effect a Wilcoxon signed-rank test was performed for each method. These tests are of interest because on one hand they provide information on the usefulness of non-bioclimatic variables, i.e. is there an increase in classification performance. Also a decrease of the AUC values is of interest, it could namely be interpreted as adding irrelevant predictors which lead to over-fitting. Even before performing a multiple testing correction none of the tests were significant at the $5$\% level. It is therefore concluded that in this limited study there is no statistically significant difference between using only the bioclimatic variables or all variables. 
 
 \section{Presence-absence data}
-Although a variation of the MaxEnt method can be used for presence-only data this is nearly never done. Furthermore, instead of fitting three different variations of (K)PCA logistic regression it was decided to only use the standard approach. This was done to speed up the computations, and unlike what was he case in the presence-only scenario the absence points are ``real'' observations. Since only five species were considered there are no statistically significant results in this section. The inspection is mainly done to make sure that the different methods show approximately have the same performance characteristics for both presence-only and presence-absence data. The results can be found in Section \ref{sec:PAResults}. Finally, because there are at between $42029$ and $287860$ plot locations available the fitting of the models leads to computational problems. A solution to these problems is proposed in Section \ref{sec:CaseControlSubsampling}
+\label{sec:PAData}
+In this section the classification methods are used in combination with the FIA presence-absence data. First of all, although a variation of the MaxEnt method can be used for presence-absence data this is nearly never done. Furthermore, instead of fitting three different variations of (K)PCA logistic regression it was decided to only use the standard approach. This was done to speed up the computations, and unlike in the presence-only scenario the absence points are ``real'' observations. Since only five species were considered there are no statistically significant results in this section. The inspection is mainly done to make sure that the different methods show approximately the same performance characteristics for both presence-only and presence-absence data. The results can be found in Section \ref{sec:PAResults}. Finally, because there are at between $42029$ and $287860$ plot locations available the fitting of the models leads to computational problems. A solution to these problems is proposed in Section \ref{sec:CaseControlSubsampling}.
 \subsection{Case-control sampling}
 \label{sec:CaseControlSubsampling}
-Because of computational considerations it was decided to use a subset of the presence-absence data to fit the models upon. More particularly, the subsample consists of all the presence points and $5000$ randomly sampled absence points. This is clearly a form of case-control sampling and the effect of doing this has been studied to some extent \parencite{king_logistic_2001}. \\
+Because of computational considerations it was decided to use a subset of the presence-absence data to fit the models upon. More particularly, the subsample consists of all the presence points and $5000$ randomly sampled absence points. This is a form of case-control sampling and the effect of doing this has been studied \parencite{king_logistic_2001}. \\
 
-In the case of logistic regression some algebra along the lines of Equation \ref{eq:IPPSampling} shows that only the intercept is affected by the sub-sampling \parencite{king_logistic_2001}. Although the underlying coefficients stay the same the variance of the estimators should increase slightly. Because we only subsample the absence points this increase should be somewhat limited. Intuitively it makes sense that a rare presence point contains more information about the coefficients than one of the abundant absence points. In the case of logistic regression this can rigorously be deduced by observing that a term of the form $P(Y=1|\bm{X} = \bm{x}) \left[1- P(Y=1|\bm{X} = \bm{x}) \right]$ turns up in the variance expression. Usually this term is quite a lot smaller for the abundant cases and hence leaving some out does not lead to a huge increase of the variance. \\ 
+In the case of logistic regression some algebra along the lines of Equation \ref{eq:IPPSampling} shows that only the intercept is affected by the sub-sampling \parencite{king_logistic_2001}. Although the underlying coefficients stay the same the variance of the estimators increases slightly. Because we only subsample the absence points this increase should be somewhat limited. Intuitively it makes sense that a rare presence point contains more information about the coefficients than one of the abundant absence points. In the case of logistic regression this can rigorously be deduced by observing that a term of the form $P(Y=1|\bm{X} = \bm{x}) \left[1- P(Y=1|\bm{X} = \bm{x}) \right]$ turns up in the variance expression. Usually this term is quite a lot smaller for the abundant cases and hence leaving some out does not lead to a huge increase of the variance. \\ 
 
-Although the previous paragraph focusses on logistic regression the same reasoning can be applied to the other methods considered. Finally, in the last two decades there has been quite some research on imbalanced data-sets and perhaps more efficient ways of dealing with the imbalance exist, see e.g.\ \cite{chawla2005data} for an overview of other methods. \\
+Although the previous paragraph focusses on logistic regression the same reasoning can be applied to the other methods considered. Finally, in the last two decades there has been quite some research on issues related to imbalanced data-sets and perhaps more efficient ways of dealing with the imbalance exist, see e.g.\ \cite{chawla2005data} for an overview of other methods. \\
 
 \subsection{results}
-\label{sec:sec:PAResults}
+\label{sec:PAResults}
 The mean and and the standard deviations can be found in Table \ref{tab:PrAbAUC} and Figure \ref{fig:PrAbAUC} shows a plot of the estimated AUC values. \\
 
 \begin{table}[!htb]
@@ -105,20 +102,20 @@ The mean and and the standard deviations can be found in Table \ref{tab:PrAbAUC}
 \cline{2-3} \cline{4-5} \cline{6-7}\\
 Method & Mean AUC & SD & Mean AUC & SD & Mean AUC & SD \\
 \midrule
-Logistic: vanilla    & 0.961 & 0.027 & 0.960 & 0.028 & 0.001  & 0.001 \\
-Logistic: backward   & 0.682 & 0.301 & 0.656 & 0.318 & 0.026  & 0.345 \\
-Logistic: forward    & 0.774 & 0.284 & 0.741 & 0.256 & 0.034  & 0.046 \\
-Logistic: PCA        & 0.913 & 0.084 & 0.913 & 0.084 & 0.000  & 0.000 \\
-Logistic: kernel PCA & 0.950 & 0.052 & 0.950 & 0.052 & 0.000  & 0.000 \\
-Logistic: lasso      & 0.960 & 0.042 & 0.960 & 0.042 & 0.000  & 0.000 \\
-Logistic: ridge      & 0.957 & 0.044 & 0.957 & 0.044 & 0.000  & 0.000 \\
-Logistic: select07   & 0.756 & 0.239 & 0.756 & 0.239 & 0.000  & 0.000 \\
-GAM: auto selection  & 0.925 & 0.098 & 0.925 & 0.098 & 0.000  & 0.000 \\
-GAM: vanilla         & 0.877 & 0.117 & 0.877 & 0.117 & 0.000  & 0.000 \\
-GAM: select07        & 0.948 & 0.062 & 0.948 & 0.062 & 0.000  & 0.000 \\
-ANN                  & 0.973 & 0.020 & 0.972 & 0.021 & 0.001  & 0.002 \\
-ANN: vanilla         & 0.962 & 0.036 & 0.969 & 0.029 & -0.007 & 0.014 \\
-GBM                  & 0.977 & 0.014 & 0.977 & 0.014 & 0.000  & 0.000 \\
+Logistic: vanilla    & 0.961 & 0.027 & 0.951 & 0.041 & 0.010   & 0.022 \\
+Logistic: backward   & 0.682 & 0.301 & 0.703 & 0.276 & -0.021  & 0.355 \\
+Logistic: forward    & 0.774 & 0.284 & 0.660 & 0.333 & 0.115   & 0.208 \\
+Logistic: PCA        & 0.913 & 0.084 & 0.926 & 0.063 & -0.013  & 0.055 \\
+Logistic: kernel PCA & 0.950 & 0.052 & 0.922 & 0.086 & 0.028   & 0.041 \\
+Logistic: lasso      & 0.960 & 0.042 & 0.968 & 0.022 & -0.008  & 0.025 \\
+Logistic: ridge      & 0.957 & 0.044 & 0.948 & 0.049 & 0.009   & 0.016 \\
+Logistic: select07   & 0.756 & 0.239 & 0.859 & 0.206 & -0.102  & 0.219 \\
+GAM: auto selection  & 0.925 & 0.098 & 0.954 & 0.038 & -0.029  & 0.062 \\
+GAM: vanilla         & 0.877 & 0.117 & 0.927 & 0.074 & -0.049  & 0.098 \\
+GAM: select07        & 0.948 & 0.062 & 0.954 & 0.052 & -0.006  & 0.019 \\
+ANN                  & 0.973 & 0.020 & 0.971 & 0.024 & 0.002   & 0.007 \\
+ANN: vanilla         & 0.962 & 0.036 & 0.963 & 0.035 & -0.001  & 0.009 \\
+GBM                  & 0.977 & 0.014 & 0.961 & 0.030 & 0.016   & 0.023 \\
 \bottomrule
 \end{tabular}}
 \caption{\label{tab:PrAbAUC}Summary of the AUC values of the different classifiers fitted on the presence-absence data.}

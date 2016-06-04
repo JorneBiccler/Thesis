@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.1)  1 JUN 2016 20:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.1)  3 JUN 2016 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -388,8 +388,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 I
-      t seems that introducing new statistical techniques to SDM could lead ...
+l.8 I
+     t seems that introducing new statistical techniques to SDM could lead t...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -586,7 +586,7 @@ Missing character: There is no r in font nullfont!
 ! Undefined control sequence.
 <write> ...esDistributionModels' on page \thepage 
                                                   \space undefined\on@line .
-l.11 ...taCommonlyUsedInSpeciesDistributionModels}
+l.8 ...ataCommonlyUsedInSpeciesDistributionModels}
                                                   . In the statistical liter...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -596,7 +596,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `ch:DataCommonlyUsedInSpeciesDistributionModels' on pa
-ge  undefined on input line 11.
+ge  undefined on input line 8.
 
 Missing character: There is no . in font nullfont!
 Missing character: There is no I in font nullfont!
@@ -741,7 +741,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.11 ...PP models are already available \parencite
+l.8 ...IPP models are already available \parencite
                                                   {cantoni_robust_2001, assu...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -759,17 +759,17 @@ Missing character: There is no i in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.11 ... are already available \parencite{cantoni_
+l.8 ...s are already available \parencite{cantoni_
                                                   robust_2001, assuncao_robu...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 11.
+(Font)              <7> on input line 8.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 11.
+(Font)              <5> on input line 8.
 ! Extra }, or forgotten $.
-l.11 ...oni_robust_2001, assuncao_robustness_1999}
+l.8 ...toni_robust_2001, assuncao_robustness_1999}
                                                   . However, if robust versi...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -778,7 +778,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.11 ...le that deal with this scenario \parencite
+l.8 ...ble that deal with this scenario \parencite
                                                   [e.g.][]{muller_robust_200...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -789,23 +789,23 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.12 
-     
+l.9 
+    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 11--12
+Overfull \hbox (20.0pt too wide) in paragraph at lines 8--9
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 11--12
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 8--9
 []
  []
 
 
-Overfull \hbox (2387.2981pt too wide) in paragraph at lines 11--12
+Overfull \hbox (2387.2981pt too wide) in paragraph at lines 8--9
 []\OML/cmm/m/it/10 obust[]\OT1/cmr/m/n/10 001\OML/cmm/m/it/10 ; assuncao[]obust
 ness[]\OT1/cmr/m/n/10 999\OML/cmm/m/it/10 :However; ifrobustversionofGLMsareuse
 dincombinationwithbackgrounddataitcouldbeinterestingtoadaptthefunctionssothatba
@@ -823,7 +823,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 I
+l.10 I
       n Section \ref{sec:CaseControlSubsampling} subsampling presence-absenc...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -841,7 +841,7 @@ Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
 <write> ...seControlSubsampling' on page \thepage 
                                                   \space undefined\on@line .
-l.13 In Section \ref{sec:CaseControlSubsampling}
+l.10 In Section \ref{sec:CaseControlSubsampling}
                                                  subsampling presence-absenc...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -851,7 +851,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `sec:CaseControlSubsampling' on page  undefined on inp
-ut line 13.
+ut line 10.
 
 Missing character: There is no s in font nullfont!
 Missing character: There is no u in font nullfont!
@@ -982,7 +982,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.13 ...nts more advanced methods exist \parencite
+l.10 ...nts more advanced methods exist \parencite
                                                   {king_logistic_2001}. Alth...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -997,13 +997,13 @@ Missing character: There is no g in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.13 ...re advanced methods exist \parencite{king_
+l.10 ...re advanced methods exist \parencite{king_
                                                   logistic_2001}. Although t...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.13 ...thods exist \parencite{king_logistic_2001}
+l.10 ...thods exist \parencite{king_logistic_2001}
                                                   . Although the gain of the...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1014,23 +1014,23 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.14 
+l.11 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 13--14
+Overfull \hbox (20.0pt too wide) in paragraph at lines 10--11
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 13--14
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 10--11
 []
  []
 
 
-Overfull \hbox (757.23393pt too wide) in paragraph at lines 13--14
+Overfull \hbox (757.23393pt too wide) in paragraph at lines 10--11
 []\OML/cmm/m/it/10 ogistic[]\OT1/cmr/m/n/10 001\OML/cmm/m/it/10 :Althoughthegai
 nofthesemethodsmightturnouttobeminimalitcouldopenthedoortousingevenmoreadvanced
 methodsthatareasofyettoocomputationallyintensive:[] 
@@ -1043,7 +1043,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.15 E
+l.12 E
       ven though we tried to study a number of different variable selection ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -1170,15 +1170,20 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no F in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
 Missing character: There is no x in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -1211,7 +1216,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.15 ...e focused information criterion \parencite
+l.12 ...e focused information criterion \parencite
                                                   [FIC, ][]{claeskens_focuse...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1239,39 +1244,101 @@ Missing character: There is no s in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.15 ...n criterion \parencite[FIC, ][]{claeskens_
-                                                  focused_2003} is a informa...
+l.12 ...n criterion \parencite[FIC, ][]{claeskens_
+                                                  focused_2003}, elastic net...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.15 ...parencite[FIC, ][]{claeskens_focused_2003}
-                                                   is a information criterio...
+l.12 ...parencite[FIC, ][]{claeskens_focused_2003}
+                                                  , elastic net \parencite{z...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
+! Undefined control sequence.
+l.12 ...kens_focused_2003}, elastic net \parencite
+                                                  {zou_regularization_2005},...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no L in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.16 
-     
+l.12 ...nalization technique that combines the $L_
+                                                  2$ and $L_1$ penalties and...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 15--16
+Overfull \hbox (20.0pt too wide) in paragraph at lines 12--13
 []
  []
 
 
-Overfull \hbox (929.61221pt too wide) in paragraph at lines 15--16
-[]\OML/cmm/m/it/10 ocused[]\OT1/cmr/m/n/10 003\OML/cmm/m/it/10 isainformationcr
-iterionthatcanbeadjustedforthegoalofthestudy:E:g: aFICcanbeconstructedthatfocus
-sesonvariableselectionwithasgoalthepredictionsofoccurrenceprobabilityinafewsele
-ctlocations:$ 
+Overfull \hbox (1403.21332pt too wide) in paragraph at lines 12--13
+[]\OML/cmm/m/it/10 ocused[]\OT1/cmr/m/n/10 003\OML/cmm/m/it/10 ; elasticnet[]; 
+[]  TheFICisainformationcriterionthatcanbeadjustedforthegoalofthestudy:E:g: aFI
+Ccanbeconstructedthatfocussesonvariableselectionwithasgoalthepredictionsofoccur
+renceprobabilityinafewselectlocations:Theelasticnetisanewpenalizationtechniquet
+hatcombinesthe$$[]$
+ []
+
+
+Overfull \hbox (11.2917pt too wide) in paragraph at lines 12--13
+\OML/cmm/m/it/10 L[]$
  []
 
 )

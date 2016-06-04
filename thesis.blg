@@ -10,6 +10,7 @@ A level-1 auxiliary file: Chapters/TheEcologicalNicheConcept/TheEcologicalNicheC
 A level-1 auxiliary file: Chapters/DataCommonlyUsedInSpeciesDistributionModels/DataCommonlyUsedInSpeciesDistributionModels.aux
 A level-1 auxiliary file: Chapters/ClassificationTechniques/ClassificationTechniques.aux
 A level-1 auxiliary file: Chapters/ReducingTheNumberOfExplanatoryVariables/ReducingTheNumberOfExplanatoryVariables.aux
+A level-1 auxiliary file: Chapters/Implementations/Implementations.aux
 A level-1 auxiliary file: Chapters/Applications/Applications.aux
 A level-1 auxiliary file: Chapters/SimulationStudy/SimulationStudy.aux
 A level-1 auxiliary file: Chapters/Conclusion/Conclusion.aux
@@ -28,49 +29,49 @@ Reallocated field_info (elt_size=4) to 17371 items from 5000.
 Database file #1: thesis-blx.bib
 Database file #2: Bibliography/Bibliography.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Database file #3: Bibliography/Data.bib
+Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Biblatex version: 3.0
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 You've used 89 entries,
             6047 wiz_defined-function locations,
-            2000 strings with 138211 characters,
-and the built_in function-call counts, 420970 in all, are:
-= -- 13007
-> -- 26615
-< -- 3916
-+ -- 17586
-- -- 18245
-* -- 33268
-:= -- 35512
+            1997 strings with 136539 characters,
+and the built_in function-call counts, 419626 in all, are:
+= -- 13048
+> -- 26354
+< -- 3915
++ -- 17360
+- -- 17998
+* -- 33166
+:= -- 35229
 add.period$ -- 0
 call.type$ -- 89
-change.case$ -- 1564
-chr.to.int$ -- 1684
+change.case$ -- 1582
+chr.to.int$ -- 1654
 cite$ -- 176
-duplicate$ -- 42646
-empty$ -- 37894
+duplicate$ -- 42581
+empty$ -- 37827
 format.name$ -- 7658
-if$ -- 79856
+if$ -- 79837
 int.to.chr$ -- 0
 int.to.str$ -- 241
 missing$ -- 0
-newline$ -- 4281
-num.names$ -- 4335
-pop$ -- 28035
+newline$ -- 4260
+num.names$ -- 4353
+pop$ -- 28052
 preamble$ -- 1
-purify$ -- 1947
+purify$ -- 1965
 quote$ -- 0
-skip$ -- 19296
+skip$ -- 19324
 stack$ -- 0
-substring$ -- 12070
-swap$ -- 17123
-text.length$ -- 3219
+substring$ -- 12033
+swap$ -- 17059
+text.length$ -- 3207
 text.prefix$ -- 89
 top$ -- 1
 type$ -- 3365
 warning$ -- 0
-while$ -- 3060
+while$ -- 3032
 width$ -- 0
-write$ -- 4191
+write$ -- 4170

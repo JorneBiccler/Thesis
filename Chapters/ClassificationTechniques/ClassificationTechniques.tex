@@ -120,7 +120,7 @@ Another popular ensemble method that is used in combination with decision trees 
 
 A disadvantage of boosted classification trees is that they are not as easily visualized / interpreted as normal classification trees. Secondly, there are quite a few tuning parameters, namely the depth of the trees $J$, the regularization term, and the number of trees. However, \cite{hastie_elements_2009} note that using $J \in \{4,\dots,8\}$ usually leads to the best performing models. Additionally they observed that the specific value of $J$ in this set has little effect on the performance of the classifier. Hence, cross validation will be used to obtain optimal values for the shrinkage parameter and the number of trees.\\
 
-Finally, although we described boosting for classification trees the same idea can be readily applied to other classification algorithms. Furthermore, boosted classification trees seem to include a form of internal variable selection, i.e.\ the performance of this method usually doesn't degrade a lot when irrelevant predictors are present. We will use the implementation provided by the \textsc{gbm} package \parencite{gbm}.
+Finally, although we described boosting for classification trees the same idea can be readily applied to other classification algorithms. Furthermore, boosted classification trees seem to include a form of internal variable selection, i.e.\ the performance of this method usually doesn't degrade a lot when irrelevant predictors are present. We will use the implementation provided by the \textsc{gbm} package \parencite{gbm}. This package allows the fitting of gradient boosting machines (GBM) of which our algorithm is a specific case.
 
 \section{Presence-only data}
 \label{sec:PresenceOnlyData}

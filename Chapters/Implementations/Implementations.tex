@@ -1,0 +1,51 @@
+\chapter{Implementations of the different methods}
+\label{ch:Implementations}
+\section{Introduction}
+Not all combinations of the techniques from Chapters \ref{ch:ReducingTheNumberOfExplanatoryVariables} and \ref{ch:ClassificationTechniques} are meaningful or used in practice. The combinations that will be considered are described in Section \ref{sec:combinations}. Some of these combinations are not yet provided in an R package and had to be implemented. Furthermore, before the methods can be used it has to be decided which values will be used for the different tuning parameters. The description of the implementations and the considered tuning parameters can be found in Section \ref{sec:implementation}.
+
+\section{Meaningful combinations of classification and }
+\label{sec:combinations}
+ 
+
+For each method of Chapter \ref{ch:ClassificationTechniques} a ``vanilla'' model will be considered. The vanilla logistic regression and ANN model use all predictors except the agriculture land cover class and BIO7. These two predictors are removed to avoid computational problems associated with design matrices that are not of full rank. For the vanilla GAM all predictors are used together with GCV to select the smoothness parameters. The vanilla MaxEnt model is the standard MaxEnt model with the default parameters \parencite{phillips_modeling_2008}. Finally, the vanilla version of boosted decision trees is just the standard implementation. \\
+
+Next to the vanilla models ten combinations of classification algorithms and methods to reduce the number of variables will be considered, see Table \ref{table:combinations}. Combinations that are not included are not computationally feasible to implement, e.g.\ combing kernel PCA and GAMs, or not meaningful, e.g.\ $L_1$ regularization combined with boosted decision trees. Furthermore, following the remarks in Section \ref{sec:dimRedPrVSBG} when PCA or kernel PCA are used in combination with presence-only data three different version will be considered: \begin{enumerate}
+\item A version where the PCA is performed on the predictor values associated with background and presence locations.
+\item A version where the PCA is performed only on the predictors values associated with background locations.
+\item A version where the PCA is performed only on the predictors values associated with presence locations.
+\end{enumerate}
+In total $20$ methods are used when presence-only data is considered and $14$ when presence-absence data is considered. \\
+
+
+\begin{table}[!htb]
+\makebox[\textwidth][c]{
+\begin{tabular}{l@{\hskip 1cm}cccccccc}
+\toprule
+ 								& PCA				& kernel PCA			& $L_2$ penalty	& $L_1$ penalty & stepwise selection & select07 \\
+\midrule
+ 								\\
+Logistic regression 			& \ding{51}			& \ding{51}			  	& \ding{51}			 	& \ding{51} & \ding{51}& \ding{51}\\ 
+Additive logistic regression 	&			&			  	& \ \ding{51}\tablefootnote{Regularization of the ``wiggliness'' instead of the coefficients, see Section \ref{sec:GAM}} 		&  & & \ding{51}
+\\
+Artificial neural networks 		&			&				& \ding{51}	\\
+Boosted regression trees 		& 	\\
+MaxEnt							& 			& 						&						& \ding{51} \tablefootnote{Using five fold CV to select the $L_1$ regularization parameter instead of using the default parameter.} \\
+\bottomrule
+\end{tabular}}
+\caption{\label{table:combinations}Table with the combinations of classification and dimensionality reduction techniques that are considered.}
+\end{table}
+
+
+\section{Implementations and tuning parameters of the methods}
+\label{sec:implementation}
+For the majority of the methods described in Chapters \ref{ch:ReducingTheNumberOfExplanatoryVariables} and \ref{ch:ClassificationTechniques} some decisions regarding their model specification and tuning parameters have to be made. \\
+
+In order to have a nice baseline method the logistic model will be fit by using only linear terms. The logistic regression methods combined with the lasso or ridge will use a cubic polynomial expansion of the predictors as the variables. To limit the amount of predictors and computational cost no interaction terms were considered. \\
+
+It was decided to implement our own version of PCA logistic and KPCA logistic regression. This was mainly done to allow the investigation of the remarks made in Section \ref{sec:dimRedPrVSBG}. Both implementations allow the specification of indices on which (K)PCA should be based on. Furthermore $5$-fold-CV is used to select an optimal number of principal components. In the CV scheme the components are entered into the model according to their eigenvalue. More specifically, the components corresponding to the $x$ highest eigenvalues are included. To allow some non-linearity in the PCA logistic regression implementation also polynomial expansions in the PCs of up to the third degree are considered (ignoring interaction effects). CV is used to select the optimal polynomial expansion. Such a polynomial expansion of the PCs is not considered when KPCA is used. The reason behind this decision is that KPCA already implicitly expands the original data into a new non-linear expansion. To limit the computational costs it was decided to limit the number of components to at most $75$ in the KPCA implementation. Furthermore, when using KPCA together with logistic regression the KPCA will be performed on at most $500$ observations, if necessary these are randomly selected from the relevant observations. \\
+
+In the MaxEnt implementation in which CV is used to select the regularization parameters we will considered the following regularization values: $\chi \times \lambda_{def}$ with $\lambda_{def}$ the default MaxEnt parameter and $\chi \in \{0.1,0.5,1,2,10\}$. \\
+
+The tuning parameters of the ANN method are the number of neurons and the regularization parameter. The number of neurons in the hidden layer  considered are the values in $\{ 5,10,20,40,60 \}$. Following the suggestions of \cite{venables_modern_2002} we optimize the weight decay parameter over $\{0.1,0.01,0.001,0.0001\}$. Furthermore instead of simply averaging neural networks it was decided to use bagging which has, next to the advantages mentioned in Section \ref{sec:ANN}, the advantage that it tends to prevent over-fitting. The only tuning parameter that is used in the vanilla ANN model is the number of neurons in the hidden layer and bagging is not performed for this model. \\
+
+The tuning parameters of our gradient boosted decision trees are the number of trees $\in \{ 100,500,1000,2000\}$, the interaction depth $\in \{ 1,3,5,7\}$, and the amount of shrinkage $\in  \{0.1,0.01,0.001,0.0001)\}$. The choice of these values was mainly inspired by \cite{elith_working_2008}. \\

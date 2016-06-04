@@ -2898,7 +2898,7 @@
   \field{year}{2014}
 \endentry
 
-\entry{leroy_virtualspecies_2015}{article}{}
+\entry{leroy2015virtualspecies}{article}{}
   \name{author}{4}{}{%
     {{}%
      {Leroy}{L.}%
@@ -2907,12 +2907,12 @@
      {}{}}%
     {{}%
      {Meynard}{M.}%
-     {Christine~N.}{C.~N.}%
+     {Christine~N}{C.~N.}%
      {}{}%
      {}{}}%
     {{}%
      {Bellard}{B.}%
-     {Céline}{C.}%
+     {C{\'e}line}{C.}%
      {}{}%
      {}{}}%
     {{}%
@@ -2921,57 +2921,17 @@
      {}{}%
      {}{}}%
   }
-  \list{language}{1}{%
-    {en}%
+  \list{publisher}{1}{%
+    {Wiley Online Library}%
   }
   \strng{namehash}{LB+1}
-  \strng{fullhash}{LBMCNBCCF1}
+  \strng{fullhash}{LBMCNBCCF2}
   \field{labelyear}{2015}
   \field{sortinit}{L}
-  \field{abstract}{%
-  virtualspecies is a freely available package for R designed to generate
-  virtual species distributions, a procedure increasingly used in ecology to
-  improve species distribution models. This package combines the existing
-  methodological approaches with the objective of generating virtual species
-  distributions with increased ecological realism. The package includes 1)
-  generating the probability of occurrence of a virtual species from a spatial
-  set of environmental conditions (i.e. environmental suitability), with two
-  different approaches; 2) converting the environmental suitability into
-  presence–absence with a probabilistic approach; 3) introducing dispersal
-  limitations in the realised virtual species distributions and 4) sampling
-  occurrences with different biases in the sampling procedure. The package was
-  designed to be extremely flexible, to allow users to simulate their own
-  defined species–environment relationships, as well as to provide a fine
-  control over every simulation parameter. The package also includes a function
-  to generate random virtual species distributions. We provide a simple example
-  in this paper showing how increasing ecological realism of the virtual
-  species impacts the predictive performance of species distribution models. We
-  expect that this new package will be valuable to researchers willing to test
-  techniques and protocols of species distribution models as well as various
-  biogeographical hypotheses.%
-  }
-  \verb{doi}
-  \verb 10.1111/ecog.01388
-  \endverb
-  \field{issn}{1600-0587}
-  \field{pages}{n/a\bibrangedash n/a}
-  \field{title}{virtualspecies, an {R} package to generate virtual species
+  \field{title}{virtualspecies, an R package to generate virtual species
   distributions}
-  \verb{url}
-  \verb http://onlinelibrary.wiley.com/doi/10.1111/ecog.01388/abstract
-  \endverb
-  \verb{file}
-  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
-  \verb e/3HBS2I4F/Leroy et al. - 2015 - virtualspecies, an R package to genera
-  \verb te virtual s.pdf:application/pdf;Snapshot:/home/jorne/.zotero/zotero/k1
-  \verb od4wal.default/zotero/storage/7G6DFP26/full.html:text/html
-  \endverb
   \field{journaltitle}{Ecography}
-  \field{month}{06}
   \field{year}{2015}
-  \field{urlday}{24}
-  \field{urlmonth}{05}
-  \field{urlyear}{2016}
 \endentry
 
 \entry{lobo_auc:_2008}{article}{}

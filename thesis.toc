@@ -112,42 +112,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.5}Taking the scale hierarchy into account}{35}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Meaningful combinations of classification and }{35}{section.5.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Applications}{37}{chapter.6}
+\contentsline {chapter}{\numberline {6}Implementations of the different methods}{37}{chapter.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Introduction}{37}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Implementations and tuning parameters of the methods}{37}{section.6.2}
+\contentsline {section}{\numberline {6.2}Meaningful combinations of classification and }{37}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}AUC as a measure of classification performance in SDM}{38}{section.6.3}
+\contentsline {section}{\numberline {6.3}Implementations and tuning parameters of the methods}{38}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Presence-only data}{39}{section.6.4}
+\contentsline {chapter}{\numberline {7}Applications}{41}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.1}Results}{39}{subsection.6.4.1}
+\contentsline {section}{\numberline {7.1}Introduction}{41}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Presence-absence data}{41}{section.6.5}
+\contentsline {section}{\numberline {7.2}AUC as a measure of classification performance in SDM}{41}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.1}Case-control sampling}{41}{subsection.6.5.1}
+\contentsline {section}{\numberline {7.3}Presence-only data}{42}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.2}results}{41}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {7.3.1}Results}{42}{subsection.7.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.6}Discussion}{43}{section.6.6}
+\contentsline {section}{\numberline {7.4}Presence-absence data}{44}{section.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Simulation study}{45}{chapter.7}
+\contentsline {subsection}{\numberline {7.4.1}Case-control sampling}{45}{subsection.7.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Introduction}{45}{section.7.1}
+\contentsline {subsection}{\numberline {7.4.2}results}{45}{subsection.7.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Overview of the \textsc {virtualspecies} package and the simulation set-up}{45}{section.7.2}
+\contentsline {section}{\numberline {7.5}Discussion}{47}{section.7.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Results}{46}{section.7.3}
+\contentsline {chapter}{\numberline {8}Simulation study}{49}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Discussion}{46}{section.7.4}
+\contentsline {section}{\numberline {8.1}Introduction}{49}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion}{47}{chapter.8}
+\contentsline {section}{\numberline {8.2}Overview of the \textsc {virtualspecies} package and the simulation set-up}{49}{section.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}}{47}{section.8.1}
+\contentsline {section}{\numberline {8.3}Model}{50}{section.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Future research}{47}{section.8.2}
+\contentsline {section}{\numberline {8.4}Results}{51}{section.8.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{49}{chapter*.33}
+\contentsline {section}{\numberline {8.5}Discussion}{51}{section.8.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Conclusion}{55}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.1}}{55}{section.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.2}Future research}{55}{section.9.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{57}{chapter*.35}
