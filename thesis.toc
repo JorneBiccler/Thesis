@@ -156,4 +156,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.2}Future research}{55}{section.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{57}{chapter*.35}
+\contentsline {chapter}{Bibliography}{57}{chapter*.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Plots}{63}{chapter*.38}
