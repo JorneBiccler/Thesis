@@ -1,6 +1,13 @@
 \chapter{Summary}
 \label{ch:Summary}
+In species distribution modelling a lot has been written about the biological importance of predictors. However, as of yet variable selection, newer machine learning, and dimensionality reduction techniques have not been considered often. Although there have been a few comparative studies that study some of the models that are studied in this thesis, they tend to compare just a few methods at a time. The fact that different study set-ups and methodologies, e.g.\ some are performed on real data  while others use simulated data, it is hard to combine these. This is the hole in the current research body that we will try to fill. By using both real data and simulated data we hope to obtain generalizable results and compare a plethora of methods. In particular we will focus on newer machine learning methods, penalization methods, dimensionality reduction, stepwise regression methods, etc.\\
 
-\ldots
-something text \\
-more text \\
+The main conclusions of the thesis are that:
+\begin{enumerate}
+\item The popular MaxEnt method tends to be outperformed by other models and hence its popularity seems a bit unjustified.
+\item Gradient boosted decision trees and bagged artificial neural networks tend to perform very well and are able to deal with irrelevant predictors.
+\item Standard logistic regression performs well when only relevant predictors are considered but tends to lead to unstable predictions when irrelevant predictors are added.
+\item By using a penalized version of logistic regression the instability of the predictions in presence of irrelevant predictors can be overcome to some extent.
+\item Pre-processing techniques that allow non-linear relationships, e.g.\ kernel principal component analysis, tend to outperform linear pre-processing techniques, e.g.\ principal component analysis.
+\item An often used selection method, the so-called select07 rule, does not seem to lead to results that are competitive with e.g.\ gradient boosted decision trees.
+\end{enumerate}

@@ -139,20 +139,6 @@ The only deviation from the presence-only scenario is the logistic07 method. Whe
 
 Finally, there seems to be no specific trend, relative to the SEs, when the models are fitted on all versus only the bioclimatic variables. 
 
-\section{Conclusion}
-In Section \ref{sec:AUC} we discussed the appropriatness of the AUC value to measure the performance of the classifiers. We then went on to use the AUC value as the main measurement of classifier performance in Sections \ref{sec:POData} and \ref{sec:PAData}. \\
-
-In Section \ref{sec:POData} $10$ species and $20$ classification methods were studied. The results can be summarized as:
-\begin{itemize}
-\item A simple logistic regression model with only linear terms can perform quite well.
-\item Flexible methods that allow for non-linear relations tend to outperform logistic regression.
-\item our implementation of penalized logistic regression performs on par with the standard logistic regression method
-\item MaxEnt does not seem to perform as well as its popularity would imply, especially when the default parameters are used other methods tend outperform it.
-\end{itemize}
-
-In section \ref{sec:CaseControlSubsampling} we introduced a sub-sampling as a method to speed up the computations when a lot of data-points are available. Sub-sampling was then used to facilitate the fitting of $14$ classification methods on the FIA data-set. The results were presented in Section \ref{sec:PAResults} and it could be concluded that roughly the same trends in classification performance were observed as when presence-only data was used. \\
-
-Based on these results it was decided to only perform a simulation study for the presence-only scenario. First of all, this is the most popular scenario in practice. Secondly, since roughly the same classification performance was observed when presence-absence data is used it seems reasonable that the results of a presence-only simulation study carry over to some extent.
 
 
 
