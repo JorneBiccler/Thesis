@@ -21,6 +21,7 @@
 \usepackage{pifont}
 \usepackage{csquotes}
 \usepackage{bm}
+\usepackage[toc,page]{appendix}
 
 % Setting the font should be done after loading the typographic packages which tend to 
 % set a new default font. The microtype package should however be loaded after the font ...
@@ -84,10 +85,8 @@
 
 % include cover page + copyright statement + no pagenumbers
 \pagenumbering{gobble}
-\includepdf[pages={1}]{Cover/TitlePage.pdf}
+\includepdf[pages={1}]{Cover/TitlePageAU.pdf}
 \clearpage \null \clearpage
-\include{Chapters/Copyright/Copyright}
-
 % frontmatter + roman page numbers
 \frontmatter
 
@@ -119,11 +118,14 @@
 
 \include{Chapters/Conclusion/Conclusion}
 % backmater => mainly references
+
+
+\appendix
+\include{Chapters/Appendix/Appendix}
+
 \backmatter
 \printbibliography[heading=bibnumbered]
 
-\include{Chapters/Appendix/Appendix}
 \cleardoublepage
 
-\includepdf[pages={1}]{Cover/BackPage.pdf}
 \end{document}

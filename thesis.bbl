@@ -1457,6 +1457,74 @@
   \field{urlyear}{2015}
 \endentry
 
+\entry{field_bootstrapping_2007}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Field}{F.}%
+     {C.~A.}{C.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Welsh}{W.}%
+     {A.~H.}{A.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \keyw{Between and within sums of squares, Bootstrap, Clusters, Hierarchical
+  data, One-way arrays}
+  \strng{namehash}{FCAWAH1}
+  \strng{fullhash}{FCAWAH1}
+  \field{labelyear}{2007}
+  \field{sortinit}{F}
+  \field{abstract}{%
+  Summary.  Various bootstraps have been proposed for bootstrapping clustered
+  data from one-way arrays. The simulation results in the literature suggest
+  that some of these methods work quite well in practice; the theoretical
+  results are limited and more mixed in their conclusions. For example,
+  McCullagh reached negative conclusions about the use of non-parametric
+  bootstraps for one-way arrays. The purpose of this paper is to extend our
+  understanding of the issues by discussing the effect of different ways of
+  modelling clustered data, the criteria for successful bootstraps used in the
+  literature and extending the theory from functions of the sample mean to
+  include functions of the between and within sums of squares and
+  non-parametric bootstraps to include model-based bootstraps. We determine
+  that the consistency of variance estimates for a bootstrap method depends on
+  the choice of model with the residual bootstrap giving consistency under the
+  transformation model whereas the cluster bootstrap gives consistent estimates
+  under both the transformation and the random-effect model. In addition we
+  note that the criteria based on the distribution of the bootstrap
+  observations are not really useful in assessing consistency.%
+  }
+  \verb{doi}
+  \verb 10.1111/j.1467-9868.2007.00593.x
+  \endverb
+  \field{issn}{1467-9868}
+  \field{number}{3}
+  \field{pages}{369\bibrangedash 390}
+  \field{title}{Bootstrapping clustered data}
+  \verb{url}
+  \verb http://onlinelibrary.wiley.com/doi/10.1111/j.1467-9868.2007.00593.x/abs
+  \verb tract
+  \endverb
+  \field{volume}{69}
+  \verb{file}
+  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
+  \verb e/VHBZJEFM/Field and Welsh - 2007 - Bootstrapping clustered data.pdf:ap
+  \verb plication/pdf;Snapshot:/home/jorne/.zotero/zotero/k1od4wal.default/zote
+  \verb ro/storage/9GJX7NNM/full.html:text/html
+  \endverb
+  \field{journaltitle}{Journal of the Royal Statistical Society: Series B
+  (Statistical Methodology)}
+  \field{month}{06}
+  \field{year}{2007}
+  \field{urlday}{07}
+  \field{urlmonth}{06}
+  \field{urlyear}{2016}
+\endentry
+
 \entry{fithian_finite-sample_2013}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -2302,6 +2370,103 @@
   \verb https://CRAN.R-project.org/package=raster
   \endverb
   \field{year}{2015}
+\endentry
+
+\entry{hijmans_very_2005}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Hijmans}{H.}%
+     {Robert~J.}{R.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cameron}{C.}%
+     {Susan~E.}{S.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Parra}{P.}%
+     {Juan~L.}{J.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jones}{J.}%
+     {Peter~G.}{P.~G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jarvis}{J.}%
+     {Andy}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \keyw{ANUSPLIN, climate, error, GIS, interpolation, precipitation,
+  temperature, uncertainty}
+  \strng{namehash}{HRJ+1}
+  \strng{fullhash}{HRJCSEPJLJPGJA1}
+  \field{labelyear}{2005}
+  \field{sortinit}{H}
+  \field{abstract}{%
+  We developed interpolated climate surfaces for global land areas (excluding
+  Antarctica) at a spatial resolution of 30 arc s (often referred to as 1-km
+  spatial resolution). The climate elements considered were monthly
+  precipitation and mean, minimum, and maximum temperature. Input data were
+  gathered from a variety of sources and, where possible, were restricted to
+  records from the 1950–2000 period. We used the thin-plate smoothing spline
+  algorithm implemented in the ANUSPLIN package for interpolation, using
+  latitude, longitude, and elevation as independent variables. We quantified
+  uncertainty arising from the input data and the interpolation by mapping
+  weather station density, elevation bias in the weather stations, and
+  elevation variation within grid cells and through data partitioning and cross
+  validation. Elevation bias tended to be negative (stations lower than
+  expected) at high latitudes but positive in the tropics. Uncertainty is
+  highest in mountainous and in poorly sampled areas. Data partitioning showed
+  high uncertainty of the surfaces on isolated islands, e.g. in the Pacific.
+  Aggregating the elevation and climate data to 10 arc min resolution showed an
+  enormous variation within grid cells, illustrating the value of
+  high-resolution surfaces. A comparison with an existing data set at 10 arc
+  min resolution showed overall agreement, but with significant variation in
+  some regions. A comparison with two high-resolution data sets for the United
+  States also identified areas with large local differences, particularly in
+  mountainous areas. Compared to previous global climatologies, ours has the
+  following advantages: the data are at a higher spatial resolution (400 times
+  greater or more); more weather station records were used; improved elevation
+  data were used; and more information about spatial patterns of uncertainty in
+  the data is available. Owing to the overall low density of available climate
+  stations, our surfaces do not capture of all variation that may occur at a
+  resolution of 1 km, particularly of precipitation in mountainous areas. In
+  future work, such variation might be captured through knowledge-based methods
+  and inclusion of additional co-variates, particularly layers obtained through
+  remote sensing. Copyright © 2005 Royal Meteorological Society.%
+  }
+  \verb{doi}
+  \verb 10.1002/joc.1276
+  \endverb
+  \field{issn}{1097-0088}
+  \field{number}{15}
+  \field{pages}{1965\bibrangedash 1978}
+  \field{title}{Very high resolution interpolated climate surfaces for global
+  land areas}
+  \verb{url}
+  \verb http://onlinelibrary.wiley.com/doi/10.1002/joc.1276/abstract
+  \endverb
+  \field{volume}{25}
+  \verb{file}
+  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
+  \verb e/AI7MZ2CK/Hijmans et al. - 2005 - Very high resolution interpolated cl
+  \verb imate surfaces.pdf:application/pdf;Snapshot:/home/jorne/.zotero/zotero/
+  \verb k1od4wal.default/zotero/storage/MZX9VBPP/Hijmans et al. - 2005 - Very h
+  \verb igh resolution interpolated climate surfaces.html:text/html
+  \endverb
+  \field{journaltitle}{International Journal of Climatology}
+  \field{month}{12}
+  \field{year}{2005}
+  \field{urlday}{07}
+  \field{urlmonth}{06}
+  \field{urlyear}{2016}
 \endentry
 
 \entry{dismo}{manual}{}
@@ -4068,6 +4233,79 @@
     {Vienna, Austria}%
   }
   \field{year}{2013}
+\endentry
+
+\entry{ren_nonparametric_2010}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Ren}{R.}%
+     {Shiquan}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lai}{L.}%
+     {Hong}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tong}{T.}%
+     {Wenjing}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Aminzadeh}{A.}%
+     {Mostafa}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hou}{H.}%
+     {Xuezhang}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lai}{L.}%
+     {Shenghan}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RS+1}
+  \strng{fullhash}{RSLHTWAMHXLS1}
+  \field{labelyear}{2010}
+  \field{sortinit}{R}
+  \field{abstract}{%
+  Nonparametric bootstrapping for hierarchical data is relatively
+  underdeveloped and not straightforward: certainly it does not make sense to
+  use simple nonparametric resampling, which treats all observations as
+  independent. We have provided some resampling strategies of hierarchical
+  data, proved that the strategy of nonparametric bootstrapping on the highest
+  level (randomly sampling all other levels without replacement within the
+  highest level selected by randomly sampling the highest levels with
+  replacement) is better than that on lower levels, analyzed real data and
+  performed simulation studies.%
+  }
+  \verb{doi}
+  \verb 10.1080/02664760903046102
+  \endverb
+  \field{issn}{0266-4763}
+  \field{number}{9}
+  \field{pages}{1487\bibrangedash 1498}
+  \field{title}{Nonparametric bootstrapping for hierarchical data}
+  \verb{url}
+  \verb http://dx.doi.org/10.1080/02664760903046102
+  \endverb
+  \field{volume}{37}
+  \verb{file}
+  \verb Full Text PDF:/home/jorne/.zotero/zotero/k1od4wal.default/zotero/storag
+  \verb e/HMUTWGS2/Ren et al. - 2010 - Nonparametric bootstrapping for hierarch
+  \verb ical data.pdf:application/pdf;Snapshot:/home/jorne/.zotero/zotero/k1od4
+  \verb wal.default/zotero/storage/C5BX6954/02664760903046102.html:text/html
+  \endverb
+  \field{journaltitle}{Journal of Applied Statistics}
+  \field{month}{09}
+  \field{year}{2010}
+  \field{urlday}{07}
+  \field{urlmonth}{06}
+  \field{urlyear}{2016}
 \endentry
 
 \entry{renner_equivalence_2013}{article}{}

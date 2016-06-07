@@ -130,9 +130,29 @@ GBM                  & 0.977 & 0.014 & 0.961 & 0.030 & 0.016   & 0.023 \\
 \caption{\label{fig:PrAbAUC}AUC values of the different classifiers fitted on the presence-absence data.}
 \end{figure}
 
-It is readily seen that the logistic regression model performs quite well, i.e. it leads to relatively high average AUC values and its SD is quite low. The stepwise methods both have large SD and have the lowest average AUC values. The GBM and ANN methods are the two methods with the largest average AUC and both have relatively small SD. Unlike in the presence-only scenario the logistic07 methods has quite a large variance and performs quite badly. Finally, the differences between using the bioclimatic or all variables are extremely small, 
+The methods tend to show the same characteristics as observed in Section \ref{sec:PAResults}, hence we only quickly review the main points. \\
 
 
+It is readily seen that the logistic regression model performs quite well, i.e.\ it leads to relatively high average AUC values and its SD is quite low. The stepwise methods both have large SD and have the lowest average AUC values. The GBM and ANN methods are the two methods with the largest average AUC and both have relatively small SD. The two penalized regression methods seem to perform on par with the standard logistic regression implementation. Preprocessing the data by using PCA before performing logistic regression seems to lead to a small decrease in performance. Doing the same but with the non-linear KPCA method leads to results comparable with those of standard logistic regression. \\
 
-\section{Discussion}
+The only deviation from the presence-only scenario is the logistic07 method. When this method is used with the presence-absence data it is quite variable and leads to low average AUC values. \\
+
+Finally, there seems to be no specific trend, relative to the SEs, when the models are fitted on all versus only the bioclimatic variables. 
+
+\section{Conclusion}
+In Section \ref{sec:AUC} we discussed the appropriatness of the AUC value to measure the performance of the classifiers. We then went on to use the AUC value as the main measurement of classifier performance in Sections \ref{sec:POData} and \ref{sec:PAData}. \\
+
+In Section \ref{sec:POData} $10$ species and $20$ classification methods were studied. The results can be summarized as:
+\begin{itemize}
+\item A simple logistic regression model with only linear terms can perform quite well.
+\item Flexible methods that allow for non-linear relations tend to outperform logistic regression.
+\item our implementation of penalized logistic regression performs on par with the standard logistic regression method
+\item MaxEnt does not seem to perform as well as its popularity would imply, especially when the default parameters are used other methods tend outperform it.
+\end{itemize}
+
+In section \ref{sec:CaseControlSubsampling} we introduced a sub-sampling as a method to speed up the computations when a lot of data-points are available. Sub-sampling was then used to facilitate the fitting of $14$ classification methods on the FIA data-set. The results were presented in Section \ref{sec:PAResults} and it could be concluded that roughly the same trends in classification performance were observed as when presence-only data was used. \\
+
+Based on these results it was decided to only perform a simulation study for the presence-only scenario. First of all, this is the most popular scenario in practice. Secondly, since roughly the same classification performance was observed when presence-absence data is used it seems reasonable that the results of a presence-only simulation study carry over to some extent.
+
+
 

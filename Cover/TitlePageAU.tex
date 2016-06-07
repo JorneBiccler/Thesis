@@ -1,0 +1,64 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{floatrow}
+\usepackage{todonotes}
+\usepackage{textcomp}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{incgraph}
+\usepackage{rotating}
+\usepackage{geometry}
+ \geometry{
+ left=25mm,
+ right=25mm,
+ top=20mm,
+ bottom=20mm,
+ }
+% Kill the auto-indent
+\setlength\parindent{0pt}
+\usepackage{epstopdf}
+\newcommand\invisiblesection[1]{%
+  \refstepcounter{section}%
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}%
+  \sectionmark{#1}
+}
+\definecolor{green}{RGB}{172,196,0}
+\definecolor{bluetitle}{RGB}{29,141,176}
+\definecolor{blueaff}{RGB}{0,0,128}
+\definecolor{blueline}{RGB}{82,189,236}
+
+\begin{document}
+\begin{titlepage}
+	\centering
+	\null
+    \vspace{2.5cm}
+	{\scshape\Large Biological project\\ Academic year 2015-2016\par}
+	\vspace{0.5cm}
+	
+	{\huge\bfseries Combining climate and remote sensing data in species distribution models\par}
+	\vspace{2cm}
+	{\scshape\LARGE Jorne Biccler}
+			\vspace{1cm}	
+
+		
+	\vspace{2cm}
+	{\scshape\LARGE Aarhus University \par}
+		\vspace{1cm}
+
+
+		\includegraphics[width=0.25\textwidth]{Segl_bla_e_PANTONE287.eps}\par
+\vfill
+	{\scshape\large Supervisor: Prof.\ B.\ Sandel \textcolor{blueaff}{Aarhus University}\\[5pt]
+Supervisor: Prof.\ T.\ Verdonck \textcolor{blueaff}{KU Leuven}\\[5pt]
+Co-supervisor: Prof.\ J.C.\ Svenning \textcolor{blueaff}{Aarhus University}\\}
+
+% Bottom of the page
+\end{titlepage}
+
+\end{document}
